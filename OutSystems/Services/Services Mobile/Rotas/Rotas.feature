@@ -31,6 +31,21 @@ Exemplos:
 | Matriz BH | 360  | Execução      | Em Deslocamento    |
 
 
+@Cenario2
+@Automatizar
+@LiberadaContatosEmail
+Esquema de Cenario: Enviar email para o contato de uma atividade liberada.
+Dado que esteja logado com usuário com acesso ao módulo rotas
+E rota esteja em execução
+E atividade esteja com situação "Em deslocamento"
+Quando clicar em "Contatos"
+E clicar no ícone <email> 
+Entao deve ser direcionado para aplicativo de email do telefone
+E conter o campo destinatário preenchido com o contato do cliente
+
+Exemplos:
+| Empresa   | Rota | Contatos | Email                      |
+| Matriz BH | 360  | AQS      | samuel.silva@sisloc.com.br |
 
 
 
