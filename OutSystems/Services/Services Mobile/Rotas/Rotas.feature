@@ -31,6 +31,7 @@ Exemplos:
 | Matriz BH | 360  | Execução      | Em Deslocamento    |
 
 @Cenario2
+@Automatizar
 
 
 
