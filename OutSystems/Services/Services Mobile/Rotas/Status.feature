@@ -48,7 +48,7 @@ Exemplos:
 | Matriz BH | Em deslocamento   | 00360 | 1º TESTE ATIVIDADE | Em Execucao  | Pendente        | Liberada para Execucao |
 
 
-@Cenario10
+@Cenario3
 @Automatizar
 @Checkin
 Esquema do Cenario: Clicar em "Check In" para iniciar atividade

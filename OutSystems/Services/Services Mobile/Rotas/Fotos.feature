@@ -22,7 +22,7 @@ Quando clicar no ícone "Foto" na seção "Fotos"
 Entao abre a camera para realizar captura
 E clicar em "Captura"
 E exibe <MensagemDeRetorno>
-E exibe foto capturada na seção "Fotos"
+E grava foto capturada na seção "Fotos"
 
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
@@ -41,7 +41,7 @@ Entao abre a camera para realizar captura
 E clicar em "Flash"
 E clicar em "Captura"
 E exibe <MensagemDeRetorno>
-E exibe foto capturada na seção "Fotos"
+E grava foto capturada na seção "Fotos"
 
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
@@ -61,7 +61,7 @@ E clicar "Reverter"
 Entao abre a camera frontal para realizar captura
 E clica em "Captura"
 E exibe <MensagemDeRetorno>
-E exibe foto capturada na seção "Fotos"
+E grava foto capturada na seção "Fotos"
 
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
@@ -82,7 +82,7 @@ Entao abre a camera frontal para realizar captura
 E não exibe botão "Flash"
 E clica em "Captura"
 E exibe <MensagemDeRetorno>
-E exibe foto capturada na seção "Fotos"
+E grava foto capturada na seção "Fotos"
 
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
@@ -109,7 +109,7 @@ Exemplos:
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE |
 
 
-@Cenario5
+@Cenario6
 @Automatizar
 @ExcluirFoto 
 Esquema do Cenario: Excluir fotos da atividade
@@ -128,7 +128,7 @@ Exemplos:
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem excluída com sucesso |
 
 
-@Cenario6
+@Cenario7
 @Automatizar
 @CancelarExclusaoFoto 
 Esquema do Cenario: Cancelar exclusao de foto da atividade
