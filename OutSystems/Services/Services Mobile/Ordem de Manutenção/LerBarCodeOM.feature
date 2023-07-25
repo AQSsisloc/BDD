@@ -1,5 +1,5 @@
 #language: pt
-#LerBarCode
+#LerBarCodeOM
 #ServicesMobile
 
 
