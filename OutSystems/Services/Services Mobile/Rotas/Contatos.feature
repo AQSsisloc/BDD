@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 @Cenario1
 @Automatizar
 @ContatosEmail
-Esquema do Cenario: Enviar email para o contato de uma atividade.
+Esquema do Cenario: Enviar email para o contato de uma atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
