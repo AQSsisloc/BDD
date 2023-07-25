@@ -395,7 +395,7 @@ Exemplos:
 
 
 
-@Cenario9
+@Cenario19
 @Automatizar
 @AtividadeConta
 Esquema do Cenario: Concluir a atividade e cadastrar uma nova atividade do tipo "Conta"
@@ -417,7 +417,7 @@ Exemplos:
 
 
 
-@Cenario10
+@Cenario20
 @Automatizar
 @AtividadeConta
 Esquema do Cenario: Estornar a conclusão de uma atividade do tipo "Conta"
