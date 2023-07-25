@@ -28,6 +28,8 @@ Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
 
+
+
 @Cenario2
 @AdicionaFotosTraseiraFlash
 @Manual
@@ -48,6 +50,7 @@ Exemplos:
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
 
 
+
 @Cenario3
 @AdicionaFotosFrontal
 @Manual
@@ -66,6 +69,7 @@ E grava foto capturada na seção "Fotos"
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+
 
 
 @Cenario4
@@ -109,6 +113,7 @@ Exemplos:
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE |
 
 
+
 @Cenario6
 @Automatizar
 @ExcluirFoto 
@@ -126,6 +131,7 @@ E exibe <MensagemDeRetorno>
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno           |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem excluída com sucesso |
+
 
 
 @Cenario7

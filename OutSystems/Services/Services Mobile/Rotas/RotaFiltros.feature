@@ -31,6 +31,7 @@ Exemplos:
 | Matriz BH | Desativado | Desativado | Desativado |            |        |
 
 
+
 @Cenario2
 @Automatizar 
 @LimpaFiltros
@@ -50,6 +51,7 @@ Exemplos:
 | Matriz BH | Desativado | Desativado | Desativado | 21/07/2023 | 21/07/2023 |
 
 
+
 @Cenario3
 @Automatizar
 @Liberada
@@ -65,6 +67,8 @@ Entao deve exibir somente rotas com status "Liberada para Execução"
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida  | DataInicio | DataFim |
 | Matriz BH | Ativado  | Desativado | Desativado |            |         |
+
+
 
 @Cenario4
 @Automatizar
@@ -83,6 +87,8 @@ Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida  | InicioApos | FimAte |
 | Matriz BH | Ativado  | Desativado | Desativado | 30/06/2023 |        |
 
+
+
 @Cenario5
 @Automatizar
 @LiberadaFimAte
@@ -99,6 +105,8 @@ Entao exibe somente rotas liberadas com data de finalização ate <FimAte>
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida  | InicioApos | FimAte     |
 | Matriz BH | Ativado  | Desativado | Desativado |            | 30/06/2023 |
+
+
 
 @Cenario6
 @Automatizar
@@ -117,6 +125,7 @@ Exemplos:
 | Matriz BH | Desativado | Ativado    | Desativado |            |        |
  
 
+
 @Cenario7
 @Automatizar
 @ExecucaoInicioApos
@@ -133,6 +142,8 @@ Entao exibe somente rotas liberadas com data após <InicioApos>
 Exemplos:
 | Empresa   | Liberada   | EmExecucao | Concluida  | InicioApos | FimAte |
 | Matriz BH | Desativado | Ativado    | Desativado | 16/04/2023 |        |
+
+
 
 @Cenario8
 @Automatizar
@@ -152,6 +163,7 @@ Exemplos:
 | Matriz BH | Ativado  | Desativado | Desativado |            | 30/06/2023 |
 
 
+
 @Cenario9
 @Automatizar
 @Concluida 
@@ -168,6 +180,7 @@ Exemplos:
 | Empresa   | Liberada   | EmExecucao | Concluida | InicioApos | FimAte |
 | Matriz BH | Desativado | Desativado | Ativado   |            |        |
  
+
 
 @Cenario10
 @Automatizar
@@ -186,6 +199,8 @@ Exemplos:
 | Empresa   | Liberada   | EmExecucao | Concluida | InicioApos | FimAte |
 | Matriz BH | Desativado | Desativado | Ativado   | 09/07/2023 |        |
 
+
+
 @Cenario8
 @Automatizar
 @LiberadaDataFim
@@ -202,6 +217,8 @@ Entao exibe somente rotas concluídas com data de finalização ate <FimAte>
 Exemplos:
 | Empresa   | Liberada   | EmExecucao | Concluida | InicioApos | FimAte     |
 | Matriz BH | Desativado | Desativado | Ativado   |            | 31/01/2022 |
+
+
 
 @Cenario9
 @Automatizar
@@ -221,6 +238,7 @@ Entao deve exibir todas as rotas de todos os status
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida | InicioApos | FimAte     |
 | Matriz BH | Ativado  | Ativado    | Ativado   | 31/12/2021 | 31/07/2023 |
+
 
 
 @Cenario10 
@@ -248,7 +266,6 @@ Exemplos:
 
 
 
-
 @Cenario11 
 @Automatizar
 @LiberadaConcluida
@@ -266,6 +283,7 @@ E rotas concluídas
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida | InicioApos | FimAte |
 | Matriz BH | Ativado  | Desativado | Ativado   |            |        |
+
 
 
 @Cenario12
@@ -289,9 +307,3 @@ E rotas até a data <FimAte>
 Exemplos:
 | Empresa   | Liberada   | EmExecucao | Concluida | InicioApos | FimAte     |
 | Matriz BH | Desativado | Ativado    | Ativado   | 01/06/2023 | 17/07/2023 |
-
-
-
-
-
-
