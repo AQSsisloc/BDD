@@ -1,11 +1,11 @@
 #language: pt
-#LerQrCode
+#LerBarCodeOM
 #ServicesMobile
 
 
-Funcionalidade: Ler QrCode de um patrimônio para abrir uma Ordem de Manutenção
+Funcionalidade: Ler código de barras de um patrimônio para abrir uma Ordem de Manutenção
   Como um usuário do Services Mobile 
-  Eu quero ler um QrCode de um patrimônio 
+  Eu quero ler um código de barras de um patrimônio 
   Para abrir uma nova Ordem de Manutenção
 
 
@@ -14,14 +14,14 @@ Dado esteja logado no Services Mobile
 
 @Cenario1
 @Manual
-@LerQrCode
-Esquema do Cenario: Ler QrCode de um patrimônio para abrir uma Ordem de Manutenção
+@LerBarCode
+Esquema do Cenario: Ler código de barras de um patrimônio para abrir uma Ordem de Manutenção
 E que esteja logado com usuário funcionário
 E selecionar <Empresa>
 E selecionar <Almoxarifado>
 Quando clicar em "Mais"
-E selecionar "Ler QrCode"
-E realiza leitura do QrCode
+E selecionar "Ler BarCode"
+E realiza leitura do código de barras
 Entao abre a tela de criação da Ordem de Manutenção
 
 Exemplos:
@@ -32,15 +32,15 @@ Exemplos:
 
 @Cenario2
 @Manual
-@LerQrCode
-Esquema do Cenario: Ler QrCode de um patrimônio na tela de criação de uma Ordem de Manutenção
+@LerBarCode
+Esquema do Cenario: Ler código de barras de um patrimônio na tela de criação de uma Ordem de Manutenção
 E que esteja logado com usuário funcionário
 E selecionar <Empresa>
 E selecionar <Almoxarifado>
 E clicar em "Mais"
 E selecionar "Criar OM"
-Quando clicar "Ler QrCode"
-E realiza leitura do QrCode
+Quando clicar "Ler BarCode"
+E realiza leitura do código de barras
 Entao preenche os dados do patrimônio na tela
 
 Exemplos:
@@ -51,19 +51,19 @@ Exemplos:
 
 @Cenario3
 @Manual
-@LerQrCode
-Esquema do Cenario: Ler QrCode de um patrimônio não cadastrado
+@LerBarCode
+Esquema do Cenario: Ler código de barras de um patrimônio não cadastrado
 E que esteja logado com usuário funcionário
 E selecionar <Empresa>
 E selecionar <Almoxarifado>
 E clicar em "Mais"
 E selecionar "Criar OM"
-Quando clicar "Ler QrCode"
-E realiza leitura do QrCode
+Quando clicar "Ler BarCode"
+E realiza leitura do código de barras
 Entao apresenta a <MensagemDeRetorno>
 
 Exemplos:
-| Empresa    | Almoxarifado         | MensagemDeRetorno                    |
-| BHLOCADORA | 1.10 - ESTOQUE VENDA | Patrimônio do QrCode não localizado! |
+| Empresa    | Almoxarifado         | MensagemDeRetorno                              |
+| BHLOCADORA | 1.10 - ESTOQUE VENDA | Patrimônio do código de barras não localizado! |
 
 
