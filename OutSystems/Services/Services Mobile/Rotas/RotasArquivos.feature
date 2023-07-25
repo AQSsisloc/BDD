@@ -8,6 +8,7 @@ Funcionalidade: Inserir arquivos na atividade
   Eu quero inserir arquivo na atividade 
   Para documentar o atendimento 
 
+
 Dado esteja logado no Services Mobile 
 
 
@@ -32,6 +33,7 @@ Exemplos:
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
 
 
+
 @Cenario2
 @AdicionaArquivoCamera
 @Manual
@@ -51,6 +53,8 @@ E grava foto na seção "Arquivos"
 Exemplos:
 | Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+
+
 
 @Cenario3
 @AdicionaArquivoFilmadora
