@@ -222,5 +222,3 @@ Entao estorna a conclusão dos dados
 Exemplos:
 | Status    | Atividade        |
 | Concluído | Visita Comercial |
-
-
