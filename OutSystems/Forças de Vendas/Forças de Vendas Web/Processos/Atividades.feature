@@ -475,3 +475,24 @@ E clicar em "Filtrar"
 Entao apresenta a atividade do filtro pesquisado
 
 
+
+@Cenario23
+@Automatizar
+@ExportarDadosDeAtividades
+Esquema do Cenario: Exportar para excel as atividades filtradas
+E que esteja logado com usuário funcionário
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "Filtro"
+E inserir <Status>
+E clicar em "Filtrar"
+E clicar em "Arquivo Excel"
+E clicar em "Exportar Arquivos"
+Entao exporta para excel as atividades filtradas
+
+
+Exemplos:
+| Status                                       |
+| Cancelado, Concluído, Em Andamento, Pendente |
+
+
