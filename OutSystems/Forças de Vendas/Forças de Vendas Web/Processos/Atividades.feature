@@ -437,3 +437,41 @@ Exemplos:
 | Concluído | Enviar E-mail    |
 
 
+
+@Cenario20
+@Automatizar
+@PesquisarAtividade
+Cenario: Pesquisar uma atividade criada
+E que esteja logado com usuário funcionário
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "Pesquisar"
+Entao apresenta todas as atividades criadas
+
+
+
+@Cenario21
+@Automatizar
+@LimparPesquisaAtividade
+Cenario: Limpar os resultados de uma pesquisa da atividade
+E que esteja logado com usuário funcionário
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "Limpar os resultados"
+Entao limpa os resultados do filtro da pesquisa 
+
+
+
+@Cenario22
+@Automatizar
+@FiltrarAtividade
+Cenario: Filtrar atividade criada
+E que esteja logado com usuário funcionário
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "Filtro"
+E inserir dados do filtro
+E clicar em "Filtrar"
+Entao apresenta a atividade do filtro pesquisado
+
+
