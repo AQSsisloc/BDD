@@ -258,8 +258,29 @@ Exemplos:
 
 @Cenario12
 @Automatizar
+@Captador
+Esquema do Cenario: Excluir um captador cadastrado
+E que esteja logado com usuário funcionário
+E selecionar "Cadastros"
+E selecionar "Captador"
+Quando inserir <Pesquisa>
+E clicar em "Lupa"
+E selecionar <Captador>
+E clicar em "Excluir"
+E clicar em "Sim"
+Entao exclui os dados
+E apresenta a <MensagemDeRetorno>
+
+Exemplos:
+| Pesquisa    | Captador    | MensagemDeRetorno              |
+| Teste AQS 2 | Teste AQS 2 | Registro excluído com sucesso! |
+
+
+
+@Cenario13
+@Automatizar
 @PesquisarCaptador
-Cenario: Pesquisar um captador criado
+Cenario: Pesquisar um captador cadastrado
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Captador"
@@ -268,7 +289,7 @@ Entao apresenta todos os captadores criados e ativos
 
 
 
-@Cenario13
+@Cenario14
 @Automatizar
 @LimparPesquisaCaptador
 Cenario: Limpar os resultados de uma pesquisa do captador
@@ -280,10 +301,10 @@ Entao limpa os resultados do filtro da pesquisa
 
 
 
-@Cenario14
+@Cenario15
 @Automatizar
 @FiltrarCaptador
-Cenario: Filtrar captador criada
+Cenario: Filtrar captador cadastrada
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Captador"
@@ -294,7 +315,7 @@ Entao apresenta a atividade do filtro pesquisado
 
 
 
-@Cenario15
+@Cenario16
 @Automatizar
 @AtualizarSincronizarSislocCaptador
 Cenario: Atualizar e sincronizar dados com Sisloc e captador
@@ -307,11 +328,11 @@ Entao apresenta a atividade do filtro pesquisado
 
 Exemplos:
 | CodigoPessoaSisloc | MensagemDeRetorno                                           |
-|                    | Pessoa de código 1 foi atualizada/sincronizada com sucesso! |
+| 123                | Pessoa de código 1 foi atualizada/sincronizada com sucesso! |
 
 
 
-@Cenario16
+@Cenario17
 @Automatizar
 @AuditoriaCaptador
 Cenario: Visualizar auditoria do captador
