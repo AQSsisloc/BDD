@@ -8,6 +8,7 @@ Funcionalidade: Exibir informações adicionais da atividade
   Eu quero visualizar informações adicionais da atividade 
   Para usar informações conforme as necessidades da atividade.
 
+
 Dado esteja logado no Services Mobile 
 
 
@@ -155,6 +156,7 @@ Exemplos:
 | Matriz BH | 00358 | Devolução |
 
 
+
 @Cenario9
 @Automatizar
 @Chegou
@@ -190,6 +192,7 @@ E bloco "Atividade concluída" nas notificações deve gravar "Disparado"
 Exemplos:
 | Empresa   | Rota  | Atividade |
 | Matriz BH | 00358 | Devolução |
+
 
 
 @Cenario11

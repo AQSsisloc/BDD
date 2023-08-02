@@ -80,7 +80,6 @@ E atividade não possua produto
 Quando clicar na <Atividade>
 Entao não exibir botão "Abrir Atividade"
 
-
 Exemplos: 
 | Empresa   | Rota  | Atividade        |
 | Matriz BH | 00379 | 1°Nova Atividade |

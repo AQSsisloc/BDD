@@ -8,7 +8,9 @@ Funcionalidade: Visualizar trajeto da rota
   Eu quero visualizar o trajeto da rota e local da atividade
   Para orientação no deslocamento do percurso
 
+
 Dado que esteja logado no Service Mobile
+
 
 @Cenario1
 @Automatizar

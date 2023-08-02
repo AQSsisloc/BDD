@@ -11,6 +11,7 @@ Funcionalidade: Gerenciar rotas de atividades criadas pelo Services
 
 Dado esteja logado no Services Mobile 
 
+
 @Cenario1 
 @Automatizar
 @StatusLiberada
@@ -72,6 +73,7 @@ Exemplos:
 | Empresa   | Rota  | Atividade          |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE |
  
+
 
 @Cenario4
 @Automatizar
@@ -220,7 +222,6 @@ Entao grava <StatusAtividade>
 E grava <StatusRota> 
 E exibe botão "Estornar Cancelamento"
 
-
 Exemplos:
 | Empresa   | Rota  | Atividade          | StatusAtividade | StatusRota  |
 | Matriz BH | 00378 | 1° TESTE ATIVIDADE | Cancelado       | Em Execução |
@@ -258,6 +259,7 @@ Entao abre mapa com localização do endereço Final
 Exemplos:
 | Empresa   | Rota  | Atividade        | StatusAtividade | StatusRota |
 | Matriz BH | 00379 | 1°Nova Atividade | Concluído       | Concluído  |
+
 
 
 @Cenario11

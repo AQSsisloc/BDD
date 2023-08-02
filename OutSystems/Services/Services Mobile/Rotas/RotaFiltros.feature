@@ -8,7 +8,9 @@ Funcionalidade: Exibir rotas por datas específicas
   Eu quero filtrar as rotas por datas específicas 
   Para ter melhor visibilidades das rotas  
 
+
 Dado esteja logado no Services Mobile 
+
 
 @Cenario1
 @Automatizar
@@ -234,7 +236,6 @@ E com <Concluida>
 Quando clicar em "Filtrar"
 Entao deve exibir todas as rotas de todos os status
 
-
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida | InicioApos | FimAte     |
 | Matriz BH | Ativado  | Ativado    | Ativado   | 31/12/2021 | 31/07/2023 |
@@ -258,7 +259,6 @@ Entao deve ser exibido rotas liberadas
 E rotas em execucao 
 E após data <InicioApos> 
 E ate data <FimAte> 
-
 
 Exemplos:
 | Empresa   | Liberada | EmExecucao | Concluida  | InicioApos | FimAte     |

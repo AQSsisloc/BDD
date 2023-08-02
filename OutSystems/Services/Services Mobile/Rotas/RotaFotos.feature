@@ -8,7 +8,9 @@ Funcionalidade: Inserir fotos na atividade
   Eu quero inserir fotos na atividade 
   Para comprovar o atendimento realizado 
 
+
 Dado esteja logado no Services Mobile
+
 
 @Cenario1
 @AdicionaFotosTraseira
