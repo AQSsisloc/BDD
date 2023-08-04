@@ -2,10 +2,12 @@
 #RegistrarPosicaoDoEquipOM
 #ServicesMobile
 
+
 Funcionalidade: Registrar posição do Equipamento na Ordem de Manutenção
   Como um usuário do Services Mobile 
   Eu quero informar a posição do equipamento na Ordem de Manutenção
   Para salvar a localização geográfica do equipamento no atendimento
+
 
 Dado esteja logado no Services Mobile
 
@@ -32,6 +34,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | A posição do equipamento foi registrada com sucesso! |
 
 
+
 @Cenario2
 @Automatizar
 @RegistrarPosicaoDoEquipOM
@@ -50,6 +53,7 @@ E apresenta a <MensagemDeSucesso>
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao              | MensagemDeSucesso                                    |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Motor Vibrador Honda GX-160 QX | A posição do equipamento foi registrada com sucesso! |
+
 
 
 @Cenario3

@@ -2,6 +2,7 @@
 #OrdemDeManutencao
 #ServicesMobile
 
+
 Funcionalidade: Visualizar as OM criadas
   Como um usuário do Services Mobile 
   Eu quero visualizar todas as ordens de manutenções criadas
@@ -25,6 +26,7 @@ E exibe as ordens de manutenções criadas
 Exemplos:
 | Empresa    | Almoxarifado         |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA |
+
 
 
 @Cenario2

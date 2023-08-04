@@ -76,6 +76,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm | Equipamento retornado | Equipamento com defeito | Voltará para Obra, equipamento será testado em nossa oficina |
 
 
+
 @Cenario4
 @Automatizar
 @CancelarInfoOM
@@ -89,8 +90,11 @@ E inserir os dados de cadastro
 E clicar em "Salvar"
 Quando selecionar a aba "Info"
 E clicar em "Cancelar" no campo "Descrição"
+E clicar em "Confirmar"
 E clicar em "Cancelar" no campo "Problema"
+E clicar em "Confirmar"
 E clicar em "Cancelar" no campo "Observação"
+E clicar em "Confirmar"
 Entao grava os dados
 
 Exemplos:
@@ -99,7 +103,33 @@ Exemplos:
 
 
 
-@Cenario5
+@Cenario4
+@Automatizar
+@CancelarInfoOM
+Esquema do Cenario: Cancelar exclusão de informações inseridas na Ordem de Manutenção
+E que esteja logado com usuário funcionário
+E selecionar <Empresa>
+E selecionar <Almoxarifado>
+E selecionar "Ordem De Manutenção"
+E selecionar "Criar OM"
+E inserir os dados de cadastro
+E clicar em "Salvar"
+Quando selecionar a aba "Info"
+E clicar em "Cancelar" no campo "Descrição"
+E clicar em "Cancelar"
+E clicar em "Cancelar" no campo "Problema"
+E clicar em "Cancelar"
+E clicar em "Cancelar" no campo "Observação"
+E clicar em "Cancelar"
+Entao cancela a exclusão dos dados
+
+Exemplos:
+| Empresa | Almoxarifado         |
+| Matriz  | 1.10 - ESTOQUE VENDA |
+
+
+
+@Cenario6
 @Manual
 @AdicionarInfoOM
 Esquema do Cenario: Adicionar informações na criação da Ordem de Manutenção no modo offline

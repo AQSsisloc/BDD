@@ -86,6 +86,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | 
 
 
+
 @Cenario4
 @Manual
 @AdicionarServicoOM
@@ -285,7 +286,6 @@ E selecionar <Servico>
 E clicar em "Apontar"
 E clicar em "Cancelar"
 Entao cancela o apontamento de serviço criado
-
 
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao              | Servico                           |

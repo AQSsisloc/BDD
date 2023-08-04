@@ -34,6 +34,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA |
 
 
+
 @Cenario2
 @Manual
 @AdicionarImagemOM
@@ -57,6 +58,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA |
 
 
+
 @Cenario3
 @Manual
 @AdicionarFotoOM
@@ -75,6 +77,7 @@ E mostra a imagem na aba "Fotos"
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao     |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm |
+
 
 
 @Cenario4
@@ -98,6 +101,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm |
 
 
+
 @Cenario5
 @Automatizar
 @CancelarInsercaoFotoOM
@@ -115,6 +119,7 @@ Entao não grava os dados
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao     |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm |
+
 
 
 @Cenario6
@@ -138,6 +143,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm | Foto deletada com sucesso! |
 
 
+
 @Cenario7
 @Automatizar
 @CancelarExclusaoFotoImagemOM
@@ -157,6 +163,7 @@ E retornar para a tela anterior
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao     |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm |
+
 
 
 @Cenario8
@@ -180,6 +187,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm | Imagem de equipamento com defeito |
 
 
+
 @Cenario9
 @Manual
 @DescricaoFotoImagemOM
@@ -199,6 +207,7 @@ Entao grava os dados
 Exemplos:
 | Empresa    | Almoxarifado         | OrdemDeManutencao     |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Mangote Vibrador 63mm |
+
 
 
 @Cenario10

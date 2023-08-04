@@ -2,10 +2,12 @@
 #InformarPendenciaOM
 #ServicesMobile
 
+
 Funcionalidade: Baixar Modelo de relatório da Ordem de Manutenção
   Como um usuário do Services Mobile 
   Eu quero baixar o modelo de relátorio da Ordem de Manutenção
   Para visualização e download do modelo de relatório
+
 
 Dado esteja logado no Services Mobile
 

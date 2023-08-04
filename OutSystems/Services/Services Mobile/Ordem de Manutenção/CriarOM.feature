@@ -2,6 +2,7 @@
 #CriarOM
 #ServicesMobile
 
+
 Funcionalidade: Cadastrar uma Ordem de Manutenção
   Como um usuário do Services Mobile 
   Eu quero cadastrar uma ordem de Manutenção
@@ -36,6 +37,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Próprio/Sublocado | 64049      | 04/05/2023 13:30   | Preventiva | Manutenção Preventiva | Sem problema | Prevenção de equipamento | Concluído         |
 
 
+
 @Cenario2
 @Manual
 @CriarOM
@@ -61,6 +63,7 @@ E apresenta a <MensagemDeSucesso>
 Exemplos:
 | Empresa    | Almoxarifado         | ProprioDeTerceiro | Equipamento        | Cliente                | NumeroDeSerie | PrevisaoDeExecucao | Tipo      | Descricao            | Problema                | Observacao              | MensagemDeSucesso |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | De terceiro       | Compactador Wacker | Construtora Cross Ltda | 123456        | 04/05/2023 13:30   | Corretiva | Manutenção Corretiva | Equipamento com defeito | Correção no equipamento | Concluído         |
+
 
 
 @Cenario3
@@ -89,6 +92,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Próprio/Sublocado | 64049      | IMOBILIZADO MANUTENÇÃO | 04/05/2023 13:30   | Preventiva | Manutenção Preventiva | Sem problema | Prevenção de equipamento | Concluído         |
 
 
+
 @Cenario4
 @Automatizar
 @CriarOM
@@ -106,6 +110,7 @@ Entao apresenta a <MensagemDeRetorno>
 Exemplos:
 | Empresa    | Almoxarifado         | ProprioDeTerceiro | Tipo                | MensagemDeRetorno              |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Próprio/Sublocado | Inspeção preventiva | Patrimônio deve ser informado! |
+
 
 
 @Cenario5
@@ -126,6 +131,7 @@ Entao apresenta a <MensagemDeRetorno>
 Exemplos:
 | Empresa    | Almoxarifado         | ProprioDeTerceiro | Equipamento              | Tipo               | MensagemDeRetorno           |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | De terceiro       | Compactador Wacker BS52Y | Inspeção corretiva | Cliente deve ser informado! |
+
 
 
 @Cenario6
@@ -153,6 +159,7 @@ Exemplos:
 | BHLOCADORA | 1.10 - ESTOQUE VENDA | Próprio/Sublocado | 64049      | 04/05/2023 13:30   | Preventiva | Concluído         |
 
 
+
 @Cenario7
 @Automatizar
 @CancelarCriacaoOM
@@ -168,6 +175,7 @@ Entao não grava os dados
 Exemplos:
 | Empresa    | Almoxarifado         |
 | BHLOCADORA | 1.10 - ESTOQUE VENDA |
+
 
 
 @Cenario8

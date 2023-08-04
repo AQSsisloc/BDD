@@ -2,10 +2,12 @@
 #InformarPendenciaOM
 #ServicesMobile
 
+
 Funcionalidade: Enviar e-mail com informações da Ordem de Manutenção
   Como um usuário do Services Mobile 
   Eu quero enviar e-mail com relatório da Ordem de Manutenção
   Para enviar relatório com um modelo cadastrado
+
 
 Dado esteja logado no Services Mobile
 
