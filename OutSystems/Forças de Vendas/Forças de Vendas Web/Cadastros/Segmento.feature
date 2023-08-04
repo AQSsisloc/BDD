@@ -123,7 +123,7 @@ Entao apresenta todas os segmentos criados
 
 @Cenario7
 @Automatizar
-@LimparPesquisaOrigem
+@LimparPesquisasegmento
 Cenario: Limpar os resultados de uma pesquisa do segmento
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
@@ -132,10 +132,23 @@ Quando clicar em "Pesquisar"
 Entao limpa os resultados do filtro da pesquisa 
 
 
-
 @Cenario8
 @Automatizar
-@AuditoriaOrigem
+@FiltrarSegmento
+Cenario: Filtrar segmento cadastrado
+E que esteja logado com usuário funcionário
+E selecionar "Cadastros"
+E selecionar "Concorrente"
+Quando clicar em "Filtro"
+E inserir dados do filtro
+E clicar em "Filtrar"
+Entao apresenta o segmento do filtro pesquisado
+
+
+
+@Cenario9
+@Automatizar
+@AuditoriaSegmento
 Cenario: Visualizar auditoria do segmento
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
