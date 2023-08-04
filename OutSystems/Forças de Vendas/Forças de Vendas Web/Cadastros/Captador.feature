@@ -52,8 +52,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Nome             | Pessoa           | MensagemDeSucesso                              |
-| Teste Captador 1 | Teste Captador 1 | Captador "Teste Captador 1" criado com suceso! |
+| Nome             | MensagemDeSucesso                              |
+| Teste Captador 1 | Captador "Teste Captador 1" criado com suceso! |
 
 
 
@@ -75,8 +75,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Nome             | Pessoa           | MensagemDeSucesso            |
-| Teste Captador 2 | Teste Captador 2 | Endereço criado com sucesso! |
+| Nome             | MensagemDeSucesso            |
+| Teste Captador 2 | Endereço criado com sucesso! |
 
 
 
@@ -207,8 +207,8 @@ E clicar em "Cancelar"
 Entao não grava os dados
 
 Exemplos:
-| Nome             | Pessoa           |
-| Teste Captador 2 | Teste Captador 2 |
+| Nome             |
+| Teste Captador 2 |
 
 
 

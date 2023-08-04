@@ -53,7 +53,7 @@ Exemplos:
 @Cenario3
 @Automatizar
 @Origem
-Cenario: Cancelar o cadastro de uma origem
+Esquema do Cenario: Cancelar o cadastro de uma origem
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Origem"
@@ -62,6 +62,10 @@ E inserir <Nome>
 E preencher os campos disponíveis
 E clicar em "Cancelar"
 Entao não grava os dados
+
+Exemplos:
+| Nome        |
+| Teste AQS 1 |
 
 
 
@@ -96,7 +100,7 @@ E selecionar "Cadastros"
 E selecionar "Origem"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
-E selecionar <Captador>
+E selecionar <Origem>
 E clicar em "Excluir"
 E clicar em "Sim"
 Entao exclui os dados

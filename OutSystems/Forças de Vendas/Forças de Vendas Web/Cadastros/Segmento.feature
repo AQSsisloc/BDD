@@ -62,7 +62,7 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Pesquisa  | Origem    | MensagemDeSucesso                             |
+| Pesquisa  | Segmento  | MensagemDeSucesso                             |
 | Teste AQS | Teste AQS | Segmento "Teste AQS 1" atualizado com suceso! |
 
 
@@ -83,7 +83,7 @@ Entao exclui os dados
 E apresenta a <MensagemDeRetorno>
 
 Exemplos:
-| Pesquisa    | Origem      | MensagemDeRetorno              |
+| Pesquisa    | Segmento    | MensagemDeRetorno              |
 | Teste AQS 2 | Teste AQS 2 | Registro excluído com sucesso! |
 
 
