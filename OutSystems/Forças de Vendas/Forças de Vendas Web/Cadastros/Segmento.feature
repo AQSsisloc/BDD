@@ -66,8 +66,29 @@ Exemplos:
 | Teste AQS | Teste AQS | Segmento "Teste AQS 1" atualizado com suceso! |
 
 
-
 @Cenario4
+@Automatizar
+@Segmento
+Esquema do Cenario: Inativar um segmento ativo
+E que esteja logado com usuário funcionário
+E selecionar "Cadastros"
+E selecionar "Segmento"
+Quando inserir <Pesquisa>
+E clicar em "Lupa"
+E selecionar <Segmento>
+E clicar em "Editar"
+E selecionar <Ativo>
+E clicar em "Salvar"
+Entao grava os dados
+E apresenta a <MensagemDeRetorno>
+
+Exemplos:
+| Pesquisa    | Segmento    | Ativo | MensagemDeRetorno                             |
+| Teste AQS 2 | Teste AQS 2 | Não   | Segmento "Teste AQS 2" atualizado com suceso! |
+
+
+
+@Cenario5
 @Automatizar
 @Segmento
 Esquema do Cenario: Excluir um segmento cadastrado
@@ -88,7 +109,7 @@ Exemplos:
 
 
 
-@Cenario5
+@Cenario6
 @Automatizar
 @PesquisarSegmento
 Cenario: Pesquisar um segmento cadastrado
@@ -100,7 +121,7 @@ Entao apresenta todas os segmentos criados
 
 
 
-@Cenario6
+@Cenario7
 @Automatizar
 @LimparPesquisaOrigem
 Cenario: Limpar os resultados de uma pesquisa do segmento
@@ -112,7 +133,7 @@ Entao limpa os resultados do filtro da pesquisa
 
 
 
-@Cenario7
+@Cenario8
 @Automatizar
 @AuditoriaOrigem
 Cenario: Visualizar auditoria do segmento
