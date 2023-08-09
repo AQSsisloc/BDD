@@ -296,7 +296,7 @@ Cenario: Limpar os resultados de uma pesquisa do captador
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Captador"
-Quando clicar em "Pesquisar"
+Quando clicar em "Limpar resultados"
 Entao limpa os resultados do filtro da pesquisa 
 
 
@@ -318,7 +318,7 @@ Entao apresenta a atividade do filtro pesquisado
 @Cenario16
 @Automatizar
 @AtualizarSincronizarSislocCaptador
-Cenario: Atualizar e sincronizar dados com Sisloc e captador
+Esquema do Cenario: Atualizar e sincronizar dados com Sisloc e captador
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Captador"

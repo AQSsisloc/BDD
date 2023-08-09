@@ -128,8 +128,9 @@ Cenario: Limpar os resultados de uma pesquisa do segmento
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Segmento"
-Quando clicar em "Pesquisar"
+Quando clicar em "Limpar resultados"
 Entao limpa os resultados do filtro da pesquisa 
+
 
 
 @Cenario8

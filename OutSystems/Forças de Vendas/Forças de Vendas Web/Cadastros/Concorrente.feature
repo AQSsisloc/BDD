@@ -141,7 +141,7 @@ Cenario: Limpar os resultados de uma pesquisa do concorrente
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Concorrente"
-Quando clicar em "Pesquisar"
+Quando clicar em "Limpar resultados"
 Entao limpa os resultados do filtro da pesquisa 
 
 
