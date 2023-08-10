@@ -2,6 +2,7 @@
 #ChecklistRemessa
 #ServicesMobile
 
+
 Funcionalidade: Cadastrar um checklist de remessa para um patrimônio
   Como um usuário do Services Mobile 
   Eu quero executar um checklist de uma remessa
