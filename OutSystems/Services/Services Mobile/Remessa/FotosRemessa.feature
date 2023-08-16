@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @InserirFotoRemessa
 Esquema do Cenario: Inserir foto na remessa
 E esteja logado com usuário funcionário
@@ -32,7 +32,7 @@ E exibe <Mensagem>
 
 
 @Cenario2
-@Automatizar
+@Manual
 @InserirFotoRemessaFrontal
 Esquema do Cenario: Inserir foto na remessa com câmera frontal
 E esteja logado com usuário funcionário
@@ -52,7 +52,7 @@ E exibe <Mensagem>
 
 
 @Cenario3
-@Automatizar
+@Manual
 @FecharCameraRemessa 
 Esquema do Cenario: Inserir foto na remessa
 E esteja logado com usuário funcionário
@@ -88,3 +88,60 @@ E exibe <Mensagem>
 | Matriz  | 4860-03 | Imagem excluída com sucesso |
 
 
+
+@Cenario5
+@Automatizar
+@CancelarExclusaoFotoRemessa 
+Esquema do Cenario: Cancelar exclusão de foto na remessa 
+E esteja logado com usuário funcionário
+E esteja logado com <Empresa>
+E clicar na <Remessa>
+E clicar em "Fotos"
+E clicar sobre a "Imagem"
+E clicar na "Lixeira"
+Quando clicar em "CANCELAR"
+Entao Imagem não é excluída
+E exibe <Mensagem> 
+
+| Empresa | Remessa | 
+| Matriz  | 4860-03 | 
+
+
+
+@Cenario6
+@Manual
+@InserirFotoRemessaOffline
+Esquema do Cenario: Inserir foto na remessa
+E esteja logado com usuário funcionário
+E esteja logado com <Empresa>
+E esteja no modo offline
+E clicar na <Remessa>
+E <Remessa> esteja com situação "Em Andamento"
+E clicar em "Fotos"
+E clicar em "Imagem"
+Quando clicar em "Capture"
+Entao foto é capturada 
+E exibe <Mensagem> 
+
+| Empresa | Remessa | Mensagem                   |
+| Matriz  | 4860-03 | Imagem Anexada com sucesso |
+
+
+
+@Cenario7
+@Automatizar
+@ExcluirFotoRemessaOffline 
+Esquema do Cenario: Excluir foto na remessa 
+E esteja logado com usuário funcionário
+E esteja logado com <Empresa>
+E esteja no modo offline 
+E clicar na <Remessa>
+E clicar em "Fotos"
+E clicar sobre a "Imagem"
+Quando clicar na "Lixeira"
+E clicar em "CONFIRMAR"
+Entao Imagem é excluída
+E exibe <Mensagem> 
+
+| Empresa | Remessa | Mensagem                    |
+| Matriz  | 4860-03 | Imagem excluída com sucesso |

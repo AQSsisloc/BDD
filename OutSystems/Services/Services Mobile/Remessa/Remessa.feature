@@ -28,6 +28,7 @@ Exemplos:
 | Matriz  | 004825-01 |
 
 
+
 @Cenario2 
 @Automatizar
 @ListarRemessas
@@ -40,6 +41,7 @@ Entao apresenta listagem de remessas agupadas por cliente
 Exemplos: 
 | Empresa | 
 | Matriz  |
+
 
 
 @Cenario3
@@ -223,6 +225,29 @@ Exemplos:
 
 
 @Cenario12
+@Automatizar 
+@EstornoCheckOutRemessaOffline
+Esquema do Cenario: Fazer estorno do check-out da remessa offline
+E esteja logado com usuário funcionário
+E esteja logado com <Empresa>
+E esteja no modo offline
+E clicar em <Remessa> 
+E clicar em "Check-In"
+E clicar em "CONFIRMAR"
+E clicar em "Check-Out"
+E clicar em "CONFIRMAR"
+Quando clicar em "Estornar Check-Out"
+E clicar em "Confirmar"
+Entao grava os dados 
+E exibe <Mensagem> 
+
+Exemplos: 
+| Empresa | Remessa | Mensagem                                   |
+| Matriz  | 4860-03 | Estorno do check-Out realizado com sucesso |
+
+
+
+@Cenario13
 @Automatizar
 @RemessaOfflineRota
 Esquema do Cenario: Executar remessa offline com rota  
