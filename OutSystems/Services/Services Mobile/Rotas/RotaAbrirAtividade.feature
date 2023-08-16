@@ -53,7 +53,7 @@ Exemplos:
 @Cenario3
 @Automatizar
 @AbrirRemessa
-Esquema do Cenario: Abrir devolução na atividade da rota
+Esquema do Cenario: Abrir remessa na atividade da rota
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
@@ -72,7 +72,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @SemProduto
-Esquema do Cenario: Atividade sem produto não exibir função de abrir atividades para produtos
+Esquema do Cenario: Não exibir função de "Abrir atividades" para produtos
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
