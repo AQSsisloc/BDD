@@ -1,11 +1,11 @@
 #language: pt
-#Remessa
+#Devolucao
 #ServicesMobile
 
 
-Funcionalidade: Gerenciar Remessas de equipamentos para locação
+Funcionalidade: Gerenciar devolução de equipamentos locados
   Como um usuário do Services Mobile 
-  Eu quero gerenciar Remessas dos equipamentos
+  Eu quero gerenciar a devolução dos equipamentos de locação 
   Para controlar a locação dos equipamentos 
 
 
@@ -14,29 +14,29 @@ Dado esteja logado no Services Mobile
 
 @Cenario1
 @Automatizar
-@AbrirRemessa
-Esquema do Cenario: Abrir remessa sem rota 
+@AbrirDevolucao
+Esquema do Cenario: Abrir devolucao 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-Quando clicar na <Remessa>
-Entao abre a <Remessa> 
+Quando clicar na <Devolucao>
+Entao abre a <Devolucao> 
 E exibe os detalhes 
 E exibe os equipamentos 
 
 Exemplos: 
-| Empresa | Remessa   |
-| Matriz  | 004825-01 |
+| Empresa | Devolucao |
+| Matriz  | 004860-02 |
 
 
 
 @Cenario2 
 @Automatizar
-@ListarRemessas
-Esquema do Cenario: Listar remessas por cliente 
+@ListarDevolucoes
+Esquema do Cenario: Listar devolucoes por cliente 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 Quando clicar em "Ir para listagem"
-Entao apresenta listagem de remessas agupadas por cliente
+Entao apresenta listagem das devolucoes agupadas por cliente
 
 Exemplos: 
 | Empresa | 
@@ -46,46 +46,46 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@CheckInRemessa
-Esquema do Cenario: Realizar check-In na entrega do equipamento 
+@CheckInDevolucao
+Esquema do Cenario: Realizar check-In na devolucao do equipamento 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 Quando clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Entao grava os dados 
 E apresenta <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                       |
-| Matriz  | 4860-03 | Check-In realizado com sucesso |
+| Empresa | Devolucao | Mensagem                       |
+| Matriz  | 4860-02   | Check-In realizado com sucesso |
 
 
 
 @Cenario4
 @Automatizar
-@CancelarCheckInRemessa
-Esquema do Cenario: Cancelar check-In na entrega do equipamento 
+@CancelarCheckInDevolucao
+Esquema do Cenario: Cancelar check-In na devolucao do equipamento 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 Quando clicar em "CANCELAR"
 Entao cancela o check-in
 
 Exemplos: 
-| Empresa | Remessa | 
-| Matriz  | 4860-03 | 
+| Empresa | Devolucao |
+| Matriz  | 4860-02   |
 
 
 
 @Cenario5
 @Automatizar 
-@EstornoCheckInRemessa
-Esquema do Cenario: Fazer estorno do check-in da remessa
+@EstornoCheckInDevolucao
+Esquema do Cenario: Fazer estorno do check-in da devolucao
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-In"
@@ -94,36 +94,36 @@ Entao grava os dados
 E exibe <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                  |
-| Matriz  | 4860-03 | Estorno do check-In realizado com sucesso |
+| Empresa | Devolucao | Mensagem                                  |
+| Matriz  | 4860-02   | Estorno do check-In realizado com sucesso |
 
 
 
 @Cenario6
 @Automatizar
-@CancelarEstornocheckinRemessa
-Esquema do Cenario: Cancelar estonro do check-In na remessa
+@CancelarEstornocheckinDevolucao
+Esquema do Cenario: Cancelar estonro do check-In na devolucao
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 Quando clicar em "Estornar Check-In"
 E clicar em "CANCELAR" 
 Entao mantem os dados sem alteração  
 
 Exemplos: 
-| Empresa | Remessa | 
-| Matriz  | 4860-03 | 
+| Empresa | Devolucao |
+| Matriz  | 4860-02   | 
 
 
 
 @Cenario7
 @Automatizar
-@CheckOutRemessa
-Esquema do Cenario: Realizar check-out da entrega 
+@CheckOutDevolucao
+Esquema do Cenario: Realizar check-out da devolucao 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Quando clicar em "Check-Out"
@@ -134,18 +134,18 @@ Entao grava os dados
 E apresenta <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
-| Matriz  | 4860-03 | Check-Out realizado com sucesso |
+| Empresa | Devolucao | Mensagem                        |
+| Matriz  | 4860-02   | Check-Out realizado com sucesso |
 
 
 
 @Cenario8
 @Automatizar 
-@EstornoCheckOutRemessa
-Esquema do Cenario: Fazer estorno do check-out da remessa
+@EstornoCheckOutDevolucao
+Esquema do Cenario: Fazer estorno do check-out da devolucao
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 E clicar em "Check-Out"
@@ -156,18 +156,18 @@ Entao grava os dados
 E exibe <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                   |
-| Matriz  | 4860-03 | Estorno do check-Out realizado com sucesso |
+| Empresa | Devolucao | Mensagem                                   |
+| Matriz  | 4860-02   | Estorno do check-Out realizado com sucesso |
 
                                                                      
                                                                  
 @Cenario9
 @Automatizar 
-@CancelarEstornoCheckOutRemessa
-Esquema do Cenario: Fazer estorno do check-out da remessa
+@CancelarEstornoCheckOutDevolucao
+Esquema do Cenario: Fazer estorno do check-out da devolucao
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 E clicar em "Check-Out"
@@ -177,38 +177,38 @@ E clicar em "Cancelar"
 Entao não altera os dados 
 
 Exemplos: 
-| Empresa | Remessa | 
-| Matriz  | 4860-03 | 
+| Empresa | Devolucao |
+| Matriz  | 4860-02   |
 
 
 
 @Cenario10
 @Automatizar 
-@RemessaRota 
-Esquema do Cenario: Executar remessa com rota 
+@DevolucaoRota 
+Esquema do Cenario: Executar devolucao com rota 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E clicar em <Remessa> 
-E <Remessa> tenha rota
+E clicar em <Devolucao> 
+E <Devolucao> tenha rota
 E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
-Entao abre atividade da <Remessa> 
+Entao abre atividade da <Devolucao> 
 
 Exemplos: 
-| Empresa | Remessa | 
-| Matriz  | 4860-05 | 
+| Empresa | Devolucao |
+| Matriz  | 4860-01   | 
 
 
 
 @Cenario11
 @Automatizar
-@RemessaOffline
-Esquema do Cenario: Executar remessa offline  
+@DevolucaoOffline
+Esquema do Cenario: Executar devolucao offline  
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E esteja no modo offline 
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Quando clicar em "Check-Out"
@@ -219,19 +219,19 @@ Entao grava os dados
 E apresenta <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
-| Matriz  | 4860-04 | Check-Out realizado com sucesso |
+| Empresa | Devolucao | Mensagem                        |
+| Matriz  | 4860-02   | Check-Out realizado com sucesso |
 
 
 
 @Cenario12
 @Automatizar 
-@EstornoCheckOutRemessaOffline
-Esquema do Cenario: Fazer estorno do check-out da remessa offline
+@EstornoCheckOutDevolucaoOffline
+Esquema do Cenario: Fazer estorno do check-out da devolucao offline
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E esteja no modo offline
-E clicar em <Remessa> 
+E clicar em <Devolucao> 
 E clicar em "Check-In"
 E clicar em "CONFIRMAR"
 E clicar em "Check-Out"
@@ -242,27 +242,27 @@ Entao grava os dados
 E exibe <Mensagem> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                   |
-| Matriz  | 4860-03 | Estorno do check-Out realizado com sucesso |
+| Empresa | Devolucao | Mensagem                                   |
+| Matriz  | 4860-02   | Estorno do check-Out realizado com sucesso |
 
 
 
 @Cenario13
 @Automatizar
-@RemessaOfflineRota
-Esquema do Cenario: Executar remessa offline com rota  
+@DevolucaoOfflineRota
+Esquema do Cenario: Executar devolucao offline com rota  
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E esteja no modo offline 
 E tenha rota 
-E <Remessa> tenha rota
+E <Devolucao> tenha rota
 E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
 Entao abre atividade da remessa 
-E apresenta dados da <Remessa>
+E apresenta dados da <Devolucao>
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
-| Matriz  | 4860-04 | Check-Out realizado com sucesso |
+| Empresa | Devolucao | Mensagem                        |
+| Matriz  | 4860-02   | Check-Out realizado com sucesso |
 
