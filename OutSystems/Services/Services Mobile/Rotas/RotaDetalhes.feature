@@ -6,7 +6,7 @@
 Funcionalidade: Exibir informações adicionais da atividade
   Como um usuário do Services Mobile 
   Eu quero visualizar informações adicionais da atividade 
-  Para usar informações conforme as necessidades da atividade.
+  Para usar informações conforme as necessidades da atividade
 
 
 Dado esteja logado no Services Mobile 
@@ -141,7 +141,7 @@ Exemplos:
 @Cenario08
 @Automatizar
 @Acaminho
-Esquema do Cenario: Iniciar atividade pendente deve disparar mensagem de Mostorista a caminho configurada
+Esquema do Cenario: Iniciar atividade pendente deve disparar mensagem de Motorista a caminho configurada
 E esteja com Modelo mensagem WhatsApp motorista está a caminho configurada no Services Web
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -160,7 +160,7 @@ Exemplos:
 @Cenario9
 @Automatizar
 @Chegou
-Esquema do Cenario: Ao fazer chek in deve disparar mensagem de Mostorista chegou configurada
+Esquema do Cenario: Ao fazer chek in deve disparar mensagem de Motorista chegou configurada
 E esteja com Modelo mensagem WhatsApp motorista chegou configurada no Services WEB
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -179,7 +179,7 @@ Exemplos:
 @Cenario10
 @Automatizar
 @Concluida
-Esquema do Cenario: Ao fazer chek out deve disparar mensagem de Atividade concluida configurada
+Esquema do Cenario: Ao fazer chek out deve disparar mensagem de Atividade concluída configurada
 E esteja com Modelo mensagem WhatsApp atividade concluída configurada no Services WEB
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
