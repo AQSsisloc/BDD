@@ -94,7 +94,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Automatizado
 @CriarOM
 Esquema do Cenario: Cadastrar Ordem de Manutenção como Próprio/Sublocado sem inserir dados
 E que esteja logado com usuário funcionário
