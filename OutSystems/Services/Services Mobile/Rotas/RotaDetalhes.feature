@@ -15,19 +15,19 @@ Dado esteja logado no Services Mobile
 @Cenario1
 @Automatizar
 @ContatosEmailRota
-Esquema do Cenario: Enviar email para o contato de uma atividade.
+Esquema do Cenario: Enviar email para o contato de uma atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade>
 E clicar em "Contatos"
-Quando clicar no <email>  
+Quando clicar no <Email1>  
 Entao deve ser direcionado para o email 
-E conter campo destinatário preenchido com <email>
+E conter campo destinatário preenchido com <Email2>
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | Email                      |
-| Matriz BH | 00360 | 1° Teste Atividade | samuel.silva@sisloc.com.br |
+| Empresa   | Rota  | Atividade          | Email1                     | Email2                     |
+| Matriz BH | 00360 | 1° Teste Atividade | samuel.silva@sisloc.com.br | samuel.silva@sisloc.com.br |
 
 
 
@@ -40,13 +40,13 @@ E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade>
 E clicar em "Contatos"
-Quando clicar no <Numero>  
+Quando clicar no <Numero1>  
 Entao deve ser direcionado para o discador  
-E conter campo numero preenchido com <Numero>
+E conter campo numero preenchido com <Numero2>
 
 Exemplos:
-| Empresa   | Rota  | Atividade    | Numero      |
-| Matriz BH | 00358 | 1° Devolucao | 31988880909 |
+| Empresa   | Rota  | Atividade    | Numero1     | Numero2     |
+| Matriz BH | 00358 | 1° Devolucao | 31988880909 | 31988880909 |
 
 
 
@@ -110,14 +110,14 @@ Esquema do Cenario: Visualizar observação na atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-E clicar na <Atividade>
-E tenha observação vinculada na <Atividade>
+E clicar na <Atividade1>
+E tenha observação vinculada na <Atividade2>
 Quando clicar em "Observação"
 Entao deve exibir detalhes inseridos na criação da <Atividade>
 
 Exemplos:
-| Empresa   | Rota  | Atividade          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE |
+| Empresa   | Rota  | Atividade1         | Atividade2         |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | 1° TESTE ATIVIDADE |
 
 
 
