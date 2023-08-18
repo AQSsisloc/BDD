@@ -14,7 +14,7 @@ Dado esteja logado no Services Mobile
 
 @Cenario1
 @Automatizar
-@ContatosEmail
+@ContatosEmailRota
 Esquema do Cenario: Enviar email para o contato de uma atividade.
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -33,7 +33,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@ContatosTelefone
+@ContatosTelefoneRota
 Esquema do Cenario: Direcionar para o discador com contato preenchido
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -52,7 +52,7 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@Detalhes
+@DetalhesRota
 Esquema do Cenario: Visualizar detalhes da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -69,7 +69,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@Produtos
+@ProdutosRota
 Esquema do Cenario: Visualizar produtos da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -87,7 +87,7 @@ Exemplos:
 
 @Cenario5
 @Automatizar
-@SemProdutos
+@SemProdutosRota
 Esquema do Cenario: Sem produtos da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -105,7 +105,7 @@ Exemplos:
 
 @Cenario6
 @Automatizar
-@Observação
+@ObservaçãoRota
 Esquema do Cenario: Visualizar observação na atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -123,7 +123,7 @@ Exemplos:
 
 @Cenario7
 @Automatizar
-@SemObservação
+@SemObservaçãoRota
 Esquema do Cenario: Sem observação na atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -140,7 +140,7 @@ Exemplos:
 
 @Cenario08
 @Automatizar
-@Acaminho
+@AcaminhoRota
 Esquema do Cenario: Iniciar atividade pendente deve disparar mensagem de Motorista a caminho configurada
 E esteja com Modelo mensagem WhatsApp motorista está a caminho configurada no Services Web
 E esteja logado com usuário funcionário
@@ -159,7 +159,7 @@ Exemplos:
 
 @Cenario9
 @Automatizar
-@Chegou
+@CheckInRota
 Esquema do Cenario: Ao fazer chek in deve disparar mensagem de Motorista chegou configurada
 E esteja com Modelo mensagem WhatsApp motorista chegou configurada no Services WEB
 E esteja logado com usuário funcionário
@@ -178,7 +178,7 @@ Exemplos:
 
 @Cenario10
 @Automatizar
-@Concluida
+@CheckOutRota
 Esquema do Cenario: Ao fazer chek out deve disparar mensagem de Atividade concluída configurada
 E esteja com Modelo mensagem WhatsApp atividade concluída configurada no Services WEB
 E esteja logado com usuário funcionário
