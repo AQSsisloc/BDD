@@ -20,7 +20,7 @@ E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade>
-E possuir ordem de manutenção na <Atividade> 
+E possuir ordem de manutenção
 Quando clicar "Abrir Atividade"
 Entao abre tela de ordem de manutenção 
 E apresenta produto da manutenção
@@ -39,7 +39,7 @@ E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade>
-E possuir devolução na <Atividade> 
+E possuir devolução
 Quando clicar "Abrir Atividade"
 Entao abre tela de Devolução
 E apresenta produto da devolução
@@ -58,7 +58,7 @@ E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade>
-E possuir remessa na <Atividade> 
+E possuir remessa
 Quando clicar "Abrir Atividade"
 Entao abre tela de Remessa
 E apresenta produto da remessa
@@ -76,7 +76,6 @@ Esquema do Cenario: Não exibir função de "Abrir atividades" para produtos
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-E atividade não possua produto
 Quando clicar na <Atividade>
 Entao não exibir botão "Abrir Atividade"
 
