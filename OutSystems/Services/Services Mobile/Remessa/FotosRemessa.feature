@@ -6,7 +6,7 @@
 Funcionalidade: Inserir fotos na remessa 
   Como um usuário do Services Mobile 
   Eu quero inserir fotos da atividade realizada na remessa 
-  Para ter uma confirmação com imagens
+  Para ter confirmação com imagens
 
 
 Dado esteja logado no Services Mobile 
@@ -26,6 +26,7 @@ Quando clicar em "Capture"
 Entao foto é capturada 
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | Mensagem                   |
 | Matriz  | 4860-03 | Imagem Anexada com sucesso |
 
@@ -46,6 +47,7 @@ Quando clicar em "Capture"
 Entao foto é capturada 
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | Mensagem                   |
 | Matriz  | 4860-03 | Imagem Anexada com sucesso |
 
@@ -65,6 +67,7 @@ Quando clicar em "Voltar"
 Entao câmera é encerrada 
 E retorna para tela das fotos anexadas 
 
+Exemplos:
 | Empresa | Remessa | 
 | Matriz  | 4860-03 | 
 
@@ -84,6 +87,7 @@ E clicar em "CONFIRMAR"
 Entao Imagem é excluída
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | Mensagem                    |
 | Matriz  | 4860-03 | Imagem excluída com sucesso |
 
@@ -103,6 +107,7 @@ Quando clicar em "CANCELAR"
 Entao Imagem não é excluída
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | 
 | Matriz  | 4860-03 | 
 
@@ -123,6 +128,7 @@ Quando clicar em "Capture"
 Entao foto é capturada 
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | Mensagem                   |
 | Matriz  | 4860-03 | Imagem Anexada com sucesso |
 
@@ -143,5 +149,6 @@ E clicar em "CONFIRMAR"
 Entao Imagem é excluída
 E exibe <Mensagem> 
 
+Exemplos:
 | Empresa | Remessa | Mensagem                    |
 | Matriz  | 4860-03 | Imagem excluída com sucesso |
