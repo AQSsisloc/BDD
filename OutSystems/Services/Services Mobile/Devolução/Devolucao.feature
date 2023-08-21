@@ -54,10 +54,10 @@ E clicar em <Devolucao>
 Quando clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemCheckInDevolucao> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                       |
+| Empresa | Devolucao | MensagemCheckInDevolucao       |
 | Matriz  | 4860-02   | Check-In realizado com sucesso |
 
 
@@ -91,10 +91,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-In"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensagemEstornoCheckInDevolucao> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                                  |
+| Empresa | Devolucao | MensagemEstornoCheckInDevolucao           |
 | Matriz  | 4860-02   | Estorno do check-In realizado com sucesso |
 
 
@@ -131,10 +131,10 @@ E clicar em "Check-out"
 E preenche os dados
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemCheckOutDevolucao> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                        |
+| Empresa | Devolucao | MensagemCheckOutDevolucao       |
 | Matriz  | 4860-02   | Check-Out realizado com sucesso |
 
 
@@ -153,10 +153,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-Out"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensagemEstornoCheckOutDevolucao> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                                   |
+| Empresa | Devolucao | MensagemEstornoCheckOutDevolucao           |
 | Matriz  | 4860-02   | Estorno do check-Out realizado com sucesso |
 
                                                                      
@@ -193,11 +193,11 @@ E <Devolucao> tenha rota
 E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
-Entao abre atividade da <Devolucao> 
+Entao abre <DevolucaoAtividade> 
 
 Exemplos: 
-| Empresa | Devolucao |
-| Matriz  | 4860-01   | 
+| Empresa | Devolucao | DevolucaoAtividade |
+| Matriz  | 4860-01   | 4860-01            |
 
 
 
@@ -216,10 +216,10 @@ E clicar em "Check-out"
 E preenche os dados
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemDevolucaoOffline> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                        |
+| Empresa | Devolucao | MensagemDevolucaoOffline        |
 | Matriz  | 4860-02   | Check-Out realizado com sucesso |
 
 
@@ -239,10 +239,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-Out"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensEstorCheckOutDevolOff> 
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                                   |
+| Empresa | Devolucao | MensEstorCheckOutDevolOff                  |
 | Matriz  | 4860-02   | Estorno do check-Out realizado com sucesso |
 
 
@@ -260,9 +260,9 @@ E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
 Entao abre atividade da remessa 
-E apresenta dados da <Devolucao>
+E apresenta dados da <DevolucaoRota1>
 
 Exemplos: 
-| Empresa | Devolucao | Mensagem                        |
-| Matriz  | 4860-02   | Check-Out realizado com sucesso |
+| Empresa | Devolucao | DevolucaoRotaoff1 |
+| Matriz  | 4860-02   | 4860-02           |
 

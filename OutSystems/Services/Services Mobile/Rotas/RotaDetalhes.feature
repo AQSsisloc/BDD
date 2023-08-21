@@ -57,13 +57,13 @@ Esquema do Cenario: Visualizar detalhes da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-E clicar na <Atividade>
+E clicar na <Atividade1>
 Quando clicar em "Detalhes"
-Entao deve exibir detalhes inseridos na criação da <Atividade>
+Entao deve exibir detalhes inseridos na criação da <Atividade2>
 
 Exemplos:
-| Empresa   | Rota  | Atividade          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE |
+| Empresa   | Rota  | Atividade1         | Atividade2         |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | 1° TESTE ATIVIDADE |
 
 
 
@@ -74,14 +74,14 @@ Esquema do Cenario: Visualizar produtos da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-E clicar na <Atividade>
+E clicar na <Atividade1>
 E tenha produtos vinculados na atividade
 Quando clicar em "Produtos"
-Entao deve exibir <Produto> da <Atividade>
+Entao deve exibir <Produto> da <Atividade2>
 
 Exemplos:
-| Empresa   | Rota  | Atividade   | Produto                    |
-| Matriz BH | 00358 | 1°devolução | 19803016 - Perfurador Solo |
+| Empresa   | Rota  | Atividade   | Atividade2  | Produto                    |
+| Matriz BH | 00358 | 1°devolução | 1°devolução | 19803016 - Perfurador Solo |
 
 
 
@@ -111,9 +111,9 @@ E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
 E clicar na <Atividade1>
-E tenha observação vinculada na <Atividade2>
+E tenha observação vinculada na <Atividade1>
 Quando clicar em "Observação"
-Entao deve exibir detalhes inseridos na criação da <Atividade>
+Entao deve exibir detalhes inseridos na criação da <Atividade2>
 
 Exemplos:
 | Empresa   | Rota  | Atividade1         | Atividade2         |
@@ -128,12 +128,12 @@ Esquema do Cenario: Sem observação na atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-Quando clicar na <Atividade>
-E não ter observação na <Atividade> 
+Quando clicar na <Atividade1>
+E não ter observação na <Atividade1> 
 Entao não deve exibir bloco "Observação" na atividade 
 
 Exemplos:
-| Empresa   | Rota  | Atividade        |
+| Empresa   | Rota  | Atividade1       |
 | Matriz BH | 00379 | 1°Nova Atividade |
 
 

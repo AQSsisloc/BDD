@@ -24,10 +24,10 @@ E clicar em "Fotos"
 E clicar em "Imagem"
 Quando clicar em "Capture"
 Entao foto é capturada 
-E exibe <Mensagem> 
+E exibe <MensagemInserirFotoRemessa> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                   |
+| Empresa | Remessa | MensagemInserirFotoRemessa |
 | Matriz  | 4860-03 | Imagem Anexada com sucesso |
 
 
@@ -45,11 +45,11 @@ E clicar em "Imagem"
 E clicar em "Reverter"
 Quando clicar em "Capture"
 Entao foto é capturada 
-E exibe <Mensagem> 
+E exibe <MensagemInserirFotoRemessaFrontal> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                   |
-| Matriz  | 4860-03 | Imagem Anexada com sucesso |
+| Empresa | Remessa | MensagemInserirFotoRemessaFrontal |
+| Matriz  | 4860-03 | Imagem Anexada com sucesso        |
 
 
 
@@ -85,10 +85,10 @@ E clicar sobre a "Imagem"
 Quando clicar na "Lixeira"
 E clicar em "CONFIRMAR"
 Entao Imagem é excluída
-E exibe <Mensagem> 
+E exibe <MensagemExcluirFotoRemessa> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                    |
+| Empresa | Remessa | MensagemExcluirFotoRemessa  |
 | Matriz  | 4860-03 | Imagem excluída com sucesso |
 
 
@@ -105,7 +105,6 @@ E clicar sobre a "Imagem"
 E clicar na "Lixeira"
 Quando clicar em "CANCELAR"
 Entao Imagem não é excluída
-E exibe <Mensagem> 
 
 Exemplos:
 | Empresa | Remessa | 
@@ -126,11 +125,11 @@ E clicar em "Fotos"
 E clicar em "Imagem"
 Quando clicar em "Capture"
 Entao foto é capturada 
-E exibe <Mensagem> 
+E exibe <MensagemInserirFotoRemessaOffline> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                   |
-| Matriz  | 4860-03 | Imagem Anexada com sucesso |
+| Empresa | Remessa | MensagemInserirFotoRemessaOffline |
+| Matriz  | 4860-03 | Imagem Anexada com sucesso        |
 
 
 
@@ -147,8 +146,8 @@ E clicar sobre a "Imagem"
 Quando clicar na "Lixeira"
 E clicar em "CONFIRMAR"
 Entao Imagem é excluída
-E exibe <Mensagem> 
+E exibe <MensagemExcluirFotoRemessaOffline> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                    |
-| Matriz  | 4860-03 | Imagem excluída com sucesso |
+| Empresa | Remessa | MensagemExcluirFotoRemessaOffline |
+| Matriz  | 4860-03 | Imagem excluída com sucesso       |

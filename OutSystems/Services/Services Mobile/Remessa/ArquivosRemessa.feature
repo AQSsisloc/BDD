@@ -6,7 +6,7 @@
 Funcionalidade: Inserir arquivos na remessa 
   Como um usuário do Services Mobile 
   Eu quero inserir arquivos da atividade realizada na remessa 
-  Para ter documentos da atividade na  remessa 
+  Para ter documentos da atividade na remessa 
 
 
 Dado esteja logado no Services Mobile 
@@ -63,10 +63,11 @@ Quando clicar em "Filmadora"
 E capturar vídeo
 E clicar em "Ok" 
 Entao vídeo é anexado na remessa 
+E apresenta <MensagemArquivosVideoRemessa>
 
 Exemplos:
-| Empresa | Remessa |
-| Matiz   | 4860-03 |
+| Empresa | Remessa | MensagemArquivosVideoRemessa |
+| Matiz   | 4860-03 | Arquivo anexado com sucesso  |
 
 
 
@@ -101,15 +102,15 @@ E e clicar em "Arquivos"
 Quando clicar na "Lixeira" 
 E clicar em "Confirmar" 
 Entao imagem é excluída 
-E apresenta <Mensagem> 
+E apresenta <MensagemExcluirArquivosRemessa> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                     |
-| Matiz   | 4860-03 | Arquivo excluído com sucesso |
+| Empresa | Remessa | MensagemExcluirArquivosRemessa |
+| Matiz   | 4860-03 | Arquivo excluído com sucesso   |
 
 
 
-@Cenario5
+@Cenario6
 @Automatizar
 @CancelarExclusaoArquivosRemessa 
 Esquema do Cenario: Fechar filmadora em arquivos da remessa
@@ -122,12 +123,12 @@ E clicar em "CANCELAR"
 Entao imagem não é excluída 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                     |
-| Matiz   | 4860-03 | Arquivo excluído com sucesso |
+| Empresa | Remessa |
+| Matiz   | 4860-03 | 
 
 
 
-@Cenario6
+@Cenario7
 @Manual
 @ArquivosFotoRemessaOffline  
 Esquema do Cenario: Inserir foto em arquivos na remessa
@@ -140,14 +141,15 @@ Quando clicar em "Câmera"
 E capturar foto
 E clicar em "Ok" 
 Entao imagem é anexada na remessa 
+E apresenta <MensagemArquivosFotoRemessaOffline>
 
 Exemplos:
-| Empresa | Remessa |
-| Matiz   | 4860-03 |
+| Empresa | Remessa | MensagemArquivosFotoRemessaOffline |
+| Matiz   | 4860-03 | Arquivo anexado com sucesso        |
 
 
 
-@Cenario7
+@Cenario8
 @Automatizar
 @ExcluirArquivosRemessaOffline
 Esquema do Cenario: Fechar filmadora em arquivos da remessa
@@ -159,8 +161,8 @@ E e clicar em "Arquivos"
 Quando clicar na "Lixeira" 
 E clicar em "Confirmar" 
 Entao imagem é excluída 
-E apresenta <Mensagem> 
+E apresenta <MensExclArqRemlucaoOff> 
 
 Exemplos:
-| Empresa | Remessa | Mensagem                     |
+| Empresa | Remessa | MensExclArqRemlucaoOff       |
 | Matiz   | 4860-03 | Arquivo excluído com sucesso |

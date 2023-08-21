@@ -54,10 +54,10 @@ E clicar em <Remessa>
 Quando clicar em "Check-In"
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemCheckInRemessa> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                       |
+| Empresa | Remessa | MensagemCheckInRemessa         |
 | Matriz  | 4860-03 | Check-In realizado com sucesso |
 
 
@@ -91,10 +91,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-In"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensagemEstornoCheckInRemessa> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                  |
+| Empresa | Remessa | MensagemEstornoCheckInRemessa             |
 | Matriz  | 4860-03 | Estorno do check-In realizado com sucesso |
 
 
@@ -131,10 +131,10 @@ E clicar em "Check-out"
 E preenche os dados
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemCheckOutRemessa> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
+| Empresa | Remessa | MensagemCheckOutRemessa         |
 | Matriz  | 4860-03 | Check-Out realizado com sucesso |
 
 
@@ -153,10 +153,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-Out"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensagemEstornoCheckOutRemessa> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                   |
+| Empresa | Remessa | MensagemEstornoCheckOutRemessa             |
 | Matriz  | 4860-03 | Estorno do check-Out realizado com sucesso |
 
                                                                      
@@ -193,11 +193,11 @@ E <Remessa> tenha rota
 E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
-Entao abre atividade da <Remessa> 
+Entao abre <RemessaAtividade> 
 
 Exemplos: 
-| Empresa | Remessa | 
-| Matriz  | 4860-05 | 
+| Empresa | Remessa | RemessaAtividade |
+| Matriz  | 4860-05 | 4860-05          |
 
 
 
@@ -216,10 +216,10 @@ E clicar em "Check-out"
 E preenche os dados
 E clicar em "CONFIRMAR"
 Entao grava os dados 
-E apresenta <Mensagem> 
+E apresenta <MensagemRemessaOffline> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
+| Empresa | Remessa | MensagemRemessaOffline                        |
 | Matriz  | 4860-04 | Check-Out realizado com sucesso |
 
 
@@ -239,10 +239,10 @@ E clicar em "CONFIRMAR"
 Quando clicar em "Estornar Check-Out"
 E clicar em "Confirmar"
 Entao grava os dados 
-E exibe <Mensagem> 
+E exibe <MensEstorCheckOutRemOff> 
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                                   |
+| Empresa | Remessa | MensEstorCheckOutRemOff                    |
 | Matriz  | 4860-03 | Estorno do check-Out realizado com sucesso |
 
 
@@ -260,9 +260,9 @@ E clicar em "Ir Agora"
 E clicar em "Check In"
 Quando clicar em "Abrir Atividade"
 Entao abre atividade da remessa 
-E apresenta dados da <Remessa>
+E apresenta dados da <Remessa1>
 
 Exemplos: 
-| Empresa | Remessa | Mensagem                        |
-| Matriz  | 4860-04 | Check-Out realizado com sucesso |
+| Empresa | Remessa | RemessaRotaoff1 |
+| Matriz  | 4860-04 | 4860-04         |
 

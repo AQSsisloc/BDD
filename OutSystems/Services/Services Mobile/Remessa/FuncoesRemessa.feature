@@ -46,10 +46,10 @@ Quando clicar em "Baixar Comprovante de Entrega"
 E clicar em "Modelo"
 E seleciona modelo
 E clicar em "Baixar" 
-Entao  é exibido <Mensagem>
+Entao  é exibido <MensagemBaixaComprovanteOffline>
 
 Exemplos:
-| Empresa | Remessa | Mensagem                              |
+| Empresa | Remessa | MensagemBaixaComprovanteOffline       |
 | Matiz   | 4860-03 | Não é possível baixar no modo offline |
 
 
@@ -104,11 +104,11 @@ Quando clicar em "Enviar E-mail"
 E preencher os campos 
 E clicar "Enviar"
 Entao email não é enviado 
-E apresenta <Mensagem> 
+E apresenta <MensagemEnviarEmailDevolucaoOffline>  
 
 Exemplos:
-| Empresa | Remessa | Mensagem                        |
-| Matiz   | 4860-03 | Não foi possível enviar o emial |
+| Empresa | Remessa | MensagemEnviarEmailDevolucaoOffline |
+| Matiz   | 4860-03 | Não foi possível enviar o emial     |
 
 
 
@@ -143,10 +143,10 @@ E clicar em "Nova Ocorrência"
 E preencher os dados
 E clicar em "Salvar"  
 Entao  Ocorrência é salva 
-E exibe <Mensagem>
+E exibe <MensagemOcorrenciaRemessa>
 
 Exemplos:
-| Empresa | Remessa | Mensagem                                |
+| Empresa | Remessa | MensagemOcorrenciaRemessa               |
 | Matiz   | 4860-03 | Ocorrência "Teste" inserida com sucesso |
 
 
@@ -181,10 +181,10 @@ E clicar em "Ocorrência(s)"
 Quando clicar na "Lixeira"  
 E clicar em "CONFIRMAR"
 Entao ocorrência é excluída
-E apresenta <Mensagem>
+E apresenta <MensExcOcorrenciaRemessa>
 
 Exemplos:
-| Empresa | Remessa | Mensagem                        |
+| Empresa | Remessa | MensExcOcorrenciaRemessa        |
 | Matiz   | 4860-03 | Ocorrência excluída com sucesso |
 
 
