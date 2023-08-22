@@ -13,8 +13,8 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@AdicionaArquivoDiretorio
 @Manual
+@AdicionaArquivoDiretorio
 Esquema do Cenario: Adicionar arquivos na atividade pelo diretorio 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -25,18 +25,18 @@ E clicar em "Arquivos"
 E selecionar o arquivo
 E clicar em "OK" 
 Entao retorna para atividade 
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaArquivoDiretorio>
 E grava arquivo na seção "Arquivos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaArquivoDiretorio |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso       |
 
 
 
 @Cenario2
-@AdicionaArquivoCamera
 @Manual
+@AdicionaArquivoCamera
 Esquema do Cenario: Adicionar arquivos na atividade com camera frontal
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -47,18 +47,18 @@ E clicar em "Câmera"
 E capturar foto 
 E clicar em "OK" 
 Entao retorna para atividade 
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaArquivoCamera>
 E grava foto na seção "Arquivos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaArquivoCamera |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso    |
 
 
 
 @Cenario3
-@AdicionaArquivoFilmadora
 @Manual
+@AdicionaArquivoFilmadora
 Esquema do Cenario: Adicionar arquivos na atividade com camera frontal
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -69,10 +69,10 @@ E clicar em "Câmera Filmadora"
 E captura o video  
 E clicar em "OK" 
 Entao retorna para atividade 
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaArquivoFilmadora>
 E grava video na seção "Arquivos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaArquivoFilmadora |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso       |
 

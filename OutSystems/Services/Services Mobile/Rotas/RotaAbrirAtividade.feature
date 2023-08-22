@@ -14,7 +14,7 @@ Dado esteja logado no Services Mobile
 
 @Cenario1
 @Automatizar
-@AbrirOM
+@RotaAbrirOM
 Esquema do Cenario: Abrir uma ordem de manutenção na atividade da rota
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -33,7 +33,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@AbrirDevolucao
+@RotaAbrirDevolucao
 Esquema do Cenario: Abrir devolução na atividade da rota
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -52,7 +52,7 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@AbrirRemessa
+@RotaAbrirRemessa
 Esquema do Cenario: Abrir remessa na atividade da rota
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -71,7 +71,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@SemProduto
+@RotaSemProduto
 Esquema do Cenario: Não exibir função de "Abrir atividades" para produtos
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>

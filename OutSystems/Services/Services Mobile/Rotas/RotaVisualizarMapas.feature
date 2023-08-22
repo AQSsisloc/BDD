@@ -35,9 +35,9 @@ Esquema do Cenario: Exibir local da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-Quando clicar na "localizacao" da <Atividade>
-Entao exibe local da <Atividade>
+Quando clicar na "localizacao" da <Atividade1>
+Entao exibe local da <Atividade2>
 
 Exemplos:
-| Empresa   | Rota  | Atividade          |
-| Matriz BH | 00360 | 1° TESTE ATIVIDADE |
+| Empresa   | Rota  | Atividade1         | Atividade2         |
+| Matriz BH | 00360 | 1° TESTE ATIVIDADE | 1° TESTE ATIVIDADE |

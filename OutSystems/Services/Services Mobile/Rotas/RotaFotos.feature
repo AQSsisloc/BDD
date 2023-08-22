@@ -13,8 +13,8 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@AdicionaFotosTraseira
 @Manual
+@AdicionaFotosTraseira
 Esquema do Cenario: Adicionar fotos na atividade com camera traseira
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -23,18 +23,18 @@ E clicar na <Atividade>
 Quando clicar no ícone "Foto" na seção "Fotos"
 Entao abre a camera para realizar captura
 E clicar em "Captura"
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaFotosTraseira>
 E grava foto capturada na seção "Fotos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaFotosTraseira |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso    |
 
 
 
 @Cenario2
-@AdicionaFotosTraseiraFlash
 @Manual
+@AdicionaFotosTraseiraFlash
 Esquema do Cenario: Adicionar fotos na atividade com camera traseira com flash
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -44,18 +44,18 @@ Quando clicar no ícone "Foto" na seção "Fotos"
 Entao abre a camera para realizar captura
 E clicar em "Flash"
 E clicar em "Captura"
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaFotosTraseiraFlash>
 E grava foto capturada na seção "Fotos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaFotosTraseiraFlash |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso         |
 
 
 
 @Cenario3
-@AdicionaFotosFrontal
 @Manual
+@AdicionaFotosFrontal
 Esquema do Cenario: Adicionar fotos na atividade com camera frontal
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -65,18 +65,18 @@ E clicar no ícone "Foto" na seção "Fotos"
 E clicar "Reverter"
 Entao abre a camera frontal para realizar captura
 E clica em "Captura"
-E exibe <MensagemDeRetorno>
+E exibe <MensagemAdicionaFotosFrontal>
 E grava foto capturada na seção "Fotos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaFotosFrontal |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso   |
 
 
 
 @Cenario4
-@AdicionaFotosFrontalFlash
 @Manual
+@AdicionaFotosFrontalFlash
 Esquema do Cenario: Não exibir botão "Flash" com camera frontal 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -91,14 +91,14 @@ E exibe <MensagemDeRetorno>
 E grava foto capturada na seção "Fotos"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno          |
-| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso |
+| Empresa   | Rota  | Atividade          | MensagemAdicionaFotosFrontalFlash |
+| Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem anexada com sucesso        |
 
 
 
 @Cenario5
-@FecharCamera
 @Manual
+@FecharCamera
 Esquema do Cenario: Fechar camera na adição de fotos
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -128,10 +128,10 @@ Quando clicar sobre a foto
 E clicar em excluir
 E clica em "CONFIRMAR" 
 Entao foto deve ser excluida da seção "Fotos"
-E exibe <MensagemDeRetorno>
+E exibe <MensagemExcluirFoto >
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | MensagemDeRetorno           |
+| Empresa   | Rota  | Atividade          | MensagemExcluirFoto         |
 | Matriz BH | 00361 | 1° TESTE ATIVIDADE | Imagem excluída com sucesso |
 
 

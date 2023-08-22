@@ -14,49 +14,49 @@ Dado esteja logado no Services Mobile
 
 @Cenario1 
 @Automatizar
-@StatusLiberada
+@RotaStatusLiberada
 Esquema do Cenario: Executar uma atividade pendente em uma rota liberada
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E possua <StatusRota>
+E possua <StatusRota1>
 E possua <SituacaoAtividade>
 Quando clicar na <Rota>
 E clicar na <Atividade>
 E clicar em "IrAgora"
 Entao direciona para o Mapa
 E grava o <StatusAtividade>
-E grava o <StatusRota>
+E grava o <StatusRota2>
 E exibe botão "Estornar"
 E exibe botão "Check In"
 
 Exemplos:
-| Empresa   | SituacaoAtividade | Rota  | Atividade          | StatusRota             | StatusAtividade | StatusRota  |
-| Matriz BH | Pendente          | 00360 | 1º TESTE ATIVIDADE | Liberada para Execucao | Em Deslocamento | Em Execucao | 
+| Empresa   | SituacaoAtividade | Rota  | Atividade          | StatusRota1            | StatusAtividade | StatusRota2 |
+| Matriz BH | Pendente          | 00360 | 1º TESTE ATIVIDADE | Liberada para Execucao | Em Deslocamento | Em Execucao |
 
 
 
 @Cenario2 
 @Automatizar
-@EstornoEmDeslocamento
+@RotaEstornoEmDeslocamento
 Esquema do Cenario: Estornar uma atividade com status "Em Deslocamento"
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E possua <StatusRota>
+E possua <StatusRota1>
 E possua <SituacaoAtividade>
 Quando clicar em "Estornar"
 Entao atualiza o <StatusAtividade>
-E atualiza o <StatusRota>
+E atualiza o <StatusRota2>
 E retorna com botão "Ir Agora"
 
 Exemplos:
-| Empresa   | SituacaoAtividade | Rota  | Atividade          | SituacaoRota | StatusAtividade | StatusRota             |
-| Matriz BH | Em deslocamento   | 00360 | 1º TESTE ATIVIDADE | Em Execucao  | Pendente        | Liberada para Execucao |
+| Empresa   | StatusRota1 |SituacaoAtividade | Rota  | Atividade          | SituacaoRota | StatusAtividade | StatusRota2            |
+| Matriz BH | Em Execucao| Em deslocamento   | 00360 | 1º TESTE ATIVIDADE | Em Execucao  | Pendente        | Liberada para Execucao |
 
 
 
 @Cenario3
 @Automatizar
-@Checkin
+@RotaCheckin
 Esquema do Cenario: Clicar em "Check In" para iniciar atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -77,7 +77,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@EstornarCheckin
+@RotaEstornarCheckin
 Esquema do Cenario: Estornar Check In da atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -95,9 +95,9 @@ Exemplos:
 
 
 
-@Cenario4
+@Cenario5
 @Automatizar
-@Adiar
+@RotaAdiar
 Esquema do Cenario: Adiar uma atividade
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
@@ -117,7 +117,7 @@ Exemplos:
 
 
 
-@Cenario5
+@Cenario6
 @Automatizar
 @EstornarAdiamento
 Esquema do Cenario: Estornar adiamento de uma atividade
@@ -138,7 +138,7 @@ Exemplos:
 
 
 
-@Cenario6
+@Cenario7
 @Automatizar
 @CheckOut
 Esquema do Cenario: Realizar check out de uma atividade
@@ -160,7 +160,7 @@ Exemplos:
 
 
 
-@Cenario6
+@Cenario8
 @Automatizar
 @EstornarCheckOut
 Esquema do Cenario: Realizar estorno de check out de uma atividade
@@ -181,7 +181,7 @@ Exemplos:
 
 
 
-@Cenario7
+@Cenario9
 @Automatizar
 @EstornarCompleto
 Esquema do Cenario: Realizar estorno de todo processo da atividade
@@ -205,7 +205,7 @@ Exemplos:
 
 
 
-@Cenario8
+@Cenario10
 @Automatizar
 @Cancelar
 Esquema do Cenario: Realizar cancelamento de uma atividade
@@ -228,52 +228,55 @@ Exemplos:
 
 
 
-@Cenario9
+@Cenario11
 @Automatizar
 @EnderecoFinalCancelado
 Esquema do Cenario: Ir para endereço final da rota 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
+E clicar na <Rota>
 E possua <StatusRota>
 E possua <SituacaoAtividade>
 Quando clicar "Ir Para Endereço Final"
 Entao abre mapa com localização do endereço Final
 
 Exemplos:
-| Empresa   | Rota  | Atividade        | SitatusAtividade | StatusRota  |
-| Matriz BH | 00379 | 1°Nova Atividade | Cancelado        | Em Execução |
+| Empresa   | Rota  | SituacaoAtividade | StatusRota  |
+| Matriz BH | 00379 | Cancelado         | Em Execução |
 
 
 
-@Cenario10
+@Cenario12
 @Automatizar
 @EnderecoFinalConcluido
 Esquema do Cenario: Ir para endereço final da rota 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
+E clicar na <Rota>
 E possua <StatusRota>
 E possua <SituacaoAtividade>
 Quando clicar "Ir Para Endereço Final"
 Entao abre mapa com localização do endereço Final
 
 Exemplos:
-| Empresa   | Rota  | Atividade        | StatusAtividade | StatusRota |
-| Matriz BH | 00379 | 1°Nova Atividade | Concluído       | Concluído  |
+| Empresa   | Rota  | SituacaoAtividade | StatusRota |
+| Matriz BH | 00379 | Concluído         | Concluído  |
 
 
 
-@Cenario11
+@Cenario13
 @Automatizar
 @ConcluirRota
 Esquema do Cenario: Concluir rota 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
-E possua <StatusRota>
+E clicar na <Rota>
+E possua <StatusRota1>
 E possua <SituacaoAtividade>
 Quando clicar "Concluir Rota"
-Entao então grava <StatusRota>
+Entao então grava <StatusRota2>
 E exibe botão "Estornar"
 
 Exemplos:
-| Empresa   | Rota  | Atividade          | SitatusAtividade | SitatusRota |
-| Matriz BH | 00379 | 1° TESTE ATIVIDADE | Concluído        | Concluído   |
+| Empresa   | Rota  | SituacaoAtividade | StatusRota1 | StatusRota2 |
+| Matriz BH | 00379 | Concluído         | Em Execucao | Concluído   |

@@ -130,11 +130,11 @@ E esteja logado com <Empresa>
 E clicar na <Rota>
 Quando clicar na <Atividade1>
 E não ter observação na <Atividade1> 
-Entao não deve exibir bloco "Observação" na atividade 
+Entao não deve exibir bloco "Observação" na <Atividade2> 
 
 Exemplos:
-| Empresa   | Rota  | Atividade1       |
-| Matriz BH | 00379 | 1°Nova Atividade |
+| Empresa   | Rota  | Atividade1       | Atividade>       | Atividade2>      |
+| Matriz BH | 00379 | 1°Nova Atividade | 1°Nova Auticidde | 1°Nova Auticidde |
 
 
 
@@ -203,9 +203,9 @@ E não esteja com "Notificar os clientes sobre a rota por WhatsApp" configurada 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Rota>
-Quando clicar na <Atividade>
-Entao não deve exibir seção "Notificações" na atividade 
+Quando clicar na <Atividade1>
+Entao não deve exibir seção "Notificações" na <Atividade2> 
 
 Exemplos:
-| Empresa   | Rota | Atividade          |
-| Matriz BH | 00378 | 1°TESTE ATIVIDADE |
+| Empresa   | Rota  | Atividade         | Atividade2        |
+| Matriz BH | 00378 | 1°TESTE ATIVIDADE | 1°TESTE ATIVIDADE |
