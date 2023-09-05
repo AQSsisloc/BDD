@@ -73,15 +73,3 @@ Exemplos:
 | 123                | Pessoa de código 123 foi atualizada/sincronizada com sucesso! |
 
 
-
-@Cenario5
-@Automatizar
-@AuditoriaGrupo
-Cenario: Visualizar auditoria do grupo
-E que esteja logado com usuário funcionário
-E selecionar "Cadastros"
-E selecionar "Grupo"
-Quando clicar em "Auditoria"
-Entao apresenta a auditoria do grupo
-
-
