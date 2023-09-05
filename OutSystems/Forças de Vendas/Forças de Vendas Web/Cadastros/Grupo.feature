@@ -34,7 +34,7 @@ Exemplos:
 @Cenario2
 @Automatizar
 @LimparPesquisaGrupo
-Cenario: Limpar os resultados de uma pesquisa do funcionário
+Cenario: Limpar os resultados de uma pesquisa do grupo
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Grupo"
@@ -46,7 +46,7 @@ Entao limpa os resultados do filtro da pesquisa
 @Cenario3
 @Automatizar
 @FiltrarGrupo
-Cenario: Filtrar funcionário cadastrado
+Cenario: Filtrar grupo cadastrado
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Grupo"
@@ -77,7 +77,7 @@ Exemplos:
 @Cenario5
 @Automatizar
 @AuditoriaGrupo
-Cenario: Visualizar auditoria do funcionário
+Cenario: Visualizar auditoria do grupo
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Grupo"
