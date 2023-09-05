@@ -145,17 +145,12 @@ Entao apresenta o motivo da perda do filtro pesquisado
 
 @Cenario8
 @Automatizar
-@AtualizarSincronizarSislocMotivoDaPerda
-Esquema do Cenario: Atualizar e sincronizar dados com Sisloc e condição de pagamento
+@AuditoriaMotivoDaPerda
+Cenario: Visualizar auditoria do motivo da perda
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Motivo da Perda"
-Quando clicar em "Atualizar/Sincronizar com Sisloc"
-E inserir <CodigoPessoaSisloc>
-Entao sincroniza a página com dados com Sisloc
-
-Exemplos:
-| CodigoPessoaSisloc | MensagemDeRetorno                                             |
-| 123                | Pessoa de código 123 foi atualizada/sincronizada com sucesso! |
+Quando clicar em "Auditoria"
+Entao apresenta a auditoria do motivo da perda
 
 
