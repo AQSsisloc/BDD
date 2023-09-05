@@ -301,7 +301,7 @@ E selecionar "Cadastros"
 E selecionar "Funcionário"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
 E inserir <CodigoPessoaSisloc>
-Entao apresenta a atividade do filtro pesquisado
+Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
 | CodigoPessoaSisloc | MensagemDeRetorno                                           |

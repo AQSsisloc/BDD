@@ -60,13 +60,13 @@ Entao apresenta a atividade do filtro pesquisado
 @Cenario4
 @Automatizar
 @AtualizarSincronizarSislocGrupo
-Esquema do Cenario: Atualizar e sincronizar dados com Sisloc e funcionário
+Esquema do Cenario: Atualizar e sincronizar dados com Sisloc e grupo
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Grupo"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
 E inserir <CodigoPessoaSisloc>
-Entao apresenta a atividade do filtro pesquisado
+Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
 | CodigoPessoaSisloc | MensagemDeRetorno                                             |
