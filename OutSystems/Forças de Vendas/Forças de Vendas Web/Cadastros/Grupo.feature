@@ -71,5 +71,3 @@ Entao sincroniza a página com dados com Sisloc
 Exemplos:
 | CodigoPessoaSisloc | MensagemDeRetorno                                             |
 | 123                | Pessoa de código 123 foi atualizada/sincronizada com sucesso! |
-
-
