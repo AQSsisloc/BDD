@@ -5,8 +5,8 @@
 
 Funcionalidade: Visualizar informações do patrimônio 
   Como um usuário do Services Mobile 
-  Eu quero visualizas a informações e arquivos dos patrimônios  
-  Para facilitar operacional do usuário com informações do equipamento 
+  Eu quero visualizas as informações e arquivos dos patrimônios  
+  Para facilitar o operacional com informações do equipamento 
 
 
 Dado esteja logado no Services Mobile 
@@ -421,3 +421,23 @@ E carrega dados do <PatrimonioInformacao2>
 Exemplos:
 | Empresa | PatrimonioPesquisa | PatrimonioInformacao | PatrimonioInformacao2 |
 | Matiz   | ACABA-10           | ACABA-10             | ACABA-10              |
+
+
+
+@Cenario18
+@Manual 
+@InformacaoPatrimonio
+Esquema do Cenario: Buscar Patrimônio offline
+E esteja em modo offline
+E esteja logado com usuário funcionário
+E esteja com a empresa <Empresa>
+E clicar em "Menu"
+E clicar em "Informações de Patrimônio"
+Quando clicar em "Buscacar Patrimônio"
+E digitar apelido do patrimônio <PatrimonioPesquisa> 
+E clicar em "Pesquisar" 
+Entao Exibe informações do patrimônio <PatrimonioInformacao>  
+
+Exemplos:
+| Empresa | PatrimonioPesquisa | PatrimonioInformacao |
+| Matiz   | ACABA-10           | ACABA-10             |
