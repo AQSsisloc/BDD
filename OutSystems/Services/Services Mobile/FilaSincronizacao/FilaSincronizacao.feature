@@ -41,3 +41,4 @@ Entao apresenta processos na fila para sincronização
 Exemplos:
 | Empresa | Parametro                        |
 | Matriz  | Exibe processos já sincronizados |
+
