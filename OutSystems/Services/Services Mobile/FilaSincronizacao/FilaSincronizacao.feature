@@ -14,7 +14,7 @@ Dado esteja logado no Services Mobile
 
 @Cenario1
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: visualizar processos não sincronizados 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -30,7 +30,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao
 Esquema do Cenario: visualizar processos já sincronizados 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -46,7 +46,7 @@ Exemplos:
 
 @Cenario3
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: visualizar problemas sincronia checklist
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -65,7 +65,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: falha ao tentar sincronizar pendência com conflitos
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -88,7 +88,7 @@ Exemplos:
 
 @Cenario5
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -106,7 +106,7 @@ Exemplos:
 
 @Cenario6
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: ajustar ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -125,7 +125,7 @@ Exemplos:
 
 @Cenario7
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Cenario: exibir processos pendentes offline
 E esteja logado com usuário funcionário
 E esteja em modo offline
@@ -137,7 +137,7 @@ Entao apresenta processos pendentes
 
 @Cenario8
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao
 Esquema do Cenario: transferir processo pendente offline 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -156,7 +156,7 @@ Exemplos:
 
 @Cenario9
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente 
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -171,9 +171,10 @@ Exemplos:
 | Matriz  | Apontamento P.D: 5 | É necessário realizar envio das informações coletadas offline para o servidor! |
 
 
-@Cenario9
+
+@Cenario10
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente e exibir processo
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
@@ -190,9 +191,9 @@ Exemplos:
 
 
 
-@Cenario10
+@Cenario11
 @Automatizar 
-@FilaSincronizao 
+@FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente e realizar envio
 E esteja logado com usuário funcionário
 E esteja logado com empresa <Empresa>
