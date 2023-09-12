@@ -81,11 +81,11 @@ E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Condição de Pagamento"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
-E inserir <CodigoPessoaSisloc>
+E inserir <CodigoCondicaoDePagamentoSisloc>
 Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
-| CodigoPessoaSisloc | MensagemDeRetorno                                             |
-| 123                | Pessoa de código 123 foi atualizada/sincronizada com sucesso! |
+| CodigoCondicaoDePagamentoSisloc | MensagemDeRetorno                                                      |
+| 28 dias                         | Condição de pagamento 28 dias foi atualizada/sincronizada com sucesso! |
 
 

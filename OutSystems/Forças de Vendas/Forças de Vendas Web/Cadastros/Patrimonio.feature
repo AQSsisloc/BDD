@@ -65,11 +65,11 @@ E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Patrimônio"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
-E inserir <CodigoPessoaSisloc>
+E inserir <CodigoPatrimonioSisloc>
 Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
-| CodigoPessoaSisloc | MensagemDeRetorno                                             |
-| 013                | Patrimônio do ID 013 foi atualizada/sincronizada com sucesso! |
+| CodigoPatrimonioSisloc | MensagemDeRetorno                                             |
+| 013                    | Patrimônio do ID 013 foi atualizada/sincronizada com sucesso! |
 
 

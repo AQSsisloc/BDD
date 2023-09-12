@@ -300,12 +300,12 @@ E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Funcionário"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
-E inserir <CodigoPessoaSisloc>
+E inserir <CodigoFuncionarioSisloc>
 Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
-| CodigoPessoaSisloc | MensagemDeRetorno                                           |
-| 123                | Pessoa de código 1 foi atualizada/sincronizada com sucesso! |
+| CodigoFuncionarioSisloc | MensagemDeRetorno                                                |
+| Teste AQS 2             | Funcionario Teste AQS 2 foi atualizada/sincronizada com sucesso! |
 
 
 

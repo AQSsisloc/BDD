@@ -323,12 +323,12 @@ E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
 E selecionar "Captador"
 Quando clicar em "Atualizar/Sincronizar com Sisloc"
-E inserir <CodigoPessoaSisloc>
+E inserir <CodigoCaptadorSisloc>
 Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
-| CodigoPessoaSisloc | MensagemDeRetorno                                           |
-| 123                | Pessoa de código 1 foi atualizada/sincronizada com sucesso! |
+| CodigoCaptadorSisloc | MensagemDeRetorno                                     |
+| 123                  | Captador 123 foi atualizada/sincronizada com sucesso! |
 
 
 
