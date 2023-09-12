@@ -116,7 +116,7 @@ E inserir <CodigoProdutoSisloc>
 Entao sincroniza a página com dados com Sisloc
 
 Exemplos:
-| CodigoProdutoSisloc | MensagemDeRetorno                                      |
-| 77657               | Produto 77657 foi atualizada/sincronizada com sucesso! |
+| CodigoProdutoSisloc | MensagemDeRetorno                                               |
+| 77657               | Produto de código 5165 foi atualizado/sincronizado com sucesso! |
 
 
