@@ -209,3 +209,5 @@ E apresenta mensagem <MensagemEnvio>
 Exemplos:
 | Empresa | Processo           | MensagemEnvio                             |
 | Matriz  | Apontamento P.D: 5 | Pendência enviada ao servidor com sucesso |
+
+
