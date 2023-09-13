@@ -139,7 +139,7 @@ Entao limpa os resultados do filtro da pesquisa
 Cenario: Filtrar segmento cadastrado
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
-E selecionar "Concorrente"
+E selecionar "Segmento"
 Quando clicar em "Filtro"
 E inserir dados do filtro
 E clicar em "Filtrar"
