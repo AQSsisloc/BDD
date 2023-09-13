@@ -72,8 +72,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Pesquisar | Produto           | MensagemDeSucesso          |
-| 77657     | Abraçadeira 77657 | Campos salvos com sucesso! |
+| Pesquisar           | Servico             | MensagemDeSucesso          |
+| Checkup de correias | Checkup de correias | Campos salvos com sucesso! |
 
 
 
