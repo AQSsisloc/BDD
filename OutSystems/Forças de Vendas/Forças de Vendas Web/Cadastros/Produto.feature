@@ -92,7 +92,7 @@ Entao limpa os resultados do filtro da pesquisa
 
 @Cenario5
 @Automatizar
-@FiltrarPatrimonio
+@FiltrarProduto
 Cenario: Filtrar produto cadastrado
 E que esteja logado com usuário funcionário
 E selecionar "Cadastros"
