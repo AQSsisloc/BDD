@@ -5,7 +5,7 @@
 
 Funcionalidade: Cadastrar um checklist de serviço extra para um patrimônio ou equipamento
   Como um usuário do Services Mobile 
-  Eu quero cadastrar um checklist avulso de serviço extra
+  Eu quero cadastrar um checklist de serviço extra
   Para utilizar na conferência esporádica do equipamento
 
 
