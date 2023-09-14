@@ -1,5 +1,5 @@
 #language: pt
-#ParametrosGerais
+#Cadastro
 #ForcaDeVendasWeb
 
 
@@ -14,13 +14,13 @@ Dado esteja logado no Força de Vendas Web
 
 @Cenario1
 @Automatizar
-@ParametrosGerais
-Esquema do Cenario: Habilitar bloqueio em atividades 
-E que esteja logado com usuário funcionário
+@Cadastro
+Esquema do Cenario: Utilizar somente letras maiúsculas 
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
-E esteja com parametro "Atual" <ParametroAtual>
+E esteja na aba "Cadastro"
+E configurado parametro "Utilizar somente letras maiúsculas" <ParametroAtual>
 Quando clicar em "Editar"
 E clicar em "Salvar"
 Entao grava os dados parametro "Atual" <ParametroAtual2>
@@ -34,13 +34,13 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@ParametrosGerais
-Esquema do Cenario: Desabilitar bloqueio em atividades 
-E que esteja logado com usuário funcionário
+@Cadastro
+Esquema do Cenario: Utilizar somente letras maiúsculas 
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
-E esteja com parametro "Atual" <ParametroAtual>
+E esteja na aba "Cadastro"
+E configurado parametro "Utilizar somente letras maiúsculas" <ParametroAtual>
 Quando clicar em "Editar"
 E clicar em "Salvar"
 Entao grava os dados parametro "Atual" <ParametroAtual2>
