@@ -103,7 +103,7 @@ Exemplos:
 
 
 
-@Cenario4
+@Cenario5
 @Automatizar
 @CancelarInfoOM
 Esquema do Cenario: Cancelar exclusão de informações inseridas na Ordem de Manutenção
