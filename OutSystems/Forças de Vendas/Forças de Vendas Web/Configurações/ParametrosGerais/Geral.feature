@@ -75,7 +75,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @Geral
-Esquema do Cenario: desabilitar navegação por abas
+Esquema do Cenario: Desabilitar navegação por abas
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
