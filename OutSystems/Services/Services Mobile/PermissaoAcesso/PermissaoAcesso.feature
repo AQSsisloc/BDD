@@ -79,8 +79,8 @@ Entao valida usuário
 E exbibe mensagem modo offline <MensageOff>
 
 Exemplos:
-| MensagemLogin                                            |
-| "Não foi encontrado Tenant referente ao alias informado" |
+| Usuario   | MensagemLogin                                            |
+| Admin@tst | "Não foi encontrado Tenant referente ao alias informado" |
 
 
 
@@ -97,8 +97,8 @@ Entao valida usuário
 E exbibe mensagem modo offline <MensageOff>
 
 Exemplos:
-| MensagemLogin                                            |
-| "Não foi encontrado Tenant referente ao alias informado" |
+| Senha  | MensagemLogin                                            |
+| 123456 | "Não foi encontrado Tenant referente ao alias informado" |
 
 
 
