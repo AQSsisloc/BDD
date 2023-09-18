@@ -197,7 +197,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @MinhaConta
 Esquema do Cenario: Adicionar foto
 E esteja logado ao Services Web
@@ -216,7 +216,7 @@ Exemplos:
 
 
 @Cenario13
-@Automatizar
+@Manual
 @MinhaConta
 Esquema do Cenario: Remover foto
 E esteja logado ao Services Web
