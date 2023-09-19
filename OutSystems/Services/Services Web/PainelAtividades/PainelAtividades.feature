@@ -5,7 +5,7 @@
 
 Funcionalidade: Exibir atividades e suas situações 
   Como um usuário do Services WEB 
-  Eu quero visualizr as atividades 
+  Eu quero visualizar as atividades 
   Para gerenciar o fluxo de trabalho 
 
 

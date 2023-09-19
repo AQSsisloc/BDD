@@ -17,9 +17,9 @@ Dado esteja com conexão a internet
 @PermissaoAcessoWeb
 Esquema do Cenario: Acessar sistema com usuário válido online
 E clicar em "Usuário"
-E preencher campo usário <Usuario>
+E preencher campo <Usuario>
 E clicar em "Senha" 
-E preenhcer campo Senha <Senha> 
+E preenhcer campo <Senha> 
 E clicar em  "ENTRAR"
 Quando clicar em "Services"
 Entao acessa ao Services Web 
@@ -45,7 +45,7 @@ E sinaliza "Campo Obrigatório"
 @PermissaoAcesso
 Esquema do Cenario: Acessar sistema informando somente usuário
 E clicar em usuário
-E preencher campo Usário <Usuario>
+E preencher campo <Usuario>
 E não preenhcer campo Senha 
 Quando clicar em  "ENTRAR"
 Entao valida usuário
@@ -64,7 +64,7 @@ Esquema do Cenario: Acessar sistema informando somente senha
 E esteja conectado a internet 
 E não preencher campo Usário 
 E clicar em "Senha" 
-E preenhcer campo Senha <Senha> 
+E preenhcer campo <Senha> 
 Quando clicar em  "ENTRAR"
 Entao valida usuário
 E sinaliza "Campo Obrigatório"
@@ -79,7 +79,7 @@ Exemplos:
 @Automatizar
 @PermissaoAcesso
 Esquema do Cenario: Sair do acesso 
-E esteja logado no sistema com usuario <Usuario>
+E esteja logado no sistema com <Usuario>
 Quando clicar em "Sair"
 Entao sai do sistema 
 
@@ -94,12 +94,12 @@ Exemplos:
 @PermissaoAcessoWeb
 Esquema do Cenario: Acessar sistema com usuário inválido 
 E clicar em "Usuário"
-E preencher campo usário <Usuario>
+E preencher campo <Usuario>
 E clicar em "Senha" 
-E preenhcer campo Senha <Senha> 
+E preenhcer campo <Senha> 
 Quando clicar em  "ENTRAR"
 Entao valida usuario
-E exibe mensagem <MensagemInvalido>
+E exibe <MensagemInvalido>
 
 Exemplos:
 | Usuario   | Senha  | MensagemInvalido                                       |
@@ -164,12 +164,12 @@ Exemplos:
 Esquema do Cenario: Alterar nome da conta
 E esteja logado ao Services Web
 E clicar "Menu" 
-E clicar na conta <Conta>
+E clicar em <Conta>
 E clicar em "Nome completo"
-E preecher nome <Nome>
+E preecher <Nome>
 Quando clicar em "Salvar"
 Entao grava os dados 
-E apresenta mensagem <MensagemNome>
+E apresenta <MensagemNome>
 
 Exemplos:
 | Conta | Nome      | MensagemNome           |
@@ -183,12 +183,12 @@ Exemplos:
 Esquema do Cenario: Alterar apelido da conta
 E esteja logado ao Services Web
 E clicar "Menu" 
-E clicar na conta <Conta>
+E clicar na <Conta>
 E clicar em "Como gostaria de ser chamdo?"
-E preecher nome <Apelido>
+E preecher <Apelido>
 Quando clicar em "Salvar"
 Entao grava os dados 
-E apresenta mensagem <MensagemApelido>
+E apresenta <MensagemApelido>
 
 Exemplos:
 | Conta | Nome      | MensagemNome              |
@@ -202,12 +202,12 @@ Exemplos:
 Esquema do Cenario: Adicionar foto
 E esteja logado ao Services Web
 E clicar "Menu" 
-E clicar na conta <Conta>
+E clicar na <Conta>
 E clicar em "Carregar Imagem"
 E selecionar Imagem
 Quando clicar em "Salvar"
 Entao grava os dados 
-E apresenta mensagem <MensagemImagem>
+E apresenta <MensagemImagem>
 
 Exemplos:
 | Conta | MensagemImagem           |
@@ -221,12 +221,12 @@ Exemplos:
 Esquema do Cenario: Remover foto
 E esteja logado ao Services Web
 E clicar "Menu" 
-E clicar na conta <Conta>
+E clicar na <Conta>
 E clicar em "Remover Imagem"
 Quando clicar em "Sim"
 E clicar em "Salvar"
 Entao grava os dados 
-E apresenta mensagem <MensagemExclusaoImagem>
+E apresenta <MensagemExclusaoImagem>
 
 Exemplos:
 | Conta | MensagemExclusaoImagem   |
@@ -241,9 +241,9 @@ Esquema do Cenario: Selecionar Empresa Ativa
 E esteja logado ao Services Web
 E clicar "Menu" 
 E clicar na empresa <Empresa>
-Quando selecionar uma empresa <EmpresaSelecionada>
+Quando selecionar uma <EmpresaSelecionada>
 Entao altera empresa ativa  
-E apresenta mensagem <MensagemEmpresa>
+E apresenta <MensagemEmpresa>
 
 Exemplos:
 | Empresa | EmpresaSelecionada | MensagemEmpresa           |

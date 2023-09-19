@@ -17,7 +17,7 @@ Dado esteja logado no Services Mobile
 @FilaSincronizacao 
 Esquema do Cenario: visualizar processos não sincronizados 
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
+E esteja logado com  <Empresa>
 Quando clicar em "Fila de Sincronização"
 E marcar <Parametro>
 Entao apresenta processos na fila para sincronização
@@ -33,7 +33,7 @@ Exemplos:
 @FilaSincronizacao
 Esquema do Cenario: visualizar processos já sincronizados 
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
+E esteja logado com  <Empresa>
 Quando clicar em "Fila de Sincronização"
 E marcar <Parametro>
 Entao apresenta processos na fila para sincronização
@@ -49,10 +49,10 @@ Exemplos:
 @FilaSincronizacao 
 Esquema do Cenario: visualizar problemas sincronia checklist
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
+E esteja logado com <Empresa>
 E esteja com problemas na sincronização de dados
 E clicar em "CheckList"
-E selecionar um módulo <Modulo>
+E selecionar um  <Modulo>
 E clicar para pesquisar 
 Quando clicar em "Problemas Sincronia"
 Entao apresenta detalhes do problema na sincronização 
@@ -68,17 +68,17 @@ Exemplos:
 @FilaSincronizacao 
 Esquema do Cenario: falha ao tentar sincronizar pendência com conflitos
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
+E esteja logado com  <Empresa>
 E esteja com problemas na sincronização de dados
 E clicar em "CheckList"
-E selecionar um módulo <Modulo>
+E selecionar um  <Modulo>
 E clicar para pesquisar 
 E clicar em "Problemas Sincronia"
-Quando selecionar uma pendência <Pendendencia>
+Quando selecionar uma <Pendendencia>
 E clicar "Tentar novamente"
 E clicar "Confirmar"
 Entao garrega os dados
-E apresenta mensagem <MensagemPendencia>
+E apresenta <MensagemPendencia>
 
 Exemplos:
 | Empresa | Modulo | Pendencia | MensagemPendencia                                    |
@@ -91,8 +91,8 @@ Exemplos:
 @FilaSincronizacao 
 Esquema do Cenario: ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
-E esteja com almoxarifado <Almoxarifado>
+E esteja logado com <Empresa>
+E esteja com  <Almoxarifado>
 E esteja com problemas na sincronização de dados
 E clicar em "Ordem de Manutenção"
 Quando clicar em "Problemas Sincronia"
@@ -109,12 +109,12 @@ Exemplos:
 @FilaSincronizacao 
 Esquema do Cenario: ajustar ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
-E esteja com almoxarifado <Almoxarifado>
+E esteja logado com <Empresa>
+E esteja com  <Almoxarifado>
 E esteja com problemas na sincronização de dados
 E clicar em "Ordem de Manutenção"
 E clicar em "Problemas Sincronia"
-Quando clicar na "Seta" da OM <OM> 
+Quando clicar na "Seta" da <OM> 
 Entao abre OM para ajustar conflito 
 
 Exemplos:
@@ -146,7 +146,7 @@ E clicar em "Menu"
 E clicar em "Processos Pendentes"
 E houver processo pendente <Processo> 
 Quando clicar "Transferir Dados"
-Entao exibe mensagem <MensagemPendente> 
+Entao exibe <MensagemPendente> 
 
 Exemplos:
 | Empresa | Processo           | MensagemPendente                                                       |
@@ -164,7 +164,7 @@ E esteja em modo offline
 E clicar em "Menu"
 E houver processo pendente <Processo>
 Quando ativar modo online  
-Entao exibe mensagem <MensagemOnline> 
+Entao exibe <MensagemOnline> 
 
 Exemplos:
 | Empresa | Processo           | MensagemOnline                                                                 |
@@ -196,7 +196,7 @@ Exemplos:
 @FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente e realizar envio
 E esteja logado com usuário funcionário
-E esteja logado com empresa <Empresa>
+E esteja logado com <Empresa>
 E esteja em modo offline 
 E clicar em "Menu"
 E houver processo pendente <Processo>
@@ -204,7 +204,7 @@ E ativar modo online
 E clicar "Fechar" na mensagem   
 Quando clicar "Transferir Dados"
 Entao carrega os dados 
-E apresenta mensagem <MensagemEnvio>  
+E apresenta <MensagemEnvio>  
 
 Exemplos:
 | Empresa | Processo           | MensagemEnvio                             |
