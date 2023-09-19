@@ -5,7 +5,7 @@
 
 Funcionalidade: Gerenciar permissões de acessos às funcionalidades 
   Como um usuário do Força de Vendas 
-  Eu quero confirgurar os parâmetros 
+  Eu quero confirgurar os parâmetros gerais
   Para utilizar nos processos do força de vendas 
 
 
