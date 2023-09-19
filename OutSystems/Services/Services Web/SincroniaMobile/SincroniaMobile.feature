@@ -64,6 +64,24 @@ Exemplos:
 
 
 
+@Cenario3
+@Automatizar
+@SincroniaMobile
+Esquema do Cenario: Pesquisar processo 
+E selecionar "Sincronia Mobile"
+E preencher <DescricaOrigem>
+E preencher <Responsavel>
+E preencher <TipOrigem> 
+E preencher <DataInsercaoDe> 
+E preencher <DataInsercaoAte>
+E preencher <DataExecucaoDe> 
+E preencher <DataExecucaoAte> 
+E preencher <Status> 
+Quando clicar em "Filrar"
+Entao apresenta processo  
+
+Exemplos:
+| DescricaOrigem | TipOrigem | Responsavel | DataInsercaoDe   | DataInsercaoAte   | DataExecucaoDe   | DataExecucaoAte  | Status          |
 
 
 
