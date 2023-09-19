@@ -178,13 +178,13 @@ Entao grava os dados do <ParametroAtual>
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Empresa | Coluna                                   | Editar | ParametroAtual | MensagemDeSucesso                  |
-| Matriz  | Previsão de fechamento (dias)            | 15     | 15             | Parâmetro atualizado com sucesso ! |
-| Matriz  | Previsão de fechamento (dias)            |        |                | Parâmetro atualizado com sucesso ! |
-| Matriz  | Qtd. de dias para vencimento da proposta | 15     | 15             | Parâmetro atualizado com sucesso ! |
-| Matriz  | Qtd. de dias para vencimento da proposta |        |                | Parâmetro atualizado com sucesso ! |
-| Matriz  | Tipo de oportunidade padrão              | 15     | 15             | Parâmetro atualizado com sucesso ! |
-| Matriz  | Tipo de oportunidade padrão              |        |                | Parâmetro atualizado com sucesso ! |
+| Empresa | Coluna                                   | Editar       | ParametroAtual | MensagemDeSucesso                  |
+| Matriz  | Previsão de fechamento (dias)            | 15           | 15             | Parâmetro atualizado com sucesso ! |
+| Matriz  | Previsão de fechamento (dias)            |              |                | Parâmetro atualizado com sucesso ! |
+| Matriz  | Qtd. de dias para vencimento da proposta | 15           | 15             | Parâmetro atualizado com sucesso ! |
+| Matriz  | Qtd. de dias para vencimento da proposta |              |                | Parâmetro atualizado com sucesso ! |
+| Matriz  | Tipo de oportunidade padrão              | Obra privada | Obra privada   | Parâmetro atualizado com sucesso ! |
+| Matriz  | Tipo de oportunidade padrão              |              |                | Parâmetro atualizado com sucesso ! |
 
 
 
