@@ -121,7 +121,7 @@ Exemplos:
 @Cenario6
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações nos detalhes gerais da proposta
+Esquema do Cenario: Selecionar editar de ações dos detalhes gerais da proposta
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -165,7 +165,7 @@ Exemplos:
 @Cenario7
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações nos detalhes gerais da proposta
+Esquema do Cenario: Editar ações dos detalhes gerais da proposta
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -191,7 +191,7 @@ Exemplos:
 @Cenario8
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações nos detalhes gerais da proposta
+Esquema do Cenario: Selecionar opções nas ações dos detalhes gerais da proposta
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -215,7 +215,7 @@ Exemplos:
 @Cenario9
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na proposta de locação
+Esquema do Cenario: Selecionar editar ações da proposta de locação
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -251,7 +251,7 @@ Exemplos:
 @Cenario10
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na proposta de locação
+Esquema do Cenario: Editar ações da proposta de locação
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -277,7 +277,7 @@ Exemplos:
 @Cenario11
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na proposta de locação
+Esquema do Cenario: Selecionar opções nas ações da proposta de locação
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -299,7 +299,7 @@ Exemplos:
 @Cenario12
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na proposta de venda
+Esquema do Cenario: Selecionar editar nas ações da proposta de venda
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -321,7 +321,7 @@ Exemplos:
 @Cenario13
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na proposta de venda
+Esquema do Cenario: Editar ações da proposta de venda
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -349,7 +349,7 @@ Exemplos:
 @Cenario14
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações na Aprovação
+Esquema do Cenario: Selecionar editar nas ações da Aprovação
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -371,12 +371,12 @@ Exemplos:
 @Cenario15
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações no Envio da proposta por E-mail
+Esquema do Cenario: Selecionar editar ações do Envio da proposta por E-mail
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
 E esteja na aba "Proposta"
-E clicar em "Ações" na Aprovação
+E clicar em "Ações" no Envio da Proposta por E-mail
 E esteja na <Coluna>
 Quando selecionar no <Editar>
 E clicar em "Salvar"
@@ -393,7 +393,7 @@ Exemplos:
 @Cenario16
 @Automatizar
 @ParametrosGeraisProposta
-Esquema do Cenario: Editar ações no Envio da proposta por E-mail
+Esquema do Cenario: Editar ações do Envio da proposta por E-mail
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -419,7 +419,7 @@ Exemplos:
 @Cenario17
 @Automatizar
 @ParametrosGeraisRota
-Esquema do Cenario: Editar ações na aba Rota
+Esquema do Cenario: Selecionar editar nas ações da aba Rota
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -456,7 +456,7 @@ Exemplos:
 @Cenario18
 @Automatizar
 @ParametrosGeraisRota
-Esquema do Cenario: Editar ações na aba Rota
+Esquema do Cenario: Selecionar opções nas ações da aba Rota
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -574,7 +574,7 @@ Exemplos:
 @Cenario23
 @Automatizar
 @ParametrosGeraisSislocMessenger
-Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger
+Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger sem informar telefone
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
@@ -613,7 +613,7 @@ Exemplos:
 @Cenario25
 @Automatizar
 @ParametrosGeraisSislocMessenger
-Esquema do Cenario: Testar E-mail na aba Sisloc Messenger
+Esquema do Cenario: Testar E-mail na aba Sisloc Messenger sem informar e-mail
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
 E selecionar "Parâmetros Gerais"
