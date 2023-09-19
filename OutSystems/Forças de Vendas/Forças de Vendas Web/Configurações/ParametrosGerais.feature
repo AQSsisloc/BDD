@@ -3,9 +3,9 @@
 #ForcaDeVendasWeb
 
 
-Funcionalidade: Gerenciar permissões de acessos às funcionalidades 
+Funcionalidade: Gerenciar parâmetros de acessos nas funcionalidades 
   Como um usuário do Força de Vendas 
-  Eu quero confirgurar os parâmetros gerais
+  Eu quero configurar os parâmetros gerais
   Para utilizar nos processos do força de vendas 
 
 
