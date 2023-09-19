@@ -215,6 +215,42 @@ Exemplos:
 @Cenario9
 @Automatizar
 @ParametrosGeraisProposta
+Esquema do Cenario: Cancelar edição nas ações dos detalhes gerais da proposta
+E selecionado empresa <Empresa>
+E selecionar "Configuração"
+E selecionar "Parâmetros Gerais"
+E esteja na aba "Proposta"
+E clicar em "Ações" no Detalhes Gerais da Proposta
+Quando clicar em "Cancelar"
+Entao não grava os dados
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario10
+@Automatizar
+@ParametrosGeraisProposta
+Esquema do Cenario: Cancelar edição nas ações do envio da Rota por WhatsApp
+E selecionado empresa <Empresa>
+E selecionar "Configuração"
+E selecionar "Parâmetros Gerais"
+E esteja na aba "Proposta"
+E clicar em "Ações" no Envio da Rota por WhatsApp
+Quando clicar em "Cancelar"
+Entao não grava os dados
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario11
+@Automatizar
+@ParametrosGeraisProposta
 Esquema do Cenario: Selecionar editar ações da proposta de locação
 E selecionado empresa <Empresa>
 E selecionar "Configuração"
@@ -248,7 +284,7 @@ Exemplos:
 
 
 
-@Cenario10
+@Cenario12
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Editar ações da proposta de locação
@@ -274,7 +310,7 @@ Exemplos:
 
 
 
-@Cenario11
+@Cenario13
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Selecionar opções nas ações da proposta de locação
@@ -296,7 +332,25 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario14
+@Automatizar
+@ParametrosGeraisProposta
+Esquema do Cenario: Cancelar edição nas ações da proposta de locação
+E selecionado empresa <Empresa>
+E selecionar "Configuração"
+E selecionar "Parâmetros Gerais"
+E esteja na aba "Proposta"
+E clicar em "Ações" na Proposta de Locação
+Quando clicar em "Cancelar"
+Entao não grava os dados
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario15
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Selecionar editar nas ações da proposta de venda
@@ -318,7 +372,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario16
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Editar ações da proposta de venda
@@ -346,7 +400,25 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario17
+@Automatizar
+@ParametrosGeraisProposta
+Esquema do Cenario: Cancelar edição nas ações da proposta de venda
+E selecionado empresa <Empresa>
+E selecionar "Configuração"
+E selecionar "Parâmetros Gerais"
+E esteja na aba "Proposta"
+E clicar em "Ações" na Proposta de Venda
+Quando clicar em "Cancelar"
+Entao não grava os dados
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario18
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Selecionar editar nas ações da Aprovação
@@ -368,7 +440,25 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario19
+@Automatizar
+@ParametrosGeraisProposta
+Esquema do Cenario: Cancelar edição nas ações da Aprovação
+E selecionado empresa <Empresa>
+E selecionar "Configuração"
+E selecionar "Parâmetros Gerais"
+E esteja na aba "Proposta"
+E clicar em "Ações" na Aprovação
+Quando clicar em "Cancelar"
+Entao não grava os dados
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario20
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Selecionar editar ações do Envio da proposta por E-mail
@@ -390,7 +480,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario21
 @Automatizar
 @ParametrosGeraisProposta
 Esquema do Cenario: Editar ações do Envio da proposta por E-mail
@@ -416,7 +506,7 @@ Exemplos:
 
 
 
-@Cenario17
+@Cenario22
 @Automatizar
 @ParametrosGeraisRota
 Esquema do Cenario: Selecionar editar nas ações da aba Rota
@@ -453,7 +543,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario23
 @Automatizar
 @ParametrosGeraisRota
 Esquema do Cenario: Selecionar opções nas ações da aba Rota
@@ -478,7 +568,7 @@ Exemplos:
 
 
 
-@Cenario19
+@Cenario24
 @Automatizar
 @ParametrosGeraisRota
 Esquema do Cenario: Editar ações na aba Rota
@@ -505,7 +595,7 @@ Exemplos:
 
 
 
-@Cenario20
+@Cenario25
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar ações na aba Sisloc Messenger
@@ -528,7 +618,7 @@ Exemplos:
 
 
 
-@Cenario21
+@Cenario26
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar senha na aba Sisloc Messenger
@@ -550,7 +640,7 @@ Exemplos:
 
 
 
-@Cenario22
+@Cenario27
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger
@@ -571,7 +661,7 @@ Exemplos:
 
 
 
-@Cenario23
+@Cenario28
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger sem informar telefone
@@ -589,7 +679,7 @@ Exemplos:
 
 
 
-@Cenario24
+@Cenario29
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar E-mail na aba Sisloc Messenger
@@ -610,7 +700,7 @@ Exemplos:
 
 
 
-@Cenario25
+@Cenario30
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar E-mail na aba Sisloc Messenger sem informar e-mail
