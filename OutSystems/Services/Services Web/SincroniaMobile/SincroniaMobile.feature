@@ -193,7 +193,7 @@ Exemplos:
 
 
 
-@Cenario11
+@Cenario12
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario:  Ignorar conflito nos detalhes do processo   
@@ -214,7 +214,7 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario13
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario:  Grava como enviado após ignorar conflitos nos detalhes do processo    
@@ -234,7 +234,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario14
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Filtrar conflitos    
@@ -257,7 +257,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario15
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Abrir detalhe dos conflitos     
@@ -273,7 +273,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario16
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Tentar enviar conflito novamente atraves dos detalhes      
@@ -292,7 +292,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario17
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Ignorar Processo atraves dos detalhes      
@@ -311,7 +311,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario18
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Cancelar detalhes do conflito      
@@ -328,7 +328,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario19
 @Automatizar
 @SincroniaMobile
 Esquema do Cenario: Alterar dados do conflito     
