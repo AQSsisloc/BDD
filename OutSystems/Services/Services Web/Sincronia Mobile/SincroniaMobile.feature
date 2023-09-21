@@ -1,6 +1,6 @@
 #language: pt
 #SincroniaMobile
-#ServicesMobile
+#ServicesWeb
 
 
 Funcionalidade: Gerenciar conflitos de processos executados no Mobile 

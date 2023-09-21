@@ -1,6 +1,6 @@
 #language: pt
 #PermissaoAcessoWeb
-#ServicesMobile
+#ServicesWeb
 
 
 Funcionalidade: Permitir acesso às funcionalidades do Services Web
