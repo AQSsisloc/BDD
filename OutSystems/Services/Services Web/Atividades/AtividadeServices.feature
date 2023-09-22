@@ -29,8 +29,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Prospeccao       | MensagemDeSucesso            |
-| Alessandra Kruse | Atividade salva com sucesso! |
+| Prospeccao | MensagemDeSucesso                            |
+| teste a    | Atividade teste aqs teste salva com sucesso! |
 
 
 
@@ -39,7 +39,6 @@ Exemplos:
 @AtividadeProspeccao
 Esquema do Cenario: Cadastrar uma atividade do tipo "Prospecção" sem preencher campo obrigatório
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Prospecção"
@@ -58,7 +57,6 @@ Exemplos:
 @AtividadeProspeccao
 Esquema do Cenario: Cancelar o cadastro de uma atividade do tipo "Prospecção"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Prospecção"
@@ -70,8 +68,8 @@ E clicar em "Cancelar"
 Entao não grava os dados
 
 Exemplos:
-| Prospeccao       |
-| Alessandra Kruse |
+| Prospeccao |
+| teste a    |
 
 
 
@@ -80,7 +78,6 @@ Exemplos:
 @AtividadeConta
 Esquema do Cenario: Cadastrar uma atividade do tipo "Conta" 
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Conta"
@@ -93,8 +90,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Conta                                          | MensagemDeSucesso            |
-| BHJA TRANSPORTES MUDANCAS E SERVICOS LTDA - ME | Atividade salva com sucesso! |
+| Conta             | MensagemDeSucesso                            |
+| ADALGISA C FLORES | Atividade teste aqs teste salva com sucesso! |
 
 
 
@@ -103,7 +100,6 @@ Exemplos:
 @AtividadeConta
 Esquema do Cenario: Cadastrar uma atividade do tipo "Conta" sem preencher campo obrigatório
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Conta"
@@ -122,7 +118,6 @@ Exemplos:
 @AtividadeConta
 Esquema do Cenario: Cancelar o cadastro de uma atividade do tipo "Conta"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Conta"
@@ -134,8 +129,8 @@ E clicar em "Cancelar"
 Entao não grava os dados
 
 Exemplos:
-| Conta                                          |
-| BHJA TRANSPORTES MUDANCAS E SERVICOS LTDA - ME |
+| Conta             |
+| ADALGISA C FLORES |
 
 
 
@@ -144,7 +139,6 @@ Exemplos:
 @AtividadeOportunidade
 Esquema do Cenario: Cadastrar uma atividade do tipo "Oportunidade" 
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Oportunidade"
@@ -157,8 +151,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Oportunidade                                               | MensagemDeSucesso            |
-| Op Antonio pedrosa / ANTONIO PEDROSA DAMASCENO 24689514844 | Atividade salva com sucesso! |
+| Oportunidade        | MensagemDeSucesso                            |
+| aqs teste/001 teste | Atividade teste aqs teste salva com sucesso! |
 
 
 
@@ -167,7 +161,6 @@ Exemplos:
 @AtividadeOportunidade
 Esquema do Cenario: Cadastrar uma atividade do tipo "Oportunidade" sem preencher campo obrigatório
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Oportunidade"
@@ -186,7 +179,6 @@ Exemplos:
 @AtividadeOportunidade
 Esquema do Cenario: Cancelar o cadastro de uma atividade do tipo "Oportunidade"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Oportunidade"
@@ -198,8 +190,8 @@ E clicar em "Cancelar"
 Entao não grava os dados
 
 Exemplos:
-| Oportunidade                                               |
-| Op Antonio pedrosa / ANTONIO PEDROSA DAMASCENO 24689514844 |
+| Oportunidade        |
+| aqs teste/001 teste |
 
 
 
@@ -208,7 +200,6 @@ Exemplos:
 @AtividadeProposta
 Esquema do Cenario: Cadastrar uma atividade do tipo "Proposta" 
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Proposta"
@@ -221,8 +212,8 @@ Entao grava os dados
 E apresenta a <MensagemDeSucesso>
 
 Exemplos:
-| Proposta                                                       | MensagemDeSucesso            |
-| 14 - 1 , Construtora Floresta Ltda / Construtora Floresta Ltda | Atividade salva com sucesso! |
+| Proposta                                                | MensagemDeSucesso                            |
+| 15685 - 1 , "jurema construcoes" / "jurema construcoes" | Atividade teste aqs teste salva com sucesso! |
 
 
 
@@ -231,7 +222,6 @@ Exemplos:
 @AtividadeProposta
 Esquema do Cenario: Cadastrar uma atividade do tipo "Oportunidade" sem preencher campo obrigatório
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Proposta"
@@ -250,7 +240,6 @@ Exemplos:
 @AtividadeProposta
 Esquema do Cenario: Cancelar o cadastro de uma atividade do tipo "Proposta"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Proposta"
@@ -262,8 +251,8 @@ E clicar em "Cancelar"
 Entao não grava os dados
 
 Exemplos:
-| Proposta                                                       |
-| 14 - 1 , Construtora Floresta Ltda / Construtora Floresta Ltda |
+| Proposta                                                |
+| 15685 - 1 , "jurema construcoes" / "jurema construcoes" |
 
 
 
@@ -272,7 +261,6 @@ Exemplos:
 @EditarAtividade
 Esquema do Cenario: Editar uma atividade de acordo com o "Tipo"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
@@ -280,14 +268,12 @@ E clicar em <Atividade>
 E clicar em "Editar"
 E preencher os campos disponíveis
 E clicar em "Salvar"
-Entao não grava os dados
+Entao grava os dados
+E apresenta a <MensagemDeRetorno>
 
 Exemplos:
-| Pesquisa                                                       | Atividade       |
-| Alessandra Kruse                                               | Skype           |
-| BHJA TRANSPORTES MUDANCAS E SERVICOS LTDA - ME                 | Agendar Visita  |
-| Loccel Ltda /  Loccel Ltda                                     | Enviar Proposta |
-| 14 - 1 , Construtora Floresta Ltda / Construtora Floresta Ltda | Enviar E-mail   |
+| Pesquisa | Atividade | MensagemDeRetorno                            |
+| aqs      | aqs teste | Atividade teste aqs teste salva com sucesso! |
 
 
 
@@ -296,7 +282,6 @@ Exemplos:
 @CancelarAtividade
 Esquema do Cenario: Cancelar uma atividade de acordo com o "Tipo"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
@@ -306,11 +291,8 @@ E clicar em "Sim"
 Entao cancela os dados
 
 Exemplos:
-| Pesquisa                                                       | Atividade       |
-| Alessandra Kruse                                               | Skype           |
-| BHJA TRANSPORTES MUDANCAS E SERVICOS LTDA - ME                 | Agendar Visita  |
-| Loccel Ltda /  Loccel Ltda                                     | Enviar Proposta |
-| 14 - 1 , Construtora Floresta Ltda / Construtora Floresta Ltda | Enviar E-mail   |
+| Pesquisa | Atividade | 
+| aqs      | aqs teste | 
 
 
 
@@ -319,23 +301,19 @@ Exemplos:
 @EstornarCancelamentoAtividade
 Esquema do Cenario: Estornar o cancelamento de uma atividade 
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "Filtro"
 E inserir <Status>
-E inserir <Atividades>
+E inserir <Atividade>
 E clicar em "Filtrar"
-E clicar em <Atividade>
+E clicar em <Atividade2>
 E clicar em "Estornar"
 E clicar em "Sim"
 Entao estorna o cancelamento dos dados
 
 Exemplos:
-| Pesquisa                                                       | Atividades      | Atividade       |
-| Alessandra Kruse                                               | Skype           | Skype           |
-| BHJA TRANSPORTES MUDANCAS E SERVICOS LTDA - ME                 | Agendar Visita  | Agendar Visita  |
-| Loccel Ltda /  Loccel Ltda                                     | Enviar Proposta | Enviar Proposta |
-| 14 - 1 , Construtora Floresta Ltda / Construtora Floresta Ltda | Enviar E-mail   | Enviar E-mail   |
+| Status    | Atividade | Atividade2 |
+| Cancelado | aqs teste | aqs teste  |
 
 
 
@@ -344,7 +322,6 @@ Exemplos:
 @ExcluirAtividade
 Esquema do Cenario: Excluir uma atividade de acordo com o "Tipo"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
@@ -355,11 +332,8 @@ Entao exclui os dados
 E apresenta a <MensagemDeRetorno>
 
 Exemplos:
-| Pesquisa                  | Atividade       | MensagemDeRetorno               |
-| Alessandra Kruse          | Skype           | Atividade excluída com sucesso! |
-| BHJA TRANSPORTES          | Agendar Visita  | Atividade excluída com sucesso! |
-| Loccel Ltda               | Enviar Proposta | Atividade excluída com sucesso! |
-| Construtora Floresta Ltda | Enviar E-mail   | Atividade excluída com sucesso! |
+| Pesquisa | Atividade | MensagemDeRetorno               |
+| aqs      | aqs teste | Atividade excluída com sucesso! |
 
 
 
@@ -368,7 +342,6 @@ Exemplos:
 @ConcluirAtividade
 Esquema do Cenario: Concluir uma atividade de acordo com o "Tipo"
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
@@ -380,11 +353,8 @@ Entao grava os dados
 E apresenta a <MensagemDeRetorno>
 
 Exemplos:
-| Pesquisa         | Atividade        | Observacao                   | MensagemDeRetorno                |
-| Visita Comercial | Visita Comercial | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Agendar Visita   | Agendar Visita   | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Enviar Proposta  | Enviar Proposta  | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Enviar E-mail    | Enviar E-mail    | Atividade concluida pela AQS | Atividade concluída com sucesso! |
+| Pesquisa | Atividade | Observacao | MensagemDeRetorno                |
+| aqs      | aqs teste | teste      | Atividade concluída com sucesso! |
 
 
 
@@ -393,7 +363,6 @@ Exemplos:
 @ConcluirECadastrarAtividade
 Esquema do Cenario: Concluir a atividade e cadastrar uma nova atividade 
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando inserir <Pesquisa>
 E clicar em "Lupa"
@@ -405,11 +374,8 @@ Entao grava os dados
 E apresenta a "+Atividade"
 
 Exemplos:
-| Pesquisa         | Atividade        | Observacao                   | MensagemDeRetorno                |
-| Visita Comercial | Visita Comercial | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Agendar Visita   | Agendar Visita   | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Enviar Proposta  | Enviar Proposta  | Atividade concluida pela AQS | Atividade concluída com sucesso! |
-| Enviar E-mail    | Enviar E-mail    | Atividade concluida pela AQS | Atividade concluída com sucesso! |
+| Pesquisa | Atividade | Observacao | MensagemDeRetorno                |
+| aqs      | aqs teste | teste      | Atividade concluída com sucesso! |
 
 
 
@@ -429,11 +395,8 @@ E clicar em "Sim"
 Entao estorna a conclusão dos dados
 
 Exemplos:
-| Status    | Atividade        |
-| Concluído | Visita Comercial |
-| Concluído | Agendar Visita   |
-| Concluído | Enviar Proposta  |
-| Concluído | Enviar E-mail    |
+| Status    | Atividade |
+| Concluído | aqs teste |
 
 
 
@@ -442,7 +405,6 @@ Exemplos:
 @PesquisarAtividade
 Cenario: Pesquisar uma atividade criada
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "Pesquisar"
 Entao apresenta todas as atividades criadas
@@ -454,7 +416,6 @@ Entao apresenta todas as atividades criadas
 @LimparPesquisaAtividade
 Cenario: Limpar os resultados de uma pesquisa da atividade
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "Limpar os resultados"
 Entao limpa os resultados do filtro da pesquisa 
@@ -466,7 +427,6 @@ Entao limpa os resultados do filtro da pesquisa
 @FiltrarAtividade
 Cenario: Filtrar atividade criada
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "Filtro"
 E inserir dados do filtro
@@ -480,7 +440,6 @@ Entao apresenta a atividade do filtro pesquisado
 @ExportarDadosDeAtividades
 Esquema do Cenario: Exportar para excel as atividades filtradas
 E que esteja logado com usuário funcionário
-E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "Filtro"
 E inserir <Status>
@@ -488,7 +447,6 @@ E clicar em "Filtrar"
 E clicar em "Arquivo Excel"
 E clicar em "Exportar Arquivos"
 Entao exporta para excel as atividades filtradas
-
 
 Exemplos:
 | Status                                       |
