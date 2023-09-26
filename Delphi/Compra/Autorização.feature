@@ -39,13 +39,19 @@ Esquema do Cenario: Autorizar pedido de compra sem parcelas cadastradas e com us
 E selecionar "Autorização"
 E selecionar "Parcelas não cadastradas. Marque para poder continuar"
 E selecionar "Ok"
-Então grava dados
-E selecionar <SolicitarAutorizacao>
-E Confirma solicitação de autorização <Sim>
-E selecionar <Autorizar>
-E Confirma autorização? <Sim>
-E grava a <Autorizacao>
-Então fica pedendete de autorização
+E grava dados
+E selecionar "SolicitarAutorizacao"
+E Confirma "Sim"
+Quando selecionar "Autorizar"
+E Confirma "Sim"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status         |
+| Não Autorizado |
+
+
 
 @Cenario3
 @Automatizar
@@ -53,9 +59,71 @@ Então fica pedendete de autorização
 Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
-Então grava dados
-E selecionar <SolicitarAutorizacao>
-E Confirma solicitação de autorização <Sim>
-E selecionar <Autorizar>
-E Confirma autorização? <Sim>
-Então grava a <Autorizacao>
+E grava dados
+E selecionar "SolicitarAutorizacao"
+E Confirma "Sim"
+Quando selecionar "Autorizar"
+E Confirma "Sim"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status     |
+| Autorizado |
+
+
+
+@Cenario4
+@Automatizar
+@Autorização
+Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário sem valor para autorização
+E selecionar "Autorização"
+E selecionar "Ok"
+E grava dados
+E selecionar "SolicitarAutorizacao"
+E Confirma "Sim"
+Quando selecionar "Autorizar"
+E Confirma "Sim"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status         |
+| Não Autorizado |
+
+
+
+@Cenario5
+@Automatizar
+@Autorização
+Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+E selecionar "Autorização"
+E selecionar "Cancelar"
+Então não grava os dados
+
+
+
+@Cenario6
+@Automatizar
+@Autorização
+Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+E selecionar "Autorização"
+E selecionar "Ok"
+E grava dados
+E selecionar "SolicitarAutorizacao"
+E Confirma "Não"
+Então não grava os dados
+
+
+@Cenario7
+@Automatizar
+@Autorização
+Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+E selecionar "Autorização"
+E selecionar "Ok"
+E grava dados
+E selecionar "SolicitarAutorizacao"
+E Confirma "Sim"
+Quando selecionar "Autorizar"
+E Confirma "Não"
+Então não grava os dados
