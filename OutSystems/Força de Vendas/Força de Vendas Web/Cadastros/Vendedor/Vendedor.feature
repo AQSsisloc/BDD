@@ -179,6 +179,7 @@ E clicar em "Lupa"
 E selecionar <Vendedor>
 E clicar em "Editar"
 E clicar em "Remover Imagem" na aba Assinatura da Proposta
+E clicar em "Sim"
 Entao remove os dados da imagem
 
 Exemplos:
@@ -221,6 +222,7 @@ E clicar em "Lupa"
 E selecionar <Vendedor>
 E clicar em "Editar"
 E clicar em "Remover Imagem" na aba Assinatura da Proposta
+E clicar em "Sim"
 Entao remove os dados da imagem
 
 Exemplos:
