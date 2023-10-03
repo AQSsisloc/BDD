@@ -188,3 +188,150 @@ Entao grava nova rota
 Exemplos:
 | Atividade          |
 | Manutenção - 18063 |
+
+
+
+@Cenario13
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Alterar endereços inválidos 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E clicar "Total atividades sem localização"
+E clicar "Editar"
+Quando alterar os dados 
+E clicar "Salvar"
+Entao grava os dados 
+E apresenta <MensagemEndereco> 
+
+Exemplos:
+| MensagemEndereco           |
+| Endereço salvo com sucesso |
+
+
+
+@Cenario14
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Centralizar empresa  
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Centralizar Empresa"
+Entao cetraliza <Empresa> no mapa
+
+Exemplos:
+| Empresa |
+| Matriz  |
+
+
+
+@Cenario15
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Alterar endereços inválidos 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E clicar "Total atividades sem localização"
+E clicar "Editar"
+Quando alterar os dados 
+E clicar "Salvar"
+Entao grava os dados 
+E apresenta <MensagemEndereco> 
+
+Exemplos:
+| MensagemEndereco           |
+| Endereço salvo com sucesso |
+
+
+
+@Cenario16
+@Automatizar
+@GerenciarRotas
+Cenario: Filtrar Rotas 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Filtro"
+E inserir dados do filtro 
+E clicar  "Filtrar"
+Entao apresenta a rota do filtro pesquisado  
+
+
+
+@Cenario17
+@Automatizar
+@GerenciarRotas
+Cenario: Pesquisar endereço 
+E selecionar "Rotas"
+Quando clicar "Buscar Endereço"
+E inserir <Endereco>
+E clicar  "Ok"
+Entao apresenta localização 
+
+Exemplos:
+| Endereco                                                      |
+| Praça da Liberdade 600 - Savassi, Belo Horizonte/MG, 30140010 |
+
+
+
+@Cenario18
+@Automatizar
+@GerenciarRotas 
+Cenario: Atualizar rotas 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Atualizar"
+Entao atualiza as rotas 
+ 
+
+
+@Cenario19
+@Automatizar
+@GerenciarRotas 
+Cenario: Adicionar nova rota 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Nova Rota"
+Entao cria nova Rota  
+
+
+
+@Cenario20
+@Automatizar
+@GerenciarRotas 
+Cenario: Gerar rotas automaticamente 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Gerar rotas automaticamente"
+E confirmar "Ok"
+Entao cria rota para atividades abertas
+
+
+
+@Cenario21
+@Automatizar
+@GerenciarRotas 
+Cenario: Adicionar atividade
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Adicionar Atividades"
+E inserir os dados 
+Entao cria ponto de atividade
+
+
+
+@Cenario22
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Alterar  endereços sem localização 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E clicar "Endereços sem localização"
+E clicar "Editar"
+Quando alterar os dados 
+E clicar "Salvar"
+Entao grava os dados 
+E apresenta <MensagemEndereco> 
+
+Exemplos:
+| MensagemEndereco           |
+| Endereço salvo com sucesso |
