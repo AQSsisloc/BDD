@@ -32,6 +32,7 @@ Exemplos:
 | Autorizado |
 
 
+
 @Cenario2
 @Automatizar
 @Autorização
@@ -209,7 +210,6 @@ E selecionar "Autorização"
 E selecionar "EstornarSolicitação"
 E Confirma "Sim"
 Então grava os dados
-
 
 
 
