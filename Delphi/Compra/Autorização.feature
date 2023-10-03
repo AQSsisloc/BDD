@@ -164,7 +164,7 @@ E Confirma "Sim"
 Quando selecionar "Não Autorizar"
 E Confirma "Motivo"
 E selecionar "Cancelar"
-Então grava os dados
+Então cancela os dados
 
 
 
@@ -182,3 +182,71 @@ E grava <Status>
 Exemplos:
 | Status            |
 | Minhas Pendências |
+
+
+
+@Cenario11
+@Automatizar
+@Autorização
+Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
+E selecionar "Autorização"
+E selecionar "EstornarAutorização"
+E Confirma "Não"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status     |
+| Autorizado |
+
+
+
+@Cenario12
+@Automatizar
+@Autorização
+Esquema do Cenario: Estornar soslicitação pedido de compra por dentro da "Autorização"
+E selecionar "Autorização"
+E selecionar "EstornarSolicitação"
+E Confirma "Sim"
+Então grava os dados
+
+
+
+
+@Cenario13
+@Automatizar
+@Autorização
+Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
+E selecionar "EstornarAutorização"
+E Confirma "Sim"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status            |
+| Minhas Pendências |
+
+
+
+@Cenario14
+@Automatizar
+@Autorização
+Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
+E selecionar "EstornarAutorização"
+E Confirma "Não"
+Então grava os dados 
+E grava <Status>
+
+Exemplos:
+| Status     |
+| Autorizado |
+
+
+
+@Cenario15
+@Automatizar
+@Autorização
+Esquema do Cenario: Estornar soslicitação pedido de compra por dentro da "Autorização"
+E selecionar "EstornarSolicitação"
+E Confirma "Sim"
+Então grava os dados
