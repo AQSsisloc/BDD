@@ -2,7 +2,8 @@
 #Importação NF Entrada
 #Delphi
 
-//Cenário para certificado digital não informado
+
+//Importação de NF de Entrada não está completa com todos os cenários. Há cenário que necessita de Certificado digital.
 
 
 Funcionalidade: importar NF de entrada de compra no pedido de compra através do XML
