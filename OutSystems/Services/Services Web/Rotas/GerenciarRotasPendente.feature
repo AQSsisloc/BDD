@@ -335,3 +335,71 @@ E apresenta <MensagemEndereco>
 Exemplos:
 | MensagemEndereco           |
 | Endereço salvo com sucesso |
+
+
+
+@Cenario23
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Excluir rota 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E haver <Rota> aberta 
+Quando clicar "Excluir"
+E confirmar "Excluir"
+Entao exclui rota
+
+Exemplos:
+| Rota   |
+| Rota 1 |
+
+
+
+@Cenario24
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Editar dados rota 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E haver <Rota> aberta 
+Quando clicar "Editar Dados"
+E clicar "Salvar"
+Entao grava os dados 
+
+Exemplos:
+| Rota   |
+| Rota 1 |
+
+
+
+@Cenario25
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Salvar rota 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E haver <Rota> preenchida
+Quando clicar "Salvar Rota"
+Entao grava os dados 
+
+Exemplos:
+| Rota   |
+| Rota 1 |
+
+
+
+@Cenario26
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Ordenar atividade
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+E haver <Atividades> na <Rota>
+Quando clicar "Ordenar e adiciionar atividade na Rota"
+E ordenar atividades 
+E clicar "Salvar"
+Entao grava os dados 
+
+Exemplos:
+| Rota   | Atividades                             |
+| Rota 1 | Devolução 100332-01, Remessa 100332-01 |
