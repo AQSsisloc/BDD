@@ -69,22 +69,6 @@ Exemplos:
 @Cenario5
 @Automatizar
 @GerenciarRotas 
-Esquema do Cenario: Editar pelo mapa 
-E selecionar "Rotas"
-E clicar "Gerenciar Rotas"
-E clicar "Previstas"
-Quando clicar editar <Rota>
-Entao abre rota para alteração 
-
-Exemplos:
-| Rota              |
-| Rota correção AQS |
-
-
-
-@Cenario6
-@Automatizar
-@GerenciarRotas 
 Esquema do Cenario: Ocultar uma rota 
 E selecionar "Rotas"
 E clicar "Gerenciar Rotas"
@@ -94,37 +78,22 @@ Entao  oculta a rota
 
 
 
+@Cenario6
+@Automatizar
+@GerenciarRotas 
+Esquema do Cenario: Novas Rotas 
+E selecionar "Rotas"
+E clicar "Gerenciar Rotas"
+Quando clicar "Adicionar" em <Atividade>
+Entao cria nova rota 
+
+Exemplos:
+| Atividade          |
+| Manutenção - 18063 |
+
+
+
 @Cenario7
-@Automatizar
-@GerenciarRotas 
-Esquema do Cenario: Novas Rotas 
-E selecionar "Rotas"
-E clicar "Gerenciar Rotas"
-Quando clicar "Adicionar" em <Atividade>
-Entao cria nova rota 
-
-Exemplos:
-| Atividade          |
-| Manutenção - 18063 |
-
-
-
-@Cenario8
-@Automatizar
-@GerenciarRotas 
-Esquema do Cenario: Novas Rotas 
-E selecionar "Rotas"
-E clicar "Gerenciar Rotas"
-Quando clicar "Adicionar" em <Atividade>
-Entao cria nova rota 
-
-Exemplos:
-| Atividade          |
-| Manutenção - 18063 |
-
-
-
-@Cenario9
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Editar data prevista atividade 
@@ -141,24 +110,7 @@ Exemplos:
 
 
 
-@Cenario10
-@Automatizar
-@GerenciarRotas 
-Esquema do Cenario: Editar data prevista atividade 
-E selecionar "Rotas"
-E clicar "Gerenciar Rotas"
-E clicar "Editar data prevista" em <Atividade>
-Quando alterar os dados 
-E clicar "Salvar"
-Entao grava os dados 
-
-Exemplos:
-| Atividade               |
-| Manutenção - 18063 |
-
-
-
-@Cenario11
+@Cenario8
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Alterar endereço da atividade 
@@ -176,7 +128,7 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario9
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Juntar atividades a uma rota existente 
@@ -191,7 +143,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario10
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Alterar endereços inválidos 
@@ -210,7 +162,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario11
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Centralizar empresa  
@@ -225,26 +177,7 @@ Exemplos:
 
 
 
-@Cenario15
-@Automatizar
-@GerenciarRotas 
-Esquema do Cenario: Alterar endereços inválidos 
-E selecionar "Rotas"
-E clicar "Gerenciar Rotas"
-E clicar "Total atividades sem localização"
-E clicar "Editar"
-Quando alterar os dados 
-E clicar "Salvar"
-Entao grava os dados 
-E apresenta <MensagemEndereco> 
-
-Exemplos:
-| MensagemEndereco           |
-| Endereço salvo com sucesso |
-
-
-
-@Cenario16
+@Cenario12
 @Automatizar
 @GerenciarRotas
 Cenario: Filtrar Rotas 
@@ -257,7 +190,7 @@ Entao apresenta a rota do filtro pesquisado
 
 
 
-@Cenario17
+@Cenario13
 @Automatizar
 @GerenciarRotas
 Cenario: Pesquisar endereço 
@@ -273,7 +206,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario14
 @Automatizar
 @GerenciarRotas 
 Cenario: Atualizar rotas 
@@ -284,7 +217,7 @@ Entao atualiza as rotas
  
 
 
-@Cenario19
+@Cenario15
 @Automatizar
 @GerenciarRotas 
 Cenario: Adicionar nova rota 
@@ -295,7 +228,7 @@ Entao cria nova Rota
 
 
 
-@Cenario20
+@Cenario16
 @Automatizar
 @GerenciarRotas 
 Cenario: Gerar rotas automaticamente 
@@ -307,7 +240,7 @@ Entao cria rota para atividades abertas
 
 
 
-@Cenario21
+@Cenario17
 @Automatizar
 @GerenciarRotas 
 Cenario: Adicionar atividade
@@ -319,7 +252,7 @@ Entao cria ponto de atividade
 
 
 
-@Cenario22
+@Cenario18
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Alterar  endereços sem localização 
@@ -338,7 +271,7 @@ Exemplos:
 
 
 
-@Cenario23
+@Cenario19
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Excluir rota 
@@ -355,7 +288,7 @@ Exemplos:
 
 
 
-@Cenario24
+@Cenario20
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Editar dados rota 
@@ -372,7 +305,7 @@ Exemplos:
 
 
 
-@Cenario25
+@Cenario21
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Salvar rota 
@@ -388,14 +321,14 @@ Exemplos:
 
 
 
-@Cenario26
+@Cenario22
 @Automatizar
 @GerenciarRotas 
 Esquema do Cenario: Ordenar atividade
 E selecionar "Rotas"
 E clicar "Gerenciar Rotas"
 E haver <Atividades> na <Rota>
-Quando clicar "Ordenar e adiciionar atividade na Rota"
+Quando clicar "Ordenar e adicionar atividade na Rota"
 E ordenar atividades 
 E clicar "Salvar"
 Entao grava os dados 
