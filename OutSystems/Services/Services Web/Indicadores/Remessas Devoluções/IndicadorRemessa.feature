@@ -1,12 +1,12 @@
 #language: pt
-#IndicadorDevolucao 
+#IndicadorRemessa 
 #ServicesWeb
 
 
-Funcionalidade: Visualizar devoluções realizadas pelo Services 
+Funcionalidade: Visualizar remessas realizadas pelo Services 
   Como um usuário do Services Web
-  Eu quero visuaslizar indicadores referente as devoluções
-  Para analisar informações do processo de devolução
+  Eu quero visuaslizar indicadores referente as remessas 
+  Para analisar informações do processo de remessa
 
 
 Dado Esteja logado no Services Web 
@@ -14,8 +14,8 @@ Dado Esteja logado no Services Web
 
 @Cenario1
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devolução aba hoje 
+@IndicadorRemessa 
+Esquema do Cenario: Visualizar indicador Remessa aba hoje 
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -30,8 +30,8 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devolução aba Semana Atual 
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Semana Atual 
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -46,8 +46,8 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Semana Anterior
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Semana Anterior
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -62,8 +62,8 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Mês Atual
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Mês Atual
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -78,8 +78,8 @@ Exemplos:
 
 @Cenario5
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Mês Anterior
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Mês Anterior
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -94,8 +94,8 @@ Exemplos:
 
 @Cenario6
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Ano Atual
+@IndicadorRemessa 
+Esquema do Cenario: Visualizar indicador Remessa aba Ano Atual
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -110,8 +110,8 @@ Exemplos:
 
 @Cenario7
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Ano Anterior
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Ano Anterior
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -126,8 +126,8 @@ Exemplos:
 
 @Cenario8
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar indicador Devoluções aba Período
+@IndicadorRemessa
+Esquema do Cenario: Visualizar indicador Remessa aba Período
 E selecionar <Empresa>
 E clicar em "Services"  
 E clicar em "Remessas e Devoluções"
@@ -143,8 +143,8 @@ Exemplos:
 
 @Cenario9
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Filtrar indicadores Devolução
+@IndicadorRemessa
+Esquema do Cenario: Filtrar indicadores Remessa
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -161,13 +161,13 @@ Exemplos:
 
 @Cenario10
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Detalhes indicadores Devoluções
+@IndicadorRemessa
+Esquema do Cenario: Detalhes indicadores Remessa
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
 Quando clicar "Detalhes"
-Entao apresenta detalhes das devoluções 
+Entao apresenta detalhes das remessas 
 
 Exemplos:
 | Empresa |  
@@ -177,8 +177,8 @@ Exemplos:
 
 @Cenario11
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Exportar indicadores Devoluções para excel 
+@IndicadorRemessa
+Esquema do Cenario: Exportar indicadores Remessa para excel 
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -195,8 +195,8 @@ Exemplos:
 
 @Cenario12
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Visualizar produto Devolução
+@IndicadorRemessa
+Esquema do Cenario: Visualizar produto remessa
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -212,12 +212,12 @@ Exemplos:
 
 @Cenario13
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Devoluções concluídas com ocorrências 
+@IndicadorRemessa
+Esquema do Cenario: Remessas concluídas com ocorrências 
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
-Quando clicar em "Devolução(s) Com Ocorrência"
+Quando clicar em "Remessa(s) Com Ocorrência"
 Entao destaca dados de ocorrência 
 
 Exemplos:
@@ -228,12 +228,12 @@ Exemplos:
 
 @Cenario14
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Devoluções concluídas sem ocorrências
+@IndicadorRemessa
+Esquema do Cenario: Remessas concluídas sem ocorrências
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
-Quando clicar em "Devolução(s) Sem Ocorrência"
+Quando clicar em "Remessa(s) Sem Ocorrência"
 Entao destaca dados de ocorrência 
 
 Exemplos:
@@ -244,8 +244,8 @@ Exemplos:
 
 @Cenario15
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Devoluções concluídas expandir grafico 
+@IndicadorRemessa
+Esquema do Cenario: Remessas concluídas expandir grafico 
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
@@ -260,12 +260,12 @@ Exemplos:
 
 @Cenario16
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Motivo de Ocorrência de Devoluções Concluídas
+@IndicadorRemessa
+Esquema do Cenario: Motivo de Ocorrência de Remessas Concluídas
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
-Quando clicar <Motivo> em "Devolucao Concluídas" 
+Quando clicar <Motivo> em "Remessas Concluídas" 
 Entao destaca motivo no gráfico
 
 Exemplos:
@@ -276,12 +276,12 @@ Exemplos:
 
 @Cenario17
 @Automatizar
-@IndicadorDevolucao
-Esquema do Cenario: Expandir Motivo de Ocorrência de Devoluções Concluídas
+@IndicadorRemessa
+Esquema do Cenario: Expandir Motivo de Ocorrência de Remessas Concluídas
 E selecionar <Empresa>
 E clicar em "Indicadores"
 E clicar em "Remessas e Devoluções"
-Quando clicar "Expandir" em "Motivo de Ocorrências de Devoluções Concluídas" 
+Quando clicar "Expandir" em "Motivo de Ocorrência de Remessas Concluídas" 
 Entao Expande gráfico
 
 Exemplos:
