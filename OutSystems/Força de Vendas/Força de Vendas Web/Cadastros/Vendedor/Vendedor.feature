@@ -350,7 +350,7 @@ E selecionar "Vendedor"
 Quando clicar em "Filtro"
 E inserir dados do filtro
 E clicar em "Filtrar"
-Entao apresenta a atividade do filtro pesquisado
+Entao apresenta o vendedor do filtro pesquisado
 
 
 
