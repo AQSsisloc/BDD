@@ -34,7 +34,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @ServiceFuncionario
 Cenario: Vincular pessoa como funcionário 
 E clicar em "Cadastros"
@@ -56,9 +56,9 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @ServiceFuncionario
-Cenario: Não informar nome na ciração 
+Cenario: Não informar nome na criação 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
 E clicar "+ Funcionário" 
@@ -68,7 +68,7 @@ Entao sinaliza obrigatoriedade do nome
 
 
 @Cenario4
-@Automatizar
+@Manual
 @ServiceFuncionario
 Cenario: Pesquisar funcionario 
 E clicar em "Cadastros"
@@ -82,7 +82,7 @@ Entao exibe dados
 
 
 @Cenario5
-@Automatizar
+@Manual
 @ServiceFuncionario
 Cenario: Atualizar listagem 
 E clicar em "Cadastros"
@@ -94,7 +94,7 @@ Entao atualiza listagem
 
 
 @Cenario6
-@Automatizar
+@Manual
 @ServiceFuncionario
 Cenario: Filtros  
 E clicar em "Cadastros"
@@ -108,7 +108,7 @@ Entao exibe dados do filtros
 
 
 @Cenario7
-@Automatizar
+@Manual
 @ServiceFuncionario
 Esquema do Cenario: Editar funcionário 
 E clicar em "Cadastros"
@@ -145,7 +145,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar
+@Manual
 @ServiceFuncionario
 Esquema do Cenario: Auditoria funcionário 
 E clicar em "Cadastros"
@@ -161,9 +161,8 @@ Exemplos:
 
 
 
-
 @Cenario10
-@Automatizar
+@Manual
 @ServiceFuncionario
 Esquema do Cenario: Sincronizar com Sisloc 
 E clicar em "Cadastros"
@@ -181,10 +180,112 @@ Exemplos:
 
 
 
+@Cenario11
+@Manual
+@ServiceFuncionario
+Esquema do Cenario: Inserir endereço  
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+Quando clicar "Endereço"
+E  clicar "+ Endereço"
+E preencher os dados 
+E clicar "Salvar"
+Entao grava os dados 
+E retorna <MensagemEndereco>
+
+Exemplos:
+| MensagemEndereco             |
+| Endereço criado com sucesso! |
 
 
 
+@Cenario12
+@Manual
+@ServiceFuncionario
+Cenario: Criar contato na inserção do endereço  
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+E clicar "Endereço"
+E clicar "+ Endereço"
+E clicar "Contato"  
+Quando clicar "+ Novo Contato"
+E preencher os dados 
+E clicar "Salvar"
+Entao grava os dados 
 
 
 
+@Cenario13
+@Manual
+@ServiceFuncionario
+Esquema do Cenario: Visualizar endereço no mapa   
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+E clicar "Endereço" 
+Quando clicar "Mapa"
+Entao abre mapa com localização <Endereco>
 
+Exemplos:
+| Endereco                                                      |
+| Belo Horizonte - MG Praça da Liberdade, 800 - Praça - Savassi |
+
+
+
+@Cenario14
+@Manual
+@ServiceFuncionario
+Cenario: Excluir endereço    
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+E clicar "Endereço" 
+Quando clicar "Excluir"
+E confirmar "Sim"
+Entao exclui endereço
+
+
+
+@Cenario15
+@Manual
+@ServiceFuncionario
+Cenario: Inserir imagem   
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+E clicar "Assinatura Email" 
+Quando clicar "Carregar imagem"
+E selecionar imagem 
+Entao inclui imagem 
+
+
+
+@Cenario16
+@Manual
+@ServiceFuncionario
+Cenario: Excluir imagem   
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "Alterar" 
+E clicar "Assinatura Email" 
+Quando clicar "Remover imagem"
+E confirmar "Sim"
+Entao exclui imagem
+
+
+
+@Cenario17
+@Manual
+@ServiceFuncionario
+Cenario: Carregar cadastro duplicado  
+E clicar em "Cadastros"
+E clicar em "Funcionarios"
+E clicar "+ Funcionário" 
+E preenhcer "Nome"
+E clicar "Criar" 
+E preenhcer os dados 
+Quando clicar "Salvar"
+E selecionar cadastro existente 
+Entao carrega cadastro
