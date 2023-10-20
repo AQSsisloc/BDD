@@ -66,7 +66,7 @@ Entao exibe dados do filtros
 @Cenario4
 @Automatizar
 @ServicesTipoDeAtividade
-Esquema do Cenario: Excluir funcionário 
+Esquema do Cenario: Excluir tipo de atividade
 E clicar em "Cadastros"
 E clicar em "Tipo de Atividade"
 Quando clicar "Excluir"
@@ -83,7 +83,7 @@ Exemplos:
 @Cenario5
 @Manual
 @ServicesTipoDeAtividade
-Esquema do Cenario: Auditoria funcionário 
+Esquema do Cenario: Auditoria atividade 
 E clicar em "Cadastros"
 E clicar em "Tipo de Atividade"
 Quando clicar "Auditoria"
@@ -99,7 +99,7 @@ Exemplos:
 @Cenario6
 @Manual
 @ServicesTipoDeAtividade
-Esquema do Cenario: Editar ocorrência 
+Esquema do Cenario: Editar tipo de atividade
 E clicar em "Cadastros"
 E clicar em "Tipo de Atividade"
 Quando clicar "Ação"
