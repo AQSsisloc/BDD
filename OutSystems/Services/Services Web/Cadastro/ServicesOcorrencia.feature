@@ -31,7 +31,7 @@ Exemplos:
 
 
 @Cenario2
-@Manual
+@Automatizar
 @ServiceOcorrencia
 Cenario: Atualizar listagem 
 E clicar em "Cadastros"
@@ -88,7 +88,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar
+@Manual
 @ServiceFuncionario
 Esquema do Cenario: Editar ocorrência 
 E clicar em "Cadastros"
