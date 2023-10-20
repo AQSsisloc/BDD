@@ -73,7 +73,6 @@ Entao sinaliza obrigatoriedade do nome
 Cenario: Pesquisar funcionario 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Pesquisar"
 E preenhcer os dados 
 E clicar "Lupa - Pesquisar"
@@ -87,7 +86,6 @@ Entao exibe dados
 Cenario: Atualizar listagem 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Atualizar"
 Entao atualiza listagem 
 
@@ -98,8 +96,7 @@ Entao atualiza listagem
 @ServiceFuncionario
 Cenario: Filtros  
 E clicar em "Cadastros"
-E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
+E clicar em "Funcionarios" 
 Quando filtros 
 E preenhcer os dados 
 E clicar "Filtrar"
@@ -113,7 +110,6 @@ Entao exibe dados do filtros
 Esquema do Cenario: Editar funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Alterar"
 E preenhcer os dados 
 E clicar "Salvar"
@@ -132,7 +128,6 @@ Exemplos:
 Esquema do Cenario: Excluir funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Excluir"
 E confirmar "Sim"
 Entao exclui o dado   
@@ -150,7 +145,6 @@ Exemplos:
 Esquema do Cenario: Auditoria funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Auditoria"
 E clicar "Ação"
 Entao exibe <Alerta> 
@@ -167,7 +161,6 @@ Exemplos:
 Esquema do Cenario: Sincronizar com Sisloc 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
-E clicar "+ Funcionário" 
 Quando clicar "Atualizar/Sincronizar com Sisloc"
 E preencher "ID"
 E confirmar "OK"

@@ -163,7 +163,7 @@ Exemplos:
 
 
 
-@Cenario10
+@Cenario11
 @Automatizar
 @ServicePatrimonio
 Cenario: Impirmir Códigos de Barras  
@@ -176,7 +176,7 @@ Entao gera código de barras
 
 
 
-@Cenario11
+@Cenario12
 @Automatizar
 @ServicePatrimonio
 Cenario: Impirmir QR Code  
