@@ -14,7 +14,7 @@ Dado Esteja logado no Services Web
 
 @Cenario1
 @Manual
-@ServicePatrimonio
+@ServicesPatrimonio
 Esquema do Cenario: Pesquisar um patrimonio 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -30,7 +30,7 @@ Exemplos:
 
 @Cenario2
 @Manual
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Atualizar listagem  
 E clicar em "Cadastros"
 E clicar em "Patrimônio" 
@@ -41,7 +41,7 @@ Entao atualiza listagem
 
 @Cenario3
 @Manual
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Filtros 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -54,7 +54,7 @@ Entao exibe os dados filtrados
 
 @Cenario4
 @Manual
-@ServicePatrimonio
+@ServicesPatrimonio
 Esquema do Cenario: Sincronizar com Sisloc  
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -71,7 +71,7 @@ Exemplos:
 
 @Cenario5
 @Manual
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Visualizar  informações do patrimônio 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -82,7 +82,7 @@ Entao exibe dados do patrimônio
 
 @Cenario6
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Esquema do Cenario: Anexar arquivo ao patrimônio
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -101,7 +101,7 @@ Exemplos:
 
 @Cenario7
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Visualizar Código de barras 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -113,7 +113,7 @@ Entao exibe código de barras
 
 @Cenario8
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Visualizar QR Code 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -125,7 +125,7 @@ Entao exibe QR Code
 
 @Cenario9
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Esquema do Cenario: Excluir anexo 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -144,7 +144,7 @@ Exemplos:
 
 @Cenario10
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Esquema do Cenario: Editar anexo 
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -165,7 +165,7 @@ Exemplos:
 
 @Cenario11
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Impirmir Códigos de Barras  
 E clicar em "Cadastros"
 E clicar em "Patrimônio"
@@ -178,7 +178,7 @@ Entao gera código de barras
 
 @Cenario12
 @Automatizar
-@ServicePatrimonio
+@ServicesPatrimonio
 Cenario: Impirmir QR Code  
 E clicar em "Cadastros"
 E clicar em "Patrimônio"

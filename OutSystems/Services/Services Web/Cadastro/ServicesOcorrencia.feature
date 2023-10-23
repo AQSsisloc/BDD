@@ -14,7 +14,7 @@ Dado Esteja logado no Services Web
 
 @Cenario1
 @Manual
-@ServiceOcorrencia
+@ServicesOcorrencia
 Esquema do Cenario: Cadastrar ocorrência  
 E clicar em "Cadastros"
 E clicar em "Ocorrência"
@@ -32,7 +32,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@ServiceOcorrencia
+@ServicesOcorrencia
 Cenario: Atualizar listagem 
 E clicar em "Cadastros"
 E clicar em "Ocorrência"
@@ -43,7 +43,7 @@ Entao atualiza listagem
 
 @Cenario3
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Filtros  
 E clicar em "Cadastros"
 E clicar em "Ocorrência"
@@ -56,7 +56,7 @@ Entao exibe dados do filtros
 
 @Cenario4
 @Automatizar
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Excluir funcionário 
 E clicar em "Cadastros"
 E clicar em "Ocorrência"
@@ -73,7 +73,7 @@ Exemplos:
 
 @Cenario5
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Auditoria funcionário 
 E clicar em "Cadastros"
 E clicar em "Oocrrência" 
@@ -89,7 +89,7 @@ Exemplos:
 
 @Cenario6
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Editar ocorrência 
 E clicar em "Cadastros"
 E clicar em "Ocorrência"

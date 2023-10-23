@@ -14,7 +14,7 @@ Dado Esteja logado no Services Web
 
 @Cenario1
 @Automatizar
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Cadastrar um novo funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -35,7 +35,7 @@ Exemplos:
 
 @Cenario2
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Vincular pessoa como funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -57,7 +57,7 @@ Exemplos:
 
 @Cenario3
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Não informar nome na criação 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -69,7 +69,7 @@ Entao sinaliza obrigatoriedade do nome
 
 @Cenario4
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Pesquisar funcionario 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -82,7 +82,7 @@ Entao exibe dados
 
 @Cenario5
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Atualizar listagem 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -93,7 +93,7 @@ Entao atualiza listagem
 
 @Cenario6
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Filtros  
 E clicar em "Cadastros"
 E clicar em "Funcionarios" 
@@ -106,7 +106,7 @@ Entao exibe dados do filtros
 
 @Cenario7
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Editar funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -124,7 +124,7 @@ Exemplos:
 
 @Cenario8
 @Automatizar
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Excluir funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -141,7 +141,7 @@ Exemplos:
 
 @Cenario9
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Auditoria funcionário 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -157,7 +157,7 @@ Exemplos:
 
 @Cenario10
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Sincronizar com Sisloc 
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -175,7 +175,7 @@ Exemplos:
 
 @Cenario11
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Inserir endereço  
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -195,7 +195,7 @@ Exemplos:
 
 @Cenario12
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Criar contato na inserção do endereço  
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -212,7 +212,7 @@ Entao grava os dados
 
 @Cenario13
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Esquema do Cenario: Visualizar endereço no mapa   
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -229,7 +229,7 @@ Exemplos:
 
 @Cenario14
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Excluir endereço    
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -243,7 +243,7 @@ Entao exclui endereço
 
 @Cenario15
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Inserir imagem   
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -257,7 +257,7 @@ Entao inclui imagem
 
 @Cenario16
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Excluir imagem   
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
@@ -271,7 +271,7 @@ Entao exclui imagem
 
 @Cenario17
 @Manual
-@ServiceFuncionario
+@ServicesFuncionario
 Cenario: Carregar cadastro duplicado  
 E clicar em "Cadastros"
 E clicar em "Funcionarios"
