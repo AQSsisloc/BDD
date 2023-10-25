@@ -3,7 +3,7 @@
 #ServicesWeb
 
 
-Funcionalidade: permitir o cadastro de reigões apra que as rotas sejam sugeridas automaticamente  
+Funcionalidade: Permitir o cadastro de regiões apra que as rotas sejam sugeridas automaticamente  
   Como um usuário do Services Web
   Eu quero cadastrar regioes de rotas  
   Para facilitar as atividades operacionais
