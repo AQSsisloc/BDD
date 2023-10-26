@@ -229,25 +229,6 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar 
-@Apontamento
-Esquema do Cenario: Excluir Desmobilização
-E esteja logado com usuário funcionário
-E esteja com a empresa <Empresa>
-E clicar em <Equipamento>
-E selecionar mobilização 
-Quando clicar em "Excluir"
-E clicar em "Confirmar" 
-Entao excluí registro  
-E exibe mensagem <MensagemRetornoExclusaoDesMob>
-
-Exemplos:
-| Empresa | Equipamento | Evento            | MensagemRetornoExclusaoDesMob    |
-| Matiz   | Bebedouro   | Teste apontamento | Mobilização deletada com sucesso |
-
-
-
-@Cenario13
 @Manual
 @Apontamento
 Esquema do Cenario: Enviar email pelo apontamento 
@@ -266,7 +247,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario13
 @Manual
 @Apontamento
 Esquema do Cenario: Adicionar assinatura 
@@ -288,7 +269,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario14
 @Manual
 @Apontamento
 Esquema do Cenario: excluir assinatura 
@@ -309,7 +290,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario15
 @Manual
 @Apontamento
 Esquema do Cenario: editar assinatura 

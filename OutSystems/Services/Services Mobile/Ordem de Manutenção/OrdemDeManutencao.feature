@@ -171,7 +171,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Ler QrCode da Ordem de Manutenção pela tela de listagem
 E que esteja logado com usuário funcionário
@@ -189,7 +189,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Ler Código de Barras da Ordem de Manutenção pela tela de listagem
 E que esteja logado com usuário funcionário
@@ -207,7 +207,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Abrir mapa da Ordem de Manutenção pela tela de listagem
 E que esteja logado com usuário funcionário

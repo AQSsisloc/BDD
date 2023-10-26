@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar 
+@Manual
 @InformacaoPatrimonio
 Esquema do Cenario: Visualizar patrimônio código barras/QR 
 E esteja logado com usuário funcionário
@@ -334,7 +334,7 @@ Exemplos:
 
 
 @Cenario15
-@Automatizar 
+@Manual
 @InformacaoPatrimonio
 Esquema do Cenario: Abrir arquivo    
 E esteja logado com usuário funcionário

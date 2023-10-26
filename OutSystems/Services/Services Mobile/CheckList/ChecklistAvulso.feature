@@ -169,7 +169,7 @@ Exemplos:
 
 
 @Cenario8
-@Automatizar
+@Manual
 @ChecklistAvulso
 Esquema do Cenario: Visualizar fila de sicronização de um checklist avulso
 E que esteja logado com usuário funcionário

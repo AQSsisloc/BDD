@@ -54,7 +54,7 @@ Entao exibe quantidade disponíveis no almoxarifado dos equipamentos inativos e 
 
 
 @Cenario4
-@Automatizar 
+@Manual 
 @EstoqueAlmoxarifado
 Esquema do Cenario: Pesquisar equipamentos pelo código
 E esteja logado com usuário funcionário
@@ -73,7 +73,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar 
+@Manual 
 @EstoqueAlmoxarifado
 Esquema do Cenario: Pesquisar equipamentos pela descrição em modo offline
 E esteja em modo offline
@@ -137,7 +137,7 @@ Entao exibe quantidade disponíveis no almoxarifado dos equipamentos inativos e 
 
 
 @Cenario9
-@Automatizar 
+@Manual
 @EstoqueAlmoxarifado
 Esquema do Cenario: Pesquisar equipamentos pelo código em modo offline
 E esteja em modo offline
@@ -157,7 +157,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar 
+@Manual 
 @EstoqueAlmoxarifado
 Esquema do Cenario: Pesquisar equipamentos pela descrição em modo offline 
 E esteja em modo offline

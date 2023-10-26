@@ -210,7 +210,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @ChecklistOM
 Esquema do Cenario: Visualizar fila de sicronização de um checklist de OM
 E que esteja logado com usuário funcionário

@@ -73,7 +73,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @EnviarEmailDevolucao
 Esquema do Cenario: Enviar email pela devolucao 
 E esteja logado com usuário funcionário
@@ -92,7 +92,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @EnviarEmailDevolucaoOffline
 Esquema do Cenario: Enviar email pela devolucao em modo offline 
 E esteja logado com usuário funcionário
@@ -113,7 +113,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar
+@Manual
 @FecharEnvioEmailDevolucao
 Esquema do Cenario: Fechar envio email pela devolucao
 E esteja logado com usuário funcionário

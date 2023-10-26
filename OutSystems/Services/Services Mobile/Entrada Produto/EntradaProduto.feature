@@ -55,7 +55,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar 
+@Manual
 @EntradaProduto
 Esquema do Cenario: Negar quantidade pendente observaçao por voz
 E esteja logado com usuário funcionário

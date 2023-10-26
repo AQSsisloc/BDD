@@ -280,7 +280,7 @@ Exemplos:
 
 
 @Cenario14
-@Automatizar
+@Manual
 @MovimentacaoInterna
 Esquema do Cenario: Ler código de barras
 E esteja logado com usuário funcionário

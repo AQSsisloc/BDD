@@ -210,7 +210,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @ChecklistDevolucao
 Esquema do Cenario: Visualizar fila de sicronização de um checklist de devolução
 E que esteja logado com usuário funcionário

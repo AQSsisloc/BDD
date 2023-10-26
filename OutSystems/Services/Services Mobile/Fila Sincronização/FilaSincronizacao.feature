@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: visualizar processos não sincronizados 
 E esteja logado com usuário funcionário
@@ -29,7 +29,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar 
+@Manual
 @FilaSincronizacao
 Esquema do Cenario: visualizar processos já sincronizados 
 E esteja logado com usuário funcionário
@@ -45,7 +45,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: visualizar problemas sincronia checklist
 E esteja logado com usuário funcionário
@@ -64,7 +64,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: falha ao tentar sincronizar pendência com conflitos
 E esteja logado com usuário funcionário
@@ -87,7 +87,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar 
+@Manual 
 @FilaSincronizacao 
 Esquema do Cenario: ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
@@ -105,7 +105,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: ajustar ordem de manutenção com conflito de sincronia 
 E esteja logado com usuário funcionário
@@ -124,7 +124,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Cenario: exibir processos pendentes offline
 E esteja logado com usuário funcionário
@@ -136,7 +136,7 @@ Entao apresenta processos pendentes
 
 
 @Cenario8
-@Automatizar 
+@Manual
 @FilaSincronizacao
 Esquema do Cenario: transferir processo pendente offline 
 E esteja logado com usuário funcionário
@@ -155,7 +155,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente 
 E esteja logado com usuário funcionário
@@ -173,7 +173,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar 
+@Manual
 @FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente e exibir processo
 E esteja logado com usuário funcionário
@@ -192,7 +192,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar 
+@Manual 
 @FilaSincronizacao 
 Esquema do Cenario: ativar modo online com processo pendente e realizar envio
 E esteja logado com usuário funcionário

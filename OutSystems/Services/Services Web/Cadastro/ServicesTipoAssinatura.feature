@@ -19,11 +19,75 @@ Esquema do Cenario: Cadastrar novo tipo de assinatura
 E clicar em "Cadastros"
 E clicar em "Tipo de assinatura"
 Quando clicar "+ Tipo de Assinatura"
-E preencher os dados 
+E configurar <Ativo>
+E preencher "Nome"
 E clicar "Salvar"
 Entao grava os dados 
 E apresenta <MensagemCriacao>
 
 Exemplos:
-| MensagemCriacao                         |
-| Região Teste bairros salva com sucesso! |
+| Ativo | MensagemCriacao                       |
+| Sim   | Tipo de assinatura salva com sucesso! |
+| Não   | Tipo de assinatura salva com sucesso! |
+
+
+@Cenario2
+@Manual
+@ServicesPatrimonio
+Esquema do Cenario: Pesquisar tipo de assinatura 
+E clicar em "Cadastros"
+E clicar em "Tipo de Assinatura"
+E preencher <Pesquisa> 
+Quando clicar "Lupa - Pesquisar"
+Entao exibe os dados
+
+Exemplos:
+| Pesquisa  |
+| Coletor |
+
+
+
+@Cenario3
+@Manual
+@ServicesPatrimonio
+Cenario: Atualizar listagem  
+E clicar em "Cadastros"
+E clicar em "Tipo de Assinatura" 
+Quando clicar "Atualizar"
+Entao atualiza listagem
+
+
+
+@Cenario4
+@Manual
+@ServicesPatrimonio
+Esquema do Cenario: Editar tipo de assinatura 
+E clicar em "Cadastros"
+E clicar em "Tipo de Assinatura"
+Quando clicar <Assinatura> 
+E preencher os dados
+E clicar "Salvar"
+Entao grava os dados 
+E apresenta <MensagemEdicao>
+
+Exemplos:
+| Assinatura | MensagemEdicao                    |
+| Cliente    | Tipo assinatura salvo com sucesso |
+
+
+
+@Cenario4
+@Manual
+@ServicesPatrimonio
+Esquema do Cenario: Excluir tipo de assinatura 
+E clicar em "Cadastros"
+E clicar em "Tipo de Assinatura"
+Quando clicar "Seta" 
+E clicar "Excluir"
+E confirmar "Sim"
+Entao excluir tipo de assinatura  
+E apresenta <MensagemExclusao>
+
+Exemplos: 
+| MensagemExclusao                        |
+| Tipo de assinatura deletado com sucesso |
