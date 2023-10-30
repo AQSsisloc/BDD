@@ -6,7 +6,7 @@
 Funcionalidade: Cadastro de tipo de assinatura que será utilizada na assinatura do checklist e ordem de manutenção.
   Como um usuário do Services Web
   Eu quero cadastrar assinaturas  
-  Para facilicatar preenchimento de assinatura
+  Para facilitar preenchimento de assinatura
  
 
 Dado Esteja logado no Services Web 
@@ -76,7 +76,7 @@ Exemplos:
 
 
 
-@Cenario4
+@Cenario5
 @Manual
 @ServicesPatrimonio
 Esquema do Cenario: Excluir tipo de assinatura 
