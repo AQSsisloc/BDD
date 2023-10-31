@@ -391,6 +391,30 @@ Exemplos:
 
 @Cenario15
 @Manual
+@PainelRemessa
+Cenario: Previsão atrasada 
+E esteja logado ao Services Web 
+E clicar "Painel"
+E clicar "Painel Locação"
+Quando quando "Previsão" estiver atrasada 
+Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
+
+
+
+@Cenario16
+@Manual
+@PainelRemessa
+Cenario: Previsão futura  
+E esteja logado ao Services Web 
+E clicar "Painel"
+E clicar "Painel Locação"
+Quando quando "Previsão" for futura 
+Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
+
+
+
+@Cenario17
+@Manual
 @PainelDevolução 
 Esquema do Cenario: Aprovar devolução
 E esteja logado como funcionário
@@ -414,7 +438,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario18
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Programar retirada 
@@ -440,7 +464,7 @@ Exemplos:
 
 
 
-@Cenario17
+@Cenario19
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Fazer recepção  
@@ -469,7 +493,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario20
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar recepção 
@@ -495,7 +519,7 @@ Exemplos:
 
 
 
-@Cenario19
+@Cenario21
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar programação retirada  
@@ -520,7 +544,7 @@ Exemplos:
 
 
 
-@Cenario20
+@Cenario22
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar aprovação   
@@ -545,7 +569,31 @@ Exemplos:
 
 
 
-@Cenario21
+@Cenario23
+@Manual
+@PainelDevolucao
+Cenario: Previsão atrasada 
+E esteja logado ao Services Web 
+E clicar "Painel"
+E clicar "Painel Locação"
+Quando quando "Previsão" estiver atrasada 
+Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegando"
+
+
+
+@Cenario24
+@Manual
+@PainelDevolucao
+Cenario: Previsão futura  
+E esteja logado ao Services Web 
+E clicar "Painel"
+E clicar "Painel Locação"
+Quando quando "Previsão" for futura 
+Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
+
+
+
+@Cenario25
 @Manual
 @PainelLocacao
 Cenario: Desacelerar palavras no painel  
@@ -557,7 +605,7 @@ Entao desacelera velocidade de transição de palavras no painel
 
 
 
-@Cenario22
+@Cenario26
 @Manual
 @PainelLocacao
 Cenario: Velocidade padrão painel 
@@ -569,7 +617,7 @@ Entao aplica velocidade padrão na transição de palavras no painel
 
 
 
-@Cenario23
+@Cenario27
 @Manual
 @PainelLocacao
 Cenario: Acelerar palavras no painel  
@@ -581,7 +629,7 @@ Entao Acelera velocidade de transição de palavras no painel
 
 
 
-@Cenario24
+@Cenario28
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -593,7 +641,7 @@ Entao atualiza os registros do painel
 
 
 
-@Cenario25
+@Cenario29
 @Manual
 @PainelLocacao
 Cenario: Modo escuro 
@@ -602,4 +650,3 @@ E clicar "Painel"
 E clicar "Painel Locação"
 Quando quando clicar "Dark mode"
 Entao muda cor do tema do painel 
- 
