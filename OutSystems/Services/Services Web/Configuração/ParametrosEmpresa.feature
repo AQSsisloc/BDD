@@ -3,10 +3,10 @@
 #ServicesWeb
 
 
-Funcionalidade: Configura/Disponibiliza os documentos a serem visualizado/impresso no ambiente Web 
+Funcionalidade: Configuração de parâmetros para o Services
   Como um usuário do Services Web
-  Eu quero configurar o documento que será apresentado ao usuário 
-  Para gerar documento no processo de impressão/visualização 
+  Eu quero configurar os parâmetros de compotamento do Services 
+  Para utilizar o sistema da forma adequada ao parâmetro 
  
 
 Dado Esteja logado no Services Web 
