@@ -304,7 +304,7 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario13
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar NF Fatura
@@ -329,7 +329,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario14
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar conclusão Execução
@@ -354,7 +354,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario15
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar programação
@@ -379,7 +379,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario16
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar autorização de execução 
@@ -402,7 +402,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario17
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar Autorização Faturamento
@@ -425,7 +425,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario18
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar Conclusão Levantamento
@@ -448,7 +448,7 @@ Exemplos:
 
 
 
-@Cenario17
+@Cenario19
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar Início levantamento
@@ -471,7 +471,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario20
 @Manual
 @PainelOMs
 Cenario: Filtrar ordens de manutenção 
