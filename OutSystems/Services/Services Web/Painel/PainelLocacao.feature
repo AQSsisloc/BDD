@@ -444,6 +444,7 @@ Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Aprovar devolução
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
@@ -470,6 +471,7 @@ Exemplos:
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Programar retirada 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
@@ -497,6 +499,7 @@ Exemplos:
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Fazer recepção  
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
@@ -527,7 +530,8 @@ Exemplos:
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar recepção 
-E esteja logado como funcionário 
+Dado Esteja logado no Sisloc
+E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
 E tenha <Cidade> 
@@ -554,7 +558,8 @@ Exemplos:
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar programação retirada  
-E esteja logado como funcionário 
+Dado Esteja logado no Sisloc
+E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
 E tenha <Cidade> 
@@ -580,6 +585,7 @@ Exemplos:
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar aprovação   
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Devolucao>
 E tenha <Previsao> 
