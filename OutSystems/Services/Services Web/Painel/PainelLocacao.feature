@@ -29,24 +29,25 @@ E não apresenta registro no painel no Services Web
 @Manual
 @PainelRemessa
 Esquema do Cenario: Remessa aprovada 
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário     
-E concontenha no Sisloc <Remessa>
-E concontenha <Previsao> 
-E concontenha <Cidade> 
-E concontenha <Cliente>
-E concontenha <Observacao> 
-E concontenha <TipoLocacao>
-E concontenha <Itens> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Aprovar Remessa"  
-Entao grava <StatusRemessa> 
-E apresenta registro no painel 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E preencher os campos disponíveis
+E clicar em "Salvar"
+E clicar "Aprovar Remessa"  
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Remessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.reserva    |
+| StatusRemessa | Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               |
+| Ag.envio      | 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 |
 
 
 

@@ -3,7 +3,7 @@
 #RegiaoWeb
 
 
-Funcionalidade: Cadastrar uma região com vinculos dos bairros
+Funcionalidade: Cadastrar uma região com vínculos dos bairros
   Como um usuário do Força de Vendas 
   Eu quero cadastrar uma região
   Para utilizar na proposta 
