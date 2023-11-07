@@ -9,13 +9,11 @@ Funcionalidade: Exibir em tempo real as remessas e devoluções
   Para facilitar gerenciamento de remessas e devoluções 
  
 
-Dado Esteja logado no Sisloc
-
-
 @Cenario1
 @Manual
 @PainelRemessa
 Esquema do Cenario: Remessa aguardando aprovação
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário    
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -24,7 +22,8 @@ E tenha <Cliente>
 E tenha <Observacao> 
 E tenha <TipoLocacao>
 E tenha <Itens> 
-E esteja logado ao Services Web
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
 Quando esteja <StatusRemessa> 
 Entao não apresenta registro no painel 
 
@@ -38,6 +37,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Remessa aprovada 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário     
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -46,7 +46,8 @@ E tenha <Cliente>
 E tenha <Observacao> 
 E tenha <TipoLocacao>
 E tenha <Itens> 
-E esteja logado ao Services Web
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
 Quando clicar "Aprovar Remessa"  
 Entao grava <StatusRemessa> 
 E apresenta registro no painel 
@@ -61,6 +62,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Indicar operador 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário      
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -70,8 +72,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusRemessa_1> 
-E esteja logado ao Services Web
-Quando quando clicar "Indicar Operador"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Indicar Operador"
 E clicar "Ok"
 E selecionar <Operador> 
 E clicar "Ok"
@@ -88,6 +91,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Programar entrega 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário      
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -99,8 +103,9 @@ E tenha <Motorista>
 E tenha <Itens> 
 E tenha <StatusRemessa>
 E tenha <Operador> 
-E esteja logado ao Services Web
-Quando quando clicar "Programar Entrega"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Programar Entrega"
 E selecionar <Motorista> 
 E clicar "Ok"
 Entao grava os dados 
@@ -116,6 +121,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Selecionar Patrimônio 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário       
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -128,8 +134,9 @@ E tenha <Itens>
 E tenha <StatusRemessa>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Selecionar Patrimônio"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Selecionar Patrimônio"
 E selecionar os itens 
 E clicar "Grava"
 Entao grava os dados
@@ -144,7 +151,8 @@ Exemplos:
 @Cenario6
 @Manual
 @PainelRemessa
-Esquema do Cenario: Reservar Patrimônio  
+Esquema do Cenario: Reservar Patrimônio 
+Dado Esteja logado no Sisloc 
 E esteja logado como funcionário    
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -158,7 +166,8 @@ E tenha <StatusRemessa>
 E tenha <Operador> 
 E tenha <Motorista>
 E esteja logado ao Services Web 
-Quando quando clicar "Reservar Patrimônio"
+E esteja com usuário funcionário 
+Quando clicar "Reservar Patrimônio"
 E clicar "Sim"
 Entao grava os dados
 E apresenta registro no painel
@@ -173,6 +182,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Fazer expedição  
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário   
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -185,8 +195,9 @@ E tenha <Itens>
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Fazer expedição"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Fazer expedição"
 E clicar "OK"
 E selecionar equipamentos 
 E clicar "Gravar"
@@ -204,6 +215,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Gerar nota de remessa
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário     
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -216,8 +228,9 @@ E tenha <Itens>
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Gerar Nota de Remessa"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Gerar Nota de Remessa"
 E clicar "OK"
 Entao gera nota de remessa 
 E grava <StatusRemessa_2>
@@ -233,6 +246,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar Nota Remessa  
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -245,8 +259,9 @@ E tenha <Itens>
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Estornar Nota Remessa"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar Nota Remessa"
 E clicar "Sim"
 Entao grava <StatusRemessa_2>
 E não apresenta registro no painel
@@ -261,6 +276,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar expedição 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário 
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -273,8 +289,9 @@ E tenha <Itens>
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Estornar expedição"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar expedição"
 E clicar "Sim"
 Entao grava <StatusRemessa_2>
 E apresenta registro no painel
@@ -289,6 +306,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar reserva patrimônio 
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário 
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -300,8 +318,9 @@ E tenha <Itens>
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
 E tenha <Motorista> 
-E esteja logado ao Services Web
-Quando quando clicar "Estornar reserva patrimônio"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar reserva patrimônio"
 E clicar "Sim"
 Entao grava <StatusRemessa_2> 
 E apresenta registro no painel
@@ -316,6 +335,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar programar entrega
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário   
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -327,8 +347,9 @@ E tenha <Itens>
 E tenha <StatusRemessa>
 E tenha <Operador>  
 E tenha <Motorista>
-E esteja logado ao Services Web
-Quando quando clicar "Estornar reserva patrimônio"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar reserva patrimônio"
 E clicar "Sim"
 Entao grava os dados
 E apresenta registro no painel
@@ -342,6 +363,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar operador
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -352,8 +374,9 @@ E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusRemessa_1>
 E tenha <Operador> 
-E esteja logado ao Services Web
-Quando quando clicar "Estornar operador"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar operador"
 E clicar "Sim"
 Entao grava <StatusRemessa_2>
 E apresenta registro no painel
@@ -368,6 +391,7 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar aprovação
+Dado Esteja logado no Sisloc
 E esteja logado como funcionário
 E contenha no Sisloc <Remessa>
 E tenha <Previsao> 
@@ -377,8 +401,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusRemessa_1>
-E esteja logado ao Services Web
-Quando quando clicar "Estornar aprovação"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar aprovação"
 E clicar "Sim"
 Entao grava <StatusRemessa_2>
 E não apresenta registro no painel
@@ -393,10 +418,11 @@ Exemplos:
 @Manual
 @PainelRemessa
 Cenario: Previsão atrasada 
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário  
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando "Previsão" estiver atrasada 
+Quando "Previsão" estiver atrasada 
 Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
 
 
@@ -405,10 +431,11 @@ Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
 @Manual
 @PainelRemessa
 Cenario: Previsão futura  
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário  
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando "Previsão" for futura 
+Quando "Previsão" for futura 
 Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
 
 
@@ -426,8 +453,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusDevolucao_1>
-E esteja logado ao Services Web
-Quando quando clicar "Aprovar Devolução"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Aprovar Devolução"
 E clicar "Sim"
 Entao grava <StatusDevolucao_2>
 E apresenta registro no painel
@@ -451,8 +479,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusDevolucao_1>
-E esteja logado ao Services Web
-Quando quando clicar "Programar Retirada"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Programar Retirada"
 E selecionar <Motorista>
 E clicar "Ok"
 Entao grava <StatusDevolucao_2>
@@ -478,8 +507,9 @@ E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusDevolucao_1>
 E tenha <Motorista>
-E esteja logado ao Services Web
-Quando quando clicar "Fazer recepçao"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Fazer recepçao"
 E clicar "Ok"
 E selecionar os itens 
 E clicar "Grava"
@@ -507,8 +537,9 @@ E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusDevolucao_1>
 E tenha <Motorista>
-E esteja logado ao Services Web
-Quando quando clicar "Estornar recepçao"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar recepçao"
 E clicar "Sim"
 Entao grava <StatusDevolucao_2>
 E apresenta registro no painel
@@ -532,8 +563,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusRemessa>
-E esteja logado ao Services Web
-Quando quando clicar "Estornar prog. retirada"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar prog. retirada"
 E clicar "Sim"
 Entao grava os dados
 E apresenta registro no painel
@@ -557,8 +589,9 @@ E tenha <Observacao>
 E tenha <TipoLocacao>
 E tenha <Itens> 
 E tenha <StatusRemessa_1>
-E esteja logado ao Services Web
-Quando quando clicar "Estornar aprovação"
+E esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Estornar aprovação"
 E clicar "Sim"
 Entao grava <StatusRemessa_2>
 E não apresenta registro no painel
@@ -573,10 +606,11 @@ Exemplos:
 @Manual
 @PainelDevolucao
 Cenario: Previsão atrasada 
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário 
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando "Previsão" estiver atrasada 
+Quando "Previsão" estiver atrasada 
 Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegando"
 
 
@@ -585,10 +619,11 @@ Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegand
 @Manual
 @PainelDevolucao
 Cenario: Previsão futura  
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando "Previsão" for futura 
+Quando "Previsão" for futura 
 Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
 
 
@@ -597,10 +632,11 @@ Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
 @Manual
 @PainelLocacao
 Cenario: Desacelerar palavras no painel  
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando clicar "Desacelerar palavaras no painel"
+Quando clicar "Desacelerar palavaras no painel"
 Entao desacelera velocidade de transição de palavras no painel 
 
 
@@ -609,10 +645,11 @@ Entao desacelera velocidade de transição de palavras no painel
 @Manual
 @PainelLocacao
 Cenario: Velocidade padrão painel 
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando clicar "Velocidade padrão"
+Quando clicar "Velocidade padrão"
 Entao aplica velocidade padrão na transição de palavras no painel 
 
 
@@ -621,10 +658,11 @@ Entao aplica velocidade padrão na transição de palavras no painel
 @Manual
 @PainelLocacao
 Cenario: Acelerar palavras no painel  
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando clicar "Acelerar palavaras no painel"
+Quando clicar "Acelerar palavaras no painel"
 Entao Acelera velocidade de transição de palavras no painel 
 
 
@@ -633,10 +671,11 @@ Entao Acelera velocidade de transição de palavras no painel
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
-E esteja logado ao Services Web 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário 
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando clicar "Atualizar os dados manualmente"
+Quando clicar "Atualizar os dados manualmente"
 Entao atualiza os registros do painel 
 
 
@@ -646,7 +685,8 @@ Entao atualiza os registros do painel
 @PainelLocacao
 Cenario: Modo escuro 
 E esteja logado ao Services Web 
+E esteja com usuário funcionário 
 E clicar "Painel"
 E clicar "Painel Locação"
-Quando quando clicar "Dark mode"
+Quando clicar "Dark mode"
 Entao muda cor do tema do painel 
