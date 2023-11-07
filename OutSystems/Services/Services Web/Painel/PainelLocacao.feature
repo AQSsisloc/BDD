@@ -31,13 +31,13 @@ E não apresenta registro no painel no Services Web
 Esquema do Cenario: Remessa aprovada 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário     
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
+E concontenha no Sisloc <Remessa>
+E concontenha <Previsao> 
+E concontenha <Cidade> 
+E concontenha <Cliente>
+E concontenha <Observacao> 
+E concontenha <TipoLocacao>
+E concontenha <Itens> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Aprovar Remessa"  
@@ -56,14 +56,14 @@ Exemplos:
 Esquema do Cenario: Indicar operador 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário      
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa_1> 
+E concontenha no Sisloc <Remessa>
+E concontenha <Previsao> 
+E concontenha <Cidade> 
+E concontenha <Cliente>
+E concontenha <Observacao> 
+E concontenha <TipoLocacao>
+E concontenha <Itens> 
+E concontenha <StatusRemessa_1> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Indicar Operador"
@@ -85,16 +85,16 @@ Exemplos:
 Esquema do Cenario: Programar entrega 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário      
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa>
-E tenha <Operador> 
+E concontenha no Sisloc <Remessa>
+E concontenha <Previsao> 
+E concontenha <Cidade> 
+E concontenha <Cliente>
+E concontenha <Observacao> 
+E concontenha <TipoLocacao>
+E concontenha <Motorista>
+E concontenha <Itens> 
+E concontenha <StatusRemessa>
+E concontenha <Operador> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Programar Entrega"
@@ -115,17 +115,17 @@ Exemplos:
 Esquema do Cenario: Selecionar Patrimônio 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário       
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E concontenha <Previsao> 
+E concontenha <Cidade> 
+E concontenha <Cliente>
+E concontenha <Observacao> 
+E concontenha <TipoLocacao>
+E concontenha <Motorista>
+E concontenha <Itens> 
+E concontenha <StatusRemessa>
+E concontenha <Operador> 
+E concontenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Selecionar Patrimônio"
@@ -146,17 +146,17 @@ Exemplos:
 Esquema do Cenario: Reservar Patrimônio 
 Dado Esteja logado no Sisloc 
 E esteja logado como funcionário    
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa>
-E tenha <Operador> 
-E tenha <Motorista>
+E concontenha no Sisloc <Remessa>
+E concontenha <Previsao> 
+E concontenha <Cidade> 
+E concontenha <Cliente>
+E concontenha <Observacao> 
+E concontenha <TipoLocacao>
+E concontenha <Motorista>
+E contenha <Itens> 
+E contenha <StatusRemessa>
+E contenha <Operador> 
+E contenha <Motorista>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário 
 Quando clicar "Reservar Patrimônio"
@@ -176,17 +176,17 @@ Exemplos:
 Esquema do Cenario: Fazer expedição  
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário   
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Motorista>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
+E contenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Fazer expedição"
@@ -209,17 +209,17 @@ Exemplos:
 Esquema do Cenario: Gerar nota de remessa
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário     
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Motorista>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
+E contenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Gerar Nota de Remessa"
@@ -240,17 +240,17 @@ Exemplos:
 Esquema do Cenario: Estornar Nota Remessa  
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Motorista>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
+E contenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar Nota Remessa"
@@ -270,17 +270,17 @@ Exemplos:
 Esquema do Cenario: Estornar expedição 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário 
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Motorista>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Motorista>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
+E contenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar expedição"
@@ -300,16 +300,16 @@ Exemplos:
 Esquema do Cenario: Estornar reserva patrimônio 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário 
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
-E tenha <Motorista> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
+E contenha <Motorista> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar reserva patrimônio"
@@ -329,16 +329,16 @@ Exemplos:
 Esquema do Cenario: Estornar programar entrega
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário   
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa>
-E tenha <Operador>  
-E tenha <Motorista>
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa>
+E contenha <Operador>  
+E contenha <Motorista>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar reserva patrimônio"
@@ -357,15 +357,15 @@ Exemplos:
 Esquema do Cenario: Estornar operador
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
-E tenha <Operador> 
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
+E contenha <Operador> 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar operador"
@@ -385,14 +385,14 @@ Exemplos:
 Esquema do Cenario: Estornar aprovação
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
+E concontenha no Sisloc <Remessa>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar aprovação"
@@ -438,14 +438,14 @@ Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
 Esquema do Cenario: Aprovar devolução
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusDevolucao_1>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusDevolucao_1>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Aprovar Devolução"
@@ -465,14 +465,14 @@ Exemplos:
 Esquema do Cenario: Programar retirada 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusDevolucao_1>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusDevolucao_1>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Programar Retirada"
@@ -493,15 +493,15 @@ Exemplos:
 Esquema do Cenario: Fazer recepção  
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusDevolucao_1>
-E tenha <Motorista>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusDevolucao_1>
+E contenha <Motorista>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Fazer recepçao"
@@ -524,15 +524,15 @@ Exemplos:
 Esquema do Cenario: Estornar recepção 
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusDevolucao_1>
-E tenha <Motorista>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusDevolucao_1>
+E contenha <Motorista>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar recepçao"
@@ -552,14 +552,14 @@ Exemplos:
 Esquema do Cenario: Estornar programação retirada  
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar prog. retirada"
@@ -579,14 +579,14 @@ Exemplos:
 Esquema do Cenario: Estornar aprovação   
 Dado Esteja logado no Sisloc
 E esteja logado como funcionário
-E contenha no Sisloc <Devolucao>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E tenha <StatusRemessa_1>
+E concontenha no Sisloc <Devolucao>
+E contenha <Previsao> 
+E contenha <Cidade> 
+E contenha <Cliente>
+E contenha <Observacao> 
+E contenha <TipoLocacao>
+E contenha <Itens> 
+E contenha <StatusRemessa_1>
 E esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Estornar aprovação"
