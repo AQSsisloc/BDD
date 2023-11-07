@@ -38,7 +38,6 @@ E preencher os campos disponíveis
 E clicar em "Salvar"
 E clicar "Aprovar Remessa"  
 Entao grava no Sisloc o <StatusRemessa> 
-E apresenta <Remessa> 
 E apresenta <Previsao>
 E apresenta <Cidade>
 E apresenta <Observacao>
@@ -46,8 +45,8 @@ E apresenta <TipoLocacao>
 E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| StatusRemessa | Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               |
-| Ag.envio      | 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 |
+| StatusRemessa | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               |
+| Ag.envio      | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 |
 
 
 
@@ -55,28 +54,25 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Indicar operador 
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário      
-E concontenha no Sisloc <Remessa>
-E concontenha <Previsao> 
-E concontenha <Cidade> 
-E concontenha <Cliente>
-E concontenha <Observacao> 
-E concontenha <TipoLocacao>
-E concontenha <Itens> 
-E concontenha <StatusRemessa_1> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Indicar Operador"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (sem operador)"
+E clicar "Indicar Operador"
+E preencher os dados 
 E clicar "Ok"
-E selecionar <Operador> 
-E clicar "Ok"
-Entao grava <StatusRemessa_2>
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1 | Operador | StatusRemessa_2 |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.reserva      | Admin    | Ag.envio        |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 |
 
 
 
@@ -84,29 +80,26 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Programar entrega 
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário      
-E concontenha no Sisloc <Remessa>
-E concontenha <Previsao> 
-E concontenha <Cidade> 
-E concontenha <Cliente>
-E concontenha <Observacao> 
-E concontenha <TipoLocacao>
-E concontenha <Motorista>
-E concontenha <Itens> 
-E concontenha <StatusRemessa>
-E concontenha <Operador> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Programar Entrega"
-E selecionar <Motorista> 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Programar Entrega"
+E preencher os dados 
 E clicar "Ok"
-Entao grava os dados 
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa | Operador | Motorista |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio      | Admin    | Admin     |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
@@ -114,30 +107,27 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Selecionar Patrimônio 
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário       
-E concontenha no Sisloc <Remessa>
-E concontenha <Previsao> 
-E concontenha <Cidade> 
-E concontenha <Cliente>
-E concontenha <Observacao> 
-E concontenha <TipoLocacao>
-E concontenha <Motorista>
-E concontenha <Itens> 
-E concontenha <StatusRemessa>
-E concontenha <Operador> 
-E concontenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Selecionar Patrimônio"
-E selecionar os itens 
-E clicar "Grava"
-Entao grava os dados
-E apresenta registro no painel
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Selecionar Patrim."
+E preencher os dados 
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa | Operador | Motorista |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio      | Admin    | Admin     |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
@@ -145,29 +135,27 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Reservar Patrimônio 
-Dado Esteja logado no Sisloc 
-E esteja logado como funcionário    
-E concontenha no Sisloc <Remessa>
-E concontenha <Previsao> 
-E concontenha <Cidade> 
-E concontenha <Cliente>
-E concontenha <Observacao> 
-E concontenha <TipoLocacao>
-E concontenha <Motorista>
-E contenha <Itens> 
-E contenha <StatusRemessa>
-E contenha <Operador> 
-E contenha <Motorista>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário 
-Quando clicar "Reservar Patrimônio"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Reservar Patrim."
+E preencher os dados 
+E clicar "Gravar"
 E clicar "Sim"
-Entao grava os dados
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa | Operador | Motorista |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio      | Admin    | Admin     |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
@@ -175,32 +163,22 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Fazer expedição  
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário   
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Motorista>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E contenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Fazer expedição"
-E clicar "OK"
-E selecionar equipamentos 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Fazer Expedição"
+E selecionar os patrimônios 
 E clicar "Gravar"
-E confirmar "Sim"
-Entao grava <StatusRemessa_2>
-E não apresenta registro no painel
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa> 
+E não apresenta registro no painel no Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1 | Operador | Motorista | StatusRemessa_2         |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio        | Admin    | Admin     | Nota de remessa a gerar |
+| StatusRemessa           |
+| Nota de remessa a gerar |
 
 
 
@@ -208,30 +186,21 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Gerar nota de remessa
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário     
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Motorista>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E contenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Gerar Nota de Remessa"
-E clicar "OK"
-Entao gera nota de remessa 
-E grava <StatusRemessa_2>
-E não apresenta registro no painel
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Nota de remessa a gerar" 
+E clicar "Gerar nota de Remessa"
+E seleciona opção
+E clicar "Ok"
+Entao grava no Sisloc o <StatusRemessa> 
+E não apresenta registro no painel no Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1         | Operador | Motorista | StatusRemessa_2   |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Nota de remessa a gerar | Admin    | Admin     | Remessa Concluída |
+| StatusRemessa     |
+| Remessa concluída |
 
 
 
@@ -239,29 +208,20 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar Nota Remessa  
-Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Motorista>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E contenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar Nota Remessa"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Remessa concluída"
+E clicar "Estornar nota Remessa"
 E clicar "Sim"
-Entao grava <StatusRemessa_2>
-E não apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E não apresenta registro no painel no Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRmessa_1    | Operador | Motorista | StatusRemessa_2         |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Remessa Concluída | Admin    | Admin     | Nota de remessa a gerar |
+| StatusRemessa           |
+| Nota de remessa a gerar |
 
 
 
@@ -269,29 +229,25 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar expedição 
-Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
 E esteja logado como funcionário 
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Motorista>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E contenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar expedição"
+Quando clicar em "Remessa"
+E esteja com status "Nota de remessa a gerar"
+E clicar "Estornar expedição"
 E clicar "Sim"
-Entao grava <StatusRemessa_2>
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1         | Operador | Motorista | StatusRemessa_2 |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Nota de remessa a gerar | Admin    | Admin     | Ag.envio        |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
@@ -299,28 +255,25 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar reserva patrimônio 
-Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
 E esteja logado como funcionário 
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E contenha <Motorista> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar reserva patrimônio"
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Estornar Reserva patrimônio"
 E clicar "Sim"
-Entao grava <StatusRemessa_2> 
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Status_1 | Operador | Motorista | Status_2 |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio | Admin    | Admin     | Ag.envio |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
@@ -328,55 +281,48 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar programar entrega
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário   
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa>
-E contenha <Operador>  
-E contenha <Motorista>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar reserva patrimônio"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Estornar Prog.Entrega"
 E clicar "Sim"
-Entao grava os dados
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa | Operador | Motorista |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio      | Admin    | Admin     |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | 
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | 
 
 
 @Cenario13
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar operador
-Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E contenha <Operador> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar operador"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Estornar Operador"
 E clicar "Sim"
-Entao grava <StatusRemessa_2>
-E apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1 | Operador | StatusRemessa_2 |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.envio        | Admin    | Ag.reserva      |
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | 
+| Ag.envio (sem operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | 
 
 
 
@@ -384,27 +330,20 @@ Exemplos:
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar aprovação
-Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Remessa>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar aprovação"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (sem operador)"
+E clicar "Estornar Aprovação"
 E clicar "Sim"
-Entao grava <StatusRemessa_2>
-E não apresenta registro no painel
+Entao grava no Sisloc o <StatusRemessa> 
+E não apresenta registro no painel do Services Web
 
 Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa_1 | StatusRemessa_2 |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.reserva      | Ag.aprovação    |
-
+| StatusRemessa |
+| Ag. aprovação |
 
 
 @Cenario15
@@ -435,173 +374,216 @@ Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
 
 @Cenario17
 @Manual
-@PainelDevolução 
-Esquema do Cenario: Aprovar devolução
-Dado Esteja logado no Sisloc
+@PainelDevolução
+Esquema do Cenario: Devolução aguardando aprovação
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusDevolucao_1>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Aprovar Devolução"
-E clicar "Sim"
-Entao grava <StatusDevolucao_2>
-E apresenta registro no painel
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E preencher os campos disponíveis
+E clicar em "Salvar"
+Entao grava no Sisloc o <StatusDevolucao>
+E não apresenta registro no painel no Services Web
 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusDevolucao_1 | StatusDevolucao_2 |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Ag.aprovação      | Ag.devolução      |
+| StatusDevolucao |
+| Ag. aprovação   |
 
 
 
 @Cenario18
 @Manual
-@PainelDevolução 
-Esquema do Cenario: Programar retirada 
-Dado Esteja logado no Sisloc
+@PainelDevolucao
+Esquema do Cenario: Aprovar devolução
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusDevolucao_1>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Programar Retirada"
-E selecionar <Motorista>
-E clicar "Ok"
-Entao grava <StatusDevolucao_2>
-E apresenta registro no painel
-
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. aprovação"
+E clicar "Aprovar Devolução"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusDevolucao_1 | Motorista | StatusDevolucao_2 |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Ag.devolução      | Admin     | Ag.devolução      |
+| StatusDevolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. devolução   | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
 
 
 
 @Cenario19
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Fazer recepção  
-Dado Esteja logado no Sisloc
+Esquema do Cenario: Programar retirada 
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusDevolucao_1>
-E contenha <Motorista>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Fazer recepçao"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. aprovação"
+E clicar "Programar Retirada"
+E preencher os dados 
 E clicar "Ok"
-E selecionar os itens 
-E clicar "Grava"
-E clciar "Sim"
-Entao grava <StatusDevolucao_2>
-E não apresenta registro no painel
-
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusDevolucao_1 | Motorista | StatusDevolucao_2   |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Ag.devolução      | Admin     | Devolução concluída |
+| StatusDevolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. devolução   | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
 
 
 
 @Cenario20
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Estornar recepção 
-Dado Esteja logado no Sisloc
+Esquema do Cenario: Fazer recepção  
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusDevolucao_1>
-E contenha <Motorista>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar recepçao"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. devolução"
+E clicar "Fazer Recepção"
+E preencher os dados 
+E clicar "Gravar"
 E clicar "Sim"
-Entao grava <StatusDevolucao_2>
-E apresenta registro no painel
-
+Entao grava no Sisloc o <StatusDevolucao>
+E não apresenta registro no painel no Services Web
+ 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusDevolucao_1   | Motorista | StatusDevolucao_2 |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Devolução concluída | Admin     | Ag.devolução      |
+| StatusDevolucao    |
+| Devolução conclída |
 
 
 
 @Cenario21
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Estornar programação retirada  
-Dado Esteja logado no Sisloc
+Esquema do Cenario: Gerar Nota Devolução 
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar prog. retirada"
-E clicar "Sim"
-Entao grava os dados
-E apresenta registro no painel
-
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Devolução concluída"
+E clicar "Gerar Nota Devolução"
+E preencher os dados 
+E clicar "Ok"
+Entao grava no Sisloc o <StatusDevolucao>
+E não apresenta registro no painel no Services Web
+ 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusRemessa |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Ag.devolução  |
+| StatusDevolucao    |
+| Devolução conclída |
 
 
 
 @Cenario22
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Estornar aprovação   
-Dado Esteja logado no Sisloc
+Esquema do Cenario: Estornar Nota Devolução
+Dado esteja logado ao Services Web 
 E esteja logado como funcionário
-E concontenha no Sisloc <Devolucao>
-E contenha <Previsao> 
-E contenha <Cidade> 
-E contenha <Cliente>
-E contenha <Observacao> 
-E contenha <TipoLocacao>
-E contenha <Itens> 
-E contenha <StatusRemessa_1>
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Estornar aprovação"
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Devolução concluída"
+E clicar "Extornar Nota Devolução"
 E clicar "Sim"
-Entao grava <StatusRemessa_2>
-E não apresenta registro no painel
-
+Entao grava no Sisloc o <StatusDevolucao>
+E não apresenta registro no painel no Services Web
+ 
 Exemplos:
-| Devolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       | StatusRemessa_1 | StatusRemessa_2 |
-| 100332-06 | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro | Ag.devolução    | Ag.aprovação    |
+| StatusDevolucao           |
+| Nota de devolução a gerar |
 
 
 
 @Cenario23
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar recepção
+Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Nota de devolução a gerar"
+E clicar "Extornar Recpção"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. devolução   | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+
+@Cenario24
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar Prog. Retirada  
+Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. devolução"
+E clicar "Extornar Prog. Retirada"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. devolução   | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+
+@Cenario25
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar Aprovação
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. devolução"
+E clicar "Extornar Aprovação"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E não apresenta registro no painel no Services Web
+ 
+Exemplos:
+| StatusDevolucao |
+| Ag. aprovação   |
+
+
+
+@Cenario26
 @Manual
 @PainelDevolucao
 Cenario: Previsão atrasada 
@@ -614,7 +596,7 @@ Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegand
 
 
 
-@Cenario24
+@Cenario27
 @Manual
 @PainelDevolucao
 Cenario: Previsão futura  
@@ -627,7 +609,7 @@ Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
 
 
 
-@Cenario25
+@Cenario28
 @Manual
 @PainelLocacao
 Cenario: Desacelerar palavras no painel  
@@ -640,7 +622,7 @@ Entao desacelera velocidade de transição de palavras no painel
 
 
 
-@Cenario26
+@Cenario29
 @Manual
 @PainelLocacao
 Cenario: Velocidade padrão painel 
@@ -653,7 +635,7 @@ Entao aplica velocidade padrão na transição de palavras no painel
 
 
 
-@Cenario27
+@Cenario30
 @Manual
 @PainelLocacao
 Cenario: Acelerar palavras no painel  
@@ -666,7 +648,7 @@ Entao Acelera velocidade de transição de palavras no painel
 
 
 
-@Cenario28
+@Cenario31
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -679,7 +661,7 @@ Entao atualiza os registros do painel
 
 
 
-@Cenario29
+@Cenario32
 @Manual
 @PainelLocacao
 Cenario: Modo escuro 
