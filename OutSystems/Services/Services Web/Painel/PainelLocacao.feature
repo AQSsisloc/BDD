@@ -174,7 +174,7 @@ E selecionar os patrimônios
 E clicar "Gravar"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusRemessa> 
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
 
 Exemplos:
 | StatusRemessa           |
@@ -196,7 +196,7 @@ E clicar "Gerar nota de Remessa"
 E seleciona opção
 E clicar "Ok"
 Entao grava no Sisloc o <StatusRemessa> 
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
 
 Exemplos:
 | StatusRemessa     |
@@ -217,7 +217,7 @@ E esteja com status "Remessa concluída"
 E clicar "Estornar nota Remessa"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusRemessa> 
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
 
 Exemplos:
 | StatusRemessa           |
@@ -355,7 +355,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Previsão" estiver atrasada 
-Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
+Entao aplica cor vermelha nas palavras do painel "Máquinas/Equipamentos Saindo"
 
 
 
@@ -368,7 +368,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Previsão" for futura 
-Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
+Entao aplica cor preta nas palavras do painel "Máquinas/Equipamentos Saindo"
 
 
 
@@ -384,7 +384,7 @@ Quando clicar em "Devolução"
 E preencher os campos disponíveis
 E clicar em "Salvar"
 Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
 
 Exemplos:
 | StatusDevolucao |
@@ -459,7 +459,7 @@ E preencher os dados
 E clicar "Gravar"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
  
 Exemplos:
 | StatusDevolucao    |
@@ -502,7 +502,7 @@ E esteja com status "Devolução concluída"
 E clicar "Extornar Nota Devolução"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
  
 Exemplos:
 | StatusDevolucao           |
@@ -575,7 +575,7 @@ E esteja com status "Ag. devolução"
 E clicar "Extornar Aprovação"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel no Services Web
+E não apresenta registro no painel do Services Web
  
 Exemplos:
 | StatusDevolucao |
@@ -592,7 +592,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Previsão" estiver atrasada 
-Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegando"
+Entao aplica cor vermelha nas palavras do painel "Máquinas/Equipamentos Chegando"
 
 
 
@@ -605,7 +605,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Previsão" for futura 
-Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
+Entao aplica cor preta nas palavras do painel "Máquinas/Equipamentos Chegando"
 
 
 
@@ -618,7 +618,7 @@ E esteja com usuário funcionário
 E clicar "Painel"
 E clicar "Painel Locação"
 Quando clicar "Desacelerar palavaras no painel"
-Entao desacelera velocidade de transição de palavras no painel 
+Entao desacelera velocidade de transição de palavras no painel do Services Web
 
 
 
@@ -631,7 +631,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Velocidade padrão"
-Entao aplica velocidade padrão na transição de palavras no painel 
+Entao aplica velocidade padrão na transição de palavras no painel do Services Web
 
 
 
@@ -644,7 +644,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Acelerar palavaras no painel"
-Entao Acelera velocidade de transição de palavras no painel 
+Entao Acelera velocidade de transição de palavras no painel do Services Web
 
 
 
@@ -657,7 +657,7 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Atualizar os dados manualmente"
-Entao atualiza os registros do painel 
+Entao atualiza os registros do painel do Services Web
 
 
 
@@ -670,4 +670,4 @@ E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Dark mode"
-Entao muda cor do tema do painel 
+Entao muda cor do tema do painel do Services Web
