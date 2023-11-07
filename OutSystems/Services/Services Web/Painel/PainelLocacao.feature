@@ -12,24 +12,16 @@ Funcionalidade: Exibir em tempo real as remessas e devoluções
 @Cenario1
 @Manual
 @PainelRemessa
-Esquema do Cenario: Remessa aguardando aprovação
-Dado Esteja logado no Sisloc
-E esteja logado como funcionário    
-E contenha no Sisloc <Remessa>
-E tenha <Previsao> 
-E tenha <Cidade> 
-E tenha <Cliente>
-E tenha <Observacao> 
-E tenha <TipoLocacao>
-E tenha <Itens> 
-E esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando esteja <StatusRemessa> 
-Entao não apresenta registro no painel 
-
-Exemplos:
-| Remessa   | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | StatusRemessa |
-| 100332-09 | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Ag.aprovação  |
+Cenario: Remessa aguardando aprovação
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E preencher os campos disponíveis
+E clicar em "Salvar"
+Entao salva o registro da remessa
+E não apresenta registro no painel no Services Web
 
 
 
@@ -420,9 +412,9 @@ Exemplos:
 Cenario: Previsão atrasada 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando "Previsão" estiver atrasada 
+E clicar "Previsão" estiver atrasada 
 Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
 
 
@@ -433,9 +425,9 @@ Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Saindo"
 Cenario: Previsão futura  
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando "Previsão" for futura 
+E clicar "Previsão" for futura 
 Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Saindo"
 
 
@@ -614,9 +606,9 @@ Exemplos:
 Cenario: Previsão atrasada 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário 
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando "Previsão" estiver atrasada 
+E clicar "Previsão" estiver atrasada 
 Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegando"
 
 
@@ -627,9 +619,9 @@ Entao aplica cor vermelha nas palavras no painel "Máquinas/Equipamentos Chegand
 Cenario: Previsão futura  
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando "Previsão" for futura 
+E clicar "Previsão" for futura 
 Entao aplica cor preta nas palavras no painel "Máquinas/Equipamentos Chegando"
 
 
@@ -653,9 +645,9 @@ Entao desacelera velocidade de transição de palavras no painel
 Cenario: Velocidade padrão painel 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando clicar "Velocidade padrão"
+E clicar "Velocidade padrão"
 Entao aplica velocidade padrão na transição de palavras no painel 
 
 
@@ -666,9 +658,9 @@ Entao aplica velocidade padrão na transição de palavras no painel
 Cenario: Acelerar palavras no painel  
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando clicar "Acelerar palavaras no painel"
+E clicar "Acelerar palavaras no painel"
 Entao Acelera velocidade de transição de palavras no painel 
 
 
@@ -679,9 +671,9 @@ Entao Acelera velocidade de transição de palavras no painel
 Cenario: Atualizar os dados manualmente 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário 
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando clicar "Atualizar os dados manualmente"
+E clicar "Atualizar os dados manualmente"
 Entao atualiza os registros do painel 
 
 
@@ -692,7 +684,7 @@ Entao atualiza os registros do painel
 Cenario: Modo escuro 
 E esteja logado ao Services Web 
 E esteja com usuário funcionário 
-E clicar "Painel"
+Quando clicar "Painel"
 E clicar "Painel Locação"
-Quando clicar "Dark mode"
+E clicar "Dark mode"
 Entao muda cor do tema do painel 
