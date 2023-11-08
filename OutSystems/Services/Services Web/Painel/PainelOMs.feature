@@ -16,20 +16,28 @@ Dado Esteja logado no Sisloc
 @Manual
 @PainelOMs
 Esquema do Cenario: Oficina aguardando liberação do equipamento
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM>
-E esteja logado ao Services Web
-Quando clicar "Iniciar Levantamento" 
-Entao grava <StatusOficina_2> 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E preencher os campos disponíveis
+E clicar em "Salvar"
+Entao grava no Sisloc o <StatusOM>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                          | StatusOM | StatusOficina_2                                   |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina aguarda liberação do equipamento | Pendente | Oficina fazendo levantamento dos serviços e peças |
+| OM     | Tecnico | Cliente             | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| 020781 | -       | Rosano Vasnconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
  
