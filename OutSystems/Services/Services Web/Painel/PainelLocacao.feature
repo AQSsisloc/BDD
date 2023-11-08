@@ -12,7 +12,7 @@ Funcionalidade: Exibir em tempo real as remessas e devoluções
 @Cenario1
 @Manual
 @PainelRemessa
-Cenario: Remessa aguardando aprovação
+Cenario: Cadastrar remessa aguardando aprovação
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -28,7 +28,7 @@ E não apresenta registro no painel no Services Web
 @Cenario2
 @Manual
 @PainelRemessa
-Esquema do Cenario: Remessa aprovada 
+Esquema do Cenario: Cadastrar remessa e aprovar
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -349,13 +349,13 @@ Exemplos:
 @Cenario15
 @Manual
 @PainelRemessa
-Cenario: Cores de acordo com a previsão 
+Cenario: Alterar cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E estiver com <Previsao> 
-Entao aplica <Cor> nas palavras do painel de remessa 
+Entao aplica <Cor> na descrição do painel de remessa 
 
 Exemplos: 
 | Previsao        | Cor      |
@@ -367,7 +367,7 @@ Exemplos:
 @Cenario16
 @Manual
 @PainelDevolução
-Esquema do Cenario: Devolução aguardando aprovação
+Esquema do Cenario: Cadastrar devolução aguardando aprovação
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -596,7 +596,7 @@ Exemplos:
 @Cenario26
 @Manual
 @PainelLocacao
-Cenario: Velocidade de rolagem da descrição do painel 
+Cenario: Alterar velocidade de rolagem da descrição do painel 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Painel"
