@@ -40,7 +40,7 @@ E clicar "Aprovar Remessa"
 Entao grava no Sisloc o <StatusRemessa> 
 E apresenta <Previsao>
 E apresenta <Cidade>
-E apresenta <Observacao>
+E apresenta <Observacao> 
 E apresenta <TipoLocacao>
 E apresenta <Itens> no painel do Services Web
 
@@ -174,6 +174,7 @@ E selecionar os patrimônios
 E clicar "Gravar"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusRemessa> 
+E realiza movimentação de estoque do equipamento 
 E não apresenta registro no painel do Services Web
 
 Exemplos:
@@ -237,7 +238,8 @@ Quando clicar em "Remessa"
 E esteja com status "Nota de remessa a gerar"
 E clicar "Estornar expedição"
 E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa> 
+Entao grava no Sisloc o <StatusRemessa>
+E realiza movimentação de estoque do equipamento  
 E apresenta <Previsao>
 E apresenta <Cidade>
 E apresenta <Observacao>
@@ -451,6 +453,7 @@ E preencher os dados
 E clicar "Gravar"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
+E realiza movimentação de estoque do equipamento 
 E não apresenta registro no painel do Services Web
  
 Exemplos:
@@ -516,6 +519,7 @@ E esteja com status "Nota de devolução a gerar"
 E clicar "Extornar Recpção"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
+E realiza movimentação de estoque do equipamento 
 E apresenta <Previsao>
 E apresenta <Cidade>
 E apresenta <Observacao>
