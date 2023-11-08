@@ -349,30 +349,22 @@ Exemplos:
 @Cenario15
 @Manual
 @PainelRemessa
-Cenario: Previsão atrasada 
+Cenario: Cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
 Quando clicar "Painel"
 E clicar "Painel Locação"
-E clicar "Previsão" estiver atrasada 
-Entao aplica cor vermelha nas palavras do painel "Máquinas/Equipamentos Saindo"
+E estiver com <Previsao> 
+Entao aplica <Cor> nas palavras do painel de remessa 
+
+Exemplos: 
+| Previsao        | Cor      |
+| Atrasada        | Vermelha |
+| Dentro do prazo | Preto    |
 
 
 
 @Cenario16
-@Manual
-@PainelRemessa
-Cenario: Previsão futura  
-Dado esteja logado ao Services Web 
-E esteja com usuário funcionário  
-Quando clicar "Painel"
-E clicar "Painel Locação"
-E clicar "Previsão" for futura 
-Entao aplica cor preta nas palavras do painel "Máquinas/Equipamentos Saindo"
-
-
-
-@Cenario17
 @Manual
 @PainelDevolução
 Esquema do Cenario: Devolução aguardando aprovação
@@ -392,7 +384,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario17
 @Manual
 @PainelDevolucao
 Esquema do Cenario: Aprovar devolução
@@ -417,7 +409,7 @@ Exemplos:
 
 
 
-@Cenario19
+@Cenario18
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Programar retirada 
@@ -444,7 +436,7 @@ Exemplos:
 
 
 
-@Cenario20
+@Cenario19
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Fazer recepção  
@@ -467,7 +459,7 @@ Exemplos:
 
 
 
-@Cenario21
+@Cenario20
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Gerar Nota Devolução 
@@ -489,7 +481,7 @@ Exemplos:
 
 
 
-@Cenario22
+@Cenario21
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Nota Devolução
@@ -510,7 +502,7 @@ Exemplos:
 
 
 
-@Cenario23
+@Cenario22
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar recepção
@@ -536,7 +528,7 @@ Exemplos:
 
 
 
-@Cenario24
+@Cenario23
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Prog. Retirada  
@@ -562,7 +554,7 @@ Exemplos:
 
 
 
-@Cenario25
+@Cenario24
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Aprovação
@@ -583,72 +575,44 @@ Exemplos:
 
 
 
-@Cenario26
+@Cenario25
 @Manual
 @PainelDevolucao
-Cenario: Previsão atrasada 
+Cenario: Cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
-E esteja com usuário funcionário 
+E esteja com usuário funcionário  
 Quando clicar "Painel"
 E clicar "Painel Locação"
-E clicar "Previsão" estiver atrasada 
-Entao aplica cor vermelha nas palavras do painel "Máquinas/Equipamentos Chegando"
+E estiver com <Previsao> 
+Entao aplica <Cor> nas palavras do painel de devolução 
+
+Exemplos: 
+| Previsao        | Cor      |
+| Atrasada        | Vermelha |
+| Dentro do prazo | Preto    |
+
+
+
+@Cenario26
+@Manual
+@PainelLocacao
+Cenario: Velocidade de rolagem das palavras do painel 
+Dado esteja logado ao Services Web 
+E esteja com usuário funcionário
+Quando clicar "Painel"
+E clicar "Painel Locação"
+E clicar <VelocidadePalavras>
+Entao altera velocidade de rolagem das palavras no painel do Services Services Web
+
+Exemplos:
+| VelocidadePalavras |
+| Desacelera         |
+| Padrão             |
+| Acelera            |
 
 
 
 @Cenario27
-@Manual
-@PainelDevolucao
-Cenario: Previsão futura  
-Dado esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Painel"
-E clicar "Painel Locação"
-E clicar "Previsão" for futura 
-Entao aplica cor preta nas palavras do painel "Máquinas/Equipamentos Chegando"
-
-
-
-@Cenario28
-@Manual
-@PainelLocacao
-Cenario: Desacelerar palavras no painel  
-Dado esteja logado ao Services Web 
-E esteja com usuário funcionário
-E clicar "Painel"
-E clicar "Painel Locação"
-Quando clicar "Desacelerar palavaras no painel"
-Entao desacelera velocidade de transição de palavras no painel do Services Web
-
-
-
-@Cenario29
-@Manual
-@PainelLocacao
-Cenario: Velocidade padrão painel 
-Dado esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Painel"
-E clicar "Painel Locação"
-E clicar "Velocidade padrão"
-Entao aplica velocidade padrão na transição de palavras no painel do Services Web
-
-
-
-@Cenario30
-@Manual
-@PainelLocacao
-Cenario: Acelerar palavras no painel  
-Dado esteja logado ao Services Web 
-E esteja com usuário funcionário
-Quando clicar "Painel"
-E clicar "Painel Locação"
-E clicar "Acelerar palavaras no painel"
-Entao Acelera velocidade de transição de palavras no painel do Services Web
-
-
-
-@Cenario31
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -661,7 +625,7 @@ Entao atualiza os registros do painel do Services Web
 
 
 
-@Cenario32
+@Cenario28
 @Manual
 @PainelLocacao
 Cenario: Modo escuro 
