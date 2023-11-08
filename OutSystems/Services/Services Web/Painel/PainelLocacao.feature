@@ -578,13 +578,13 @@ Exemplos:
 @Cenario25
 @Manual
 @PainelDevolucao
-Cenario: Cores de acordo com a previsão 
+Cenario: Alterar cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E estiver com <Previsao> 
-Entao aplica <Cor> nas palavras do painel de devolução 
+Entao aplica <Cor> na descrição do painel de devolução 
 
 Exemplos: 
 | Previsao        | Cor      |
@@ -596,19 +596,19 @@ Exemplos:
 @Cenario26
 @Manual
 @PainelLocacao
-Cenario: Velocidade de rolagem das palavras do painel 
+Cenario: Velocidade de rolagem da descrição do painel 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Painel"
 E clicar "Painel Locação"
-E clicar <VelocidadePalavras>
-Entao altera velocidade de rolagem das palavras no painel do Services Services Web
+E clicar <VelocidadeDescricao>
+Entao altera <Velocidade> de rolagem na descrição no painel do Services Web
 
 Exemplos:
-| VelocidadePalavras |
-| Desacelera         |
-| Padrão             |
-| Acelera            |
+| VelocidadeDescricao | Velocidade |
+| Desacelera          | Baixa      |
+| Padrão              | Normal     |
+| Acelera             | Alta       |
 
 
 
@@ -628,10 +628,12 @@ Entao atualiza os registros do painel do Services Web
 @Cenario28
 @Manual
 @PainelLocacao
-Cenario: Modo escuro 
+Cenario: Alterar cor para modo escuro
 E esteja logado ao Services Web 
 E esteja com usuário funcionário 
 Quando clicar "Painel"
 E clicar "Painel Locação"
 E clicar "Dark mode"
-Entao muda cor do tema do painel do Services Web
+Entao altera cor do tema do painel do Services Web
+
+
