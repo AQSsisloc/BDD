@@ -265,28 +265,65 @@ Exemplos:
 
 
 
-@Cenario9
+@Cenario11
 @Manual
 @PainelRemessa
-Esquema do Cenario: Estornar Nota Remessa  
+Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação  
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
 E esteja logado como funcionário 
 Quando clicar em "Remessa"
-E esteja com status "Remessa concluída"
-E clicar "Estornar nota Remessa"
+E esteja com Remessa concluída
+E esteja com Movimentação concluída
+E clicar no "Raio" em "Dt. Saída"
+E clicar "Pedido Movimentação"
+E clicar "Estornar TODAS as movimentações"
 E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa> 
-E não apresenta registro no painel do Services Web
+Entao grava no Sisloc o <StatusRemessa>
+E realiza movimentação de estoque do equipamento  
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
 
 Exemplos:
-| StatusRemessa           |
-| Nota de remessa a gerar |
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
 
 
 
-@Cenario10
+@Cenario12
+@Manual
+@PainelRemessa
+Esquema do Cenario: Estornar movimentação pelo atalho lateral  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com Remessa concluída
+E esteja com Movimentação concluída
+E clicar "Estornar movimentação"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E realiza movimentação de estoque do equipamento  
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
+@Cenario13
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar expedição 
@@ -313,7 +350,7 @@ Exemplos:
 
 
 
-@Cenario11
+@Cenario14
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar reserva patrimônio 
@@ -339,7 +376,7 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario15
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar programar entrega
@@ -363,7 +400,8 @@ Exemplos:
 | Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | 
 
 
-@Cenario13
+
+@Cenario16
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar operador
@@ -388,7 +426,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario17
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar aprovação
@@ -408,7 +446,8 @@ Exemplos:
 | Ag. aprovação |
 
 
-@Cenario15
+
+@Cenario18
 @Manual
 @PainelRemessa
 Cenario: Alterar cores de acordo com a previsão 
@@ -426,7 +465,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario19
 @Manual
 @PainelDevolução
 Esquema do Cenario: Cadastrar devolução aguardando aprovação
@@ -446,7 +485,7 @@ Exemplos:
 
 
 
-@Cenario17
+@Cenario20
 @Manual
 @PainelDevolucao
 Esquema do Cenario: Aprovar devolução
@@ -471,7 +510,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario21
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Programar retirada 
@@ -498,7 +537,7 @@ Exemplos:
 
 
 
-@Cenario19
+@Cenario22
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Fazer recepção  
@@ -522,7 +561,7 @@ Exemplos:
 
 
 
-@Cenario20
+@Cenario23
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Gerar Nota Devolução 
@@ -544,7 +583,7 @@ Exemplos:
 
 
 
-@Cenario21
+@Cenario24
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Nota Devolução
@@ -565,7 +604,7 @@ Exemplos:
 
 
 
-@Cenario22
+@Cenario25
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar recepção
@@ -592,7 +631,7 @@ Exemplos:
 
 
 
-@Cenario23
+@Cenario26
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Prog. Retirada  
@@ -618,7 +657,7 @@ Exemplos:
 
 
 
-@Cenario24
+@Cenario27
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Aprovação
@@ -639,7 +678,7 @@ Exemplos:
 
 
 
-@Cenario25
+@Cenario28
 @Manual
 @PainelDevolucao
 Cenario: Alterar cores de acordo com a previsão 
@@ -657,7 +696,7 @@ Exemplos:
 
 
 
-@Cenario26
+@Cenario29
 @Manual
 @PainelLocacao
 Cenario: Alterar velocidade de rolagem da descrição do painel 
@@ -676,7 +715,7 @@ Exemplos:
 
 
 
-@Cenario27
+@Cenario30
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -689,7 +728,7 @@ Entao atualiza os registros do painel do Services Web
 
 
 
-@Cenario28
+@Cenario31
 @Manual
 @PainelLocacao
 Cenario: Alterar cor para modo escuro
