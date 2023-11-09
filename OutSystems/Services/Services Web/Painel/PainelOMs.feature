@@ -9,13 +9,10 @@ Funcionalidade: Exibir em tempo real as ordens de manutenção e seus respectivo
   Para facilitar gerenciamento de ordens de manutenção  
  
 
-Dado Esteja logado no Sisloc
-
-
 @Cenario1
 @Manual
 @PainelOMs
-Esquema do Cenario: Oficina aguardando liberação do equipamento
+Cenario: Cadastrar ordem de manutenção 
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -23,7 +20,8 @@ E esteja logado como funcionário
 Quando clicar em "Ordem de Manutenção"
 E preencher os campos disponíveis
 E clicar em "Salvar"
-Entao grava no Sisloc o <StatusOM>
+Entao grava no Sisloc <StatusOM>
+E apresenta <StatusPainel>
 E apresenta <OM>
 E apresenta <Tecnico>
 E apresenta <Cliente>
@@ -36,54 +34,101 @@ E apresenta <Total>
 E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Tecnico | Cliente             | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
-| 020781 | -       | Rosano Vasnconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+| StatusOM                                    | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguardando liberação do equipamento | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
- 
+
 @Cenario2
 @Manual
 @PainelOMs
-Esquema do Cenario: Oficina aguardando autorização para execução
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM>
-E esteja logado ao Services Web
-Quando clicar "Conlcuir Levantamento"
-E clicar "Ok" 
-Entao grava <StatusOficina_2> 
+Esquema do Cenario: Requisitar equipamento 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status oficina "Oficina aguardando liberação do equipamento"
+E clicar "Requisitar Equipamento"
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                                   | StatusOM | StatusOficina_2                           |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina fazendo levantamento dos serviços e peças | Pendente | Oficina aguarda autorização para execução |
+| StatusOM                                    | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguardando liberação do equipamento | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
-
+ 
 @Cenario3
 @Manual
 @PainelOMs
-Esquema do Cenario: Oficina aguardando autorização para execução sem defeito
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Conlcuir Levantamento"
-E marcar "Equipamento em perfeito estado de conservação e uso" 
-E clicar "Ok"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2>
+Esquema do Cenario: Iniciar Levantamento 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status oficina "Oficina aguardando liberação do equipamento"
+E clicar "Iniciar Levantamento"
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                                   | StatusOM | StatusOficina_2                                     | StatusOM_2 |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina fazendo levantamento dos serviços e peças | Pendente | Equipamento em perfeito estado de conservação e uso | Concluído  |
+| StatusOM                                          | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina fazendo levantamento dos serviços e peças | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+
+
+
+@Cenario4
+@Manual
+@PainelOMs
+Esquema do Cenario: Concluir levantamento de equipamento em perfeito estado
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status oficina "Oficina fazendo levantamento dos serviços e peças"
+E clicar "Concluir Levantamento"
+E marcar "Equipamento em perfeito estado de conservação e uso"
+E preencher os dados 
+E clicar "Ok"
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
+
+Exemplos:
+| StatusOM                                            | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Equipamento em perfeito estado de conservação e uso | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
 

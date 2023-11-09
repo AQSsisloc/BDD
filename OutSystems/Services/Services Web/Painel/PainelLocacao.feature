@@ -162,7 +162,7 @@ Exemplos:
 @Cenario7
 @Manual
 @PainelRemessa
-Esquema do Cenario: Fazer expedição  
+Esquema do Cenario: Fazer expedição com conclusão de Pedido de Movimentação automático 
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -173,8 +173,9 @@ E clicar "Fazer Expedição"
 E selecionar os patrimônios 
 E clicar "Gravar"
 E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa> 
-E realiza movimentação de estoque do equipamento 
+Entao grava no Sisloc o <StatusRemessa>
+E conclui Pedido de Movimentação no Sisloc
+E realiza movimentação de estoque do equipamento
 E não apresenta registro no painel do Services Web
 
 Exemplos:
@@ -186,17 +187,76 @@ Exemplos:
 @Cenario8
 @Manual
 @PainelRemessa
-Esquema do Cenario: Gerar nota de remessa
+Esquema do Cenario: Fazer expedição e autoriza Pedido de Movimentação
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
 E esteja logado como funcionário 
 Quando clicar em "Remessa"
-E esteja com status "Nota de remessa a gerar" 
-E clicar "Gerar nota de Remessa"
-E seleciona opção
-E clicar "Ok"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Fazer Expedição"
 Entao grava no Sisloc o <StatusRemessa> 
+E autoriza Pedido de Movimentação no Sisloc 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
+@Cenario9
+@Manual
+@PainelRemessa
+Esquema do Cenario: Efetuar movimentação pelo atalho lateral
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. movimentação"
+E clicar "Efetuar movimentação"
+E selecionar o almoxarifado
+E selecionar o patrimônio
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E concluí Pedido de Movimentação no Sisloc
+E realiza movimentação de estoque do equipamento
+E não apresenta registro no painel do Services Web
+
+Exemplos:
+| StatusRemessa     |
+| Remessa concluída |
+
+
+
+@Cenario10
+@Manual
+@PainelRemessa
+Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. movimentação"
+E clicar "Efetuar movimentação"
+E clicar no "Raio" em "Dt. Saída"
+E clicar "Pedido Movimentação"
+E clicar "Efetuar movimentação"
+E selecionar o almoxarifado
+E selecionar o patrimônio
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E concluí Pedido de Movimentação no Sisloc
+E realiza movimentação de estoque do equipamento
 E não apresenta registro no painel do Services Web
 
 Exemplos:

@@ -66,7 +66,7 @@ Exemplos:
 @Cenario3
 @Automatico
 @ParametrosEmpresasServices
-Cenario: Parêmtros Services 
+Cenario: Parâmetros Services 
 E esteja logado como funcionário     
 E clicar "configurações"
 E clicar "Parâmetros Empresa"
