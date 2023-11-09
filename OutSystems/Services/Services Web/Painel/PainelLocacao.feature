@@ -326,7 +326,7 @@ Exemplos:
 @Cenario13
 @Manual
 @PainelRemessa
-Esquema do Cenario: Estornar expedição 
+Esquema do Cenario: Estornar expedição com autorização automática de Pedido de Movimentação
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -564,49 +564,6 @@ Exemplos:
 @Cenario23
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Gerar Nota Devolução 
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Devolução"
-E esteja com status "Devolução concluída"
-E clicar "Gerar Nota Devolução"
-E preencher os dados 
-E clicar "Ok"
-Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel no Services Web
- 
-Exemplos:
-| StatusDevolucao    |
-| Devolução conclída |
-
-
-
-@Cenario24
-@Manual
-@PainelDevolução 
-Esquema do Cenario: Estornar Nota Devolução
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Devolução"
-E esteja com status "Devolução concluída"
-E clicar "Extornar Nota Devolução"
-E clicar "Sim"
-Entao grava no Sisloc o <StatusDevolucao>
-E não apresenta registro no painel do Services Web
- 
-Exemplos:
-| StatusDevolucao           |
-| Nota de devolução a gerar |
-
-
-
-@Cenario25
-@Manual
-@PainelDevolução 
 Esquema do Cenario: Estornar recepção
 Dado Esteja logado no Sisloc
 Dado esteja logado ao Services Web 
@@ -631,7 +588,7 @@ Exemplos:
 
 
 
-@Cenario26
+@Cenario24
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Prog. Retirada  
@@ -657,7 +614,7 @@ Exemplos:
 
 
 
-@Cenario27
+@Cenario25
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Aprovação
@@ -678,7 +635,7 @@ Exemplos:
 
 
 
-@Cenario28
+@Cenario26
 @Manual
 @PainelDevolucao
 Cenario: Alterar cores de acordo com a previsão 
@@ -696,7 +653,7 @@ Exemplos:
 
 
 
-@Cenario29
+@Cenario27
 @Manual
 @PainelLocacao
 Cenario: Alterar velocidade de rolagem da descrição do painel 
@@ -715,7 +672,7 @@ Exemplos:
 
 
 
-@Cenario30
+@Cenario28
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -728,7 +685,7 @@ Entao atualiza os registros do painel do Services Web
 
 
 
-@Cenario31
+@Cenario29
 @Manual
 @PainelLocacao
 Cenario: Alterar cor para modo escuro
