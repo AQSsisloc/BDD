@@ -162,7 +162,7 @@ Exemplos:
 @Cenario7
 @Manual
 @PainelRemessa
-Esquema do Cenario: Fazer expedição com conclusão de Pedido de Movimentação automático 
+Esquema do Cenario: Fazer expedição com conclusão de Pedido de Movimentação de Saída automático 
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -184,149 +184,10 @@ Exemplos:
 
 
 
-@Cenario8
+@Cenario08
 @Manual
 @PainelRemessa
-Esquema do Cenario: Fazer expedição e autoriza Pedido de Movimentação
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Remessa"
-E esteja com status "Ag. envio (com operador)"
-E clicar "Fazer Expedição"
-Entao grava no Sisloc o <StatusRemessa> 
-E autoriza Pedido de Movimentação no Sisloc 
-E apresenta <Previsao>
-E apresenta <Cidade>
-E apresenta <Observacao>
-E apresenta <TipoLocacao>
-E apresenta <Motorista>
-E apresenta <Itens> no painel do Services Web
-
-Exemplos:
-| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
-| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
-
-
-
-@Cenario9
-@Manual
-@PainelRemessa
-Esquema do Cenario: Efetuar movimentação pelo atalho lateral
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Remessa"
-E esteja com status "Ag. movimentação"
-E clicar "Efetuar movimentação"
-E selecionar o almoxarifado
-E selecionar o patrimônio
-E clicar "Gravar"
-E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa>
-E concluí Pedido de Movimentação no Sisloc
-E realiza movimentação de estoque do equipamento
-E não apresenta registro no painel do Services Web
-
-Exemplos:
-| StatusRemessa     |
-| Remessa concluída |
-
-
-
-@Cenario10
-@Manual
-@PainelRemessa
-Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Remessa"
-E esteja com status "Ag. movimentação"
-E clicar "Efetuar movimentação"
-E clicar no "Raio" em "Dt. Saída"
-E clicar "Pedido Movimentação"
-E clicar "Efetuar movimentação"
-E selecionar o almoxarifado
-E selecionar o patrimônio
-E clicar "Gravar"
-E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa>
-E concluí Pedido de Movimentação no Sisloc
-E realiza movimentação de estoque do equipamento
-E não apresenta registro no painel do Services Web
-
-Exemplos:
-| StatusRemessa     |
-| Remessa concluída |
-
-
-
-@Cenario11
-@Manual
-@PainelRemessa
-Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação  
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Remessa"
-E esteja com Remessa concluída
-E esteja com Movimentação concluída
-E clicar no "Raio" em "Dt. Saída"
-E clicar "Pedido Movimentação"
-E clicar "Estornar TODAS as movimentações"
-E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa>
-E realiza movimentação de estoque do equipamento  
-E apresenta <Previsao>
-E apresenta <Cidade>
-E apresenta <Observacao>
-E apresenta <TipoLocacao>
-E apresenta <Motorista>
-E apresenta <Itens> no painel do Services Web
-
-Exemplos:
-| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
-| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
-
-
-
-@Cenario12
-@Manual
-@PainelRemessa
-Esquema do Cenario: Estornar movimentação pelo atalho lateral  
-Dado esteja logado ao Services Web 
-E esteja logado como funcionário
-E esteja logado no Sisloc 
-E esteja logado como funcionário 
-Quando clicar em "Remessa"
-E esteja com Remessa concluída
-E esteja com Movimentação concluída
-E clicar "Estornar movimentação"
-E clicar "Sim"
-Entao grava no Sisloc o <StatusRemessa>
-E realiza movimentação de estoque do equipamento  
-E apresenta <Previsao>
-E apresenta <Cidade>
-E apresenta <Observacao>
-E apresenta <TipoLocacao>
-E apresenta <Motorista>
-E apresenta <Itens> no painel do Services Web
-
-Exemplos:
-| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
-| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
-
-
-
-@Cenario13
-@Manual
-@PainelRemessa
-Esquema do Cenario: Estornar expedição com autorização automática de Pedido de Movimentação
+Esquema do Cenario: Estornar expedição com Pedido de Movimentação de Saída automático
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -350,7 +211,171 @@ Exemplos:
 
 
 
+@Cenario9
+@Manual
+@PainelRemessa
+Esquema do Cenario: Fazer expedição com conclusão de Pedido de Movimentação de Saída manual 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. envio (com operador)"
+E clicar "Fazer Expedição"
+Entao grava no Sisloc o <StatusRemessa> 
+E autoriza Pedido de Movimentação de Saída no Sisloc 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
+@Cenario10
+@Manual
+@PainelRemessa
+Esquema do Cenario: Efetuar movimentação de Saída pelo atalho no menu lateral
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. movimentação"
+E clicar "Efetuar movimentação"
+E selecionar o almoxarifado
+E selecionar o patrimônio
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E conclui Pedido de Movimentação no Sisloc
+E realiza movimentação de estoque do equipamento
+E não apresenta registro no painel do Services Web
+
+Exemplos:
+| StatusRemessa     |
+| Remessa concluída |
+
+
+
+@Cenario11
+@Manual
+@PainelRemessa
+Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. movimentação"
+E clicar "Efetuar movimentação"
+E clicar no "Raio" em "Dt. Saída"
+E clicar "Pedido Movimentação"
+E clicar "Efetuar movimentação"
+E selecionar o almoxarifado
+E selecionar o patrimônio
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E conclui Pedido de Movimentação de Saída no Sisloc
+E realiza movimentação de estoque do equipamento
+E não apresenta registro no painel do Services Web
+
+Exemplos:
+| StatusRemessa     |
+| Remessa concluída |
+
+
+
+@Cenario12
+@Manual
+@PainelRemessa
+Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Remessa concluída"
+E esteja com Pedido Movimentação de Saída concluído
+E clicar no "Raio" em "Dt. Saída"
+E clicar "Pedido Movimentação"
+E clicar "Estornar TODAS as movimentações"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E realiza movimentação de estoque do equipamento  
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
+@Cenario13
+@Manual
+@PainelRemessa
+Esquema do Cenario: Estornar movimentação pelo atalho no menu lateral com Pedido de Movimentação de Saída manual
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status Remessa concluída
+E clicar "Estornar movimentação"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa>
+E realiza movimentação de estoque do equipamento  
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa    | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag. movimentação | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
 @Cenario14
+@Manual
+@PainelRemessa
+Esquema do Cenario: Estornar expedição com autorização Pedido de Movimentação de Saída manual
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Remessa"
+E esteja com status "Ag. movimentação"
+E clicar "Estornar expedição"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusRemessa> 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Motorista>
+E apresenta <Itens> no painel do Services Web
+
+Exemplos:
+| StatusRemessa           | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens                               | Motorista |
+| Ag.envio (com operador) | 30/10/2023 13:25 | Contagem | teste...teste...teste | 28 Dias     | 2 Bebedouro, 1 Bomba de mangote 1,5 | Admin     |
+
+
+
+@Cenario15
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar reserva patrimônio 
@@ -376,7 +401,7 @@ Exemplos:
 
 
 
-@Cenario15
+@Cenario16
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar programar entrega
@@ -401,7 +426,7 @@ Exemplos:
 
 
 
-@Cenario16
+@Cenario17
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar operador
@@ -426,7 +451,7 @@ Exemplos:
 
 
 
-@Cenario17
+@Cenario18
 @Manual
 @PainelRemessa
 Esquema do Cenario: Estornar aprovação
@@ -447,7 +472,7 @@ Exemplos:
 
 
 
-@Cenario18
+@Cenario19
 @Manual
 @PainelRemessa
 Cenario: Alterar cores de acordo com a previsão 
@@ -465,7 +490,7 @@ Exemplos:
 
 
 
-@Cenario19
+@Cenario20
 @Manual
 @PainelDevolução
 Esquema do Cenario: Cadastrar devolução aguardando aprovação
@@ -485,7 +510,7 @@ Exemplos:
 
 
 
-@Cenario20
+@Cenario21
 @Manual
 @PainelDevolucao
 Esquema do Cenario: Aprovar devolução
@@ -510,7 +535,7 @@ Exemplos:
 
 
 
-@Cenario21
+@Cenario22
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Programar retirada 
@@ -537,10 +562,10 @@ Exemplos:
 
 
 
-@Cenario22
+@Cenario23
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Fazer recepção  
+Esquema do Cenario: Fazer recepção com conclusão de Pedido de Movimentação de Entrada automático 
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -548,23 +573,24 @@ E esteja logado como funcionário
 Quando clicar em "Devolução"
 E esteja com status "Ag. devolução"
 E clicar "Fazer Recepção"
-E preencher os dados 
+E selecionar o patrimônio 
 E clicar "Gravar"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
+E conclui Pedido de Movimentação de Entrada
 E realiza movimentação de estoque do equipamento 
 E não apresenta registro no painel do Services Web
  
 Exemplos:
-| StatusDevolucao    |
-| Devolução conclída |
+| StatusDevolucao           |
+| Nota de devolução a gerar |
 
 
 
-@Cenario23
+@Cenario24
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Estornar recepção
+Esquema do Cenario: Estornar recepção com Pedido de Movimentação de Entrada automático
 Dado Esteja logado no Sisloc
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
@@ -572,7 +598,7 @@ E esteja logado no Sisloc
 E esteja logado como funcionário 
 Quando clicar em "Devolução"
 E esteja com status "Nota de devolução a gerar"
-E clicar "Extornar Recpção"
+E clicar "Extornar Recepção"
 E clicar "Sim"
 Entao grava no Sisloc o <StatusDevolucao>
 E realiza movimentação de estoque do equipamento 
@@ -588,7 +614,172 @@ Exemplos:
 
 
 
-@Cenario24
+@Cenario25
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Fazer recepção com Pedido de Movimentação de Entrada manual
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. devolução"
+E clicar "Fazer Recepção"
+E selecionar o patrimônio
+E clicar "Ok"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E autoriza Pedido de Movimentação de Entrada no Sisloc
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao  | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. movimentação | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+
+@Cenario26
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Efetuar movimentação de Entrada pelo atalho no menu lateral  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. movimentação"
+E clicar "Efeturar movimentação"
+E selecionar almoxarifado
+E selecionar o patrimônio
+E clicar "Ok"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E concluí Pedido de Movimentação de Entrada no Sisloc
+E realiza movimentação de estoque do equipamento
+E não apresenta registro no painel do Services Web
+
+Exemplos:
+| StatusDevolucao     |
+| Devolução concluída |
+
+
+
+@Cenario27
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Efetuar movimentação de Entrada pelo Pedido de Movimentação  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. movimentação"
+E clicar no "Raio" em "Data entrada"
+E clicar "Abrir Pedido Movimentação"
+E clicar "Rastreamento"
+E clicar "Devolução (Realizada)"
+E clicar "Efetuar movimentação"
+E selecionar o almoxarifado
+E selecionar o patrimônio
+E clicar "Gravar"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E conclui Pedido de Movimentação de Entrada no Sisloc
+E realiza movimentação de estoque do equipamento
+E não apresenta registro no painel do Services Web
+
+Exemplos:
+| StatusDevolucao     |
+| Devolução concluída |
+
+
+
+@Cenario28
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar movimentação de Entrada pelo Pedido de Movimentação  
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Devolução concluída"
+E clicar no "Raio" em "Data entrada"
+E clicar "Abrir Pedido Movimentação"
+E clicar "Rastreamento"
+E clicar "Devolução (Realizada)"
+E clicar "Estornar TODAS as Movimentações"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E realiza movimentação de estoque do equipamento 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao  | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. movimentação | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+
+@Cenario29
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar movimentação de Entrada pelo atalho no menu lateral 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Devolução concluída"
+E clicar "Estornar Movimentação"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E realiza movimentação de estoque do equipamento 
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao  | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. movimentação | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+@Cenario30
+@Manual
+@PainelDevolução 
+Esquema do Cenario: Estornar recepção com Pedido de Movimentação de Entrada manual
+Dado Esteja logado no Sisloc
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Devolução"
+E esteja com status "Ag. movimentação"
+E clicar "Extornar Recepção"
+E clicar "Sim"
+Entao grava no Sisloc o <StatusDevolucao>
+E apresenta <Previsao>
+E apresenta <Cidade>
+E apresenta <Observacao>
+E apresenta <TipoLocacao>
+E apresenta <Itens> no painel do Services Web
+ 
+Exemplos:
+| StatusDevolucao | Previsao         | Cidade   | Observacao            | TipoLocacao | Itens       |
+| Ag. devolução   | 30/10/2023 14:08 | Contagem | teste...teste...teste | 28 Dias     | 1 Bebedouro |
+
+
+
+@Cenario31
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Prog. Retirada  
@@ -614,7 +805,7 @@ Exemplos:
 
 
 
-@Cenario25
+@Cenario32
 @Manual
 @PainelDevolução 
 Esquema do Cenario: Estornar Aprovação
@@ -635,7 +826,7 @@ Exemplos:
 
 
 
-@Cenario26
+@Cenario33
 @Manual
 @PainelDevolucao
 Cenario: Alterar cores de acordo com a previsão 
@@ -653,7 +844,7 @@ Exemplos:
 
 
 
-@Cenario27
+@Cenario34
 @Manual
 @PainelLocacao
 Cenario: Alterar velocidade de rolagem da descrição do painel 
@@ -672,7 +863,7 @@ Exemplos:
 
 
 
-@Cenario28
+@Cenario35
 @Manual
 @PainelLocacao
 Cenario: Atualizar os dados manualmente 
@@ -685,7 +876,7 @@ Entao atualiza os registros do painel do Services Web
 
 
 
-@Cenario29
+@Cenario36
 @Manual
 @PainelLocacao
 Cenario: Alterar cor para modo escuro
