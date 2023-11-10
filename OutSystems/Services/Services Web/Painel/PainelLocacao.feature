@@ -475,7 +475,7 @@ Exemplos:
 @Cenario19
 @Manual
 @PainelRemessa
-Cenario: Alterar cores de acordo com a previsão 
+Esquema do Cenario: Alterar cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
 Quando clicar "Painel"
@@ -829,7 +829,7 @@ Exemplos:
 @Cenario33
 @Manual
 @PainelDevolucao
-Cenario: Alterar cores de acordo com a previsão 
+Esquema do Cenario: Alterar cores de acordo com a previsão 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário  
 Quando clicar "Painel"
@@ -847,7 +847,7 @@ Exemplos:
 @Cenario34
 @Manual
 @PainelLocacao
-Cenario: Alterar velocidade de rolagem da descrição do painel 
+Esquema do Cenario: Alterar velocidade de rolagem da descrição do painel 
 Dado esteja logado ao Services Web 
 E esteja com usuário funcionário
 Quando clicar "Painel"
