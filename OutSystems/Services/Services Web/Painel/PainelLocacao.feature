@@ -266,7 +266,7 @@ Exemplos:
 @Cenario11
 @Manual
 @PainelRemessa
-Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  
+Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  de Saída
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -295,7 +295,7 @@ Exemplos:
 @Cenario12
 @Manual
 @PainelRemessa
-Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação  
+Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação  de Saída
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -671,7 +671,7 @@ Exemplos:
 @Cenario27
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Efetuar movimentação de Entrada pelo Pedido de Movimentação  
+Esquema do Cenario: Efetuar movimentação pelo Pedido de Movimentação  de Entrada
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
@@ -701,7 +701,7 @@ Exemplos:
 @Cenario28
 @Manual
 @PainelDevolução 
-Esquema do Cenario: Estornar movimentação de Entrada pelo Pedido de Movimentação  
+Esquema do Cenario: Estornar movimentação pelo Pedido de Movimentação de Entrada 
 Dado esteja logado ao Services Web 
 E esteja logado como funcionário
 E esteja logado no Sisloc 
