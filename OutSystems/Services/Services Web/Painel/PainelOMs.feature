@@ -35,7 +35,7 @@ E apresenta <SLA> no painel do Services Web
 
 Exemplos:
 | StatusOM                                    | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
-| Oficina aguardando liberação do equipamento | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+| Oficina aguardando liberação do equipamento | Pendente     | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
 
@@ -65,7 +65,7 @@ E apresenta <SLA> no painel do Services Web
 
 Exemplos:
 | StatusOM                                    | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
-| Oficina aguardando liberação do equipamento | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+| Oficina aguardando liberação do equipamento | Pendente     | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
 
 
  
@@ -95,7 +95,7 @@ E apresenta <SLA> no painel do Services Web
 
 Exemplos:
 | StatusOM                                          | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
-| Oficina fazendo levantamento dos serviços e peças | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+| Oficina fazendo levantamento dos serviços e peças | Pendente     | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
@@ -128,132 +128,166 @@ E apresenta <SLA> no painel do Services Web
 
 Exemplos:
 | StatusOM                                            | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
-| Equipamento em perfeito estado de conservação e uso | Pendente     | 020781 | -       | Rosano Vasconcelos |                | teste    | Executando | PG-10      | 10:43 | 49:42 | -10:13 |
+| Equipamento em perfeito estado de conservação e uso | Conlcuído    | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario4
 @Manual
 @PainelOMs
-Esquema do Cenario: Autorizar Faturamento 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM>
-E esteja logado ao Services Web
-Quando clicar "Autorizar faturamento"
-E preencher "Quem autorizou preencher os faturamento" 
+Esquema do Cenario: Concluir levantamento 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status oficina "Oficina fazendo levantamento dos serviços e peças"
+E clicar "Concluir Levantamento"
 E clicar "Ok"
-Entao grava <StatusOficina_2> 
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                           | StatusOM | StatusOficina_2                           |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina aguarda autorização para execução | Pendente | Oficina aguarda autorização para execução |
+| StatusOM                                            | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Equipamento em perfeito estado de conservação e uso | Pendente    | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
-
+ 
 @Cenario5
 @Manual
 @PainelOMs
-Esquema do Cenario: Autorizar Execução 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Autorizar execução"
-E preencher "Previsão Entrega" 
+Esquema do Cenario: Autorizar Faturamento 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status oficina "Oficina aguardando autorização para execução"
+E clicar "Autorizar Faturamento"
+E preencher os dados
 E clicar "Ok"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                           | StatusOM_1 | StatusOficina_2                        | StatusOM_2     |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina aguarda autorização para execução | Pendente   | Oficina executando ordem de manutenção | Em andamento |
+| StatusOM                                  | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguarda autorização para execução | Pendente    | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario6
 @Manual
 @PainelOMs
-Esquema do Cenario: Programar Execução 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Programar execução"
-E selecionar responsável <Tecnico> 
-E preencher os dados 
+Esquema do Cenario: Autorizar Execução 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina aguarda autorização para execução"
+E clicar "Autorizar Execução"
+E preencher os dados
 E clicar "Ok"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                        | StatusOM_1   | Tecnico  | StatusOficina_2                        | StatusOM_2     | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina executando ordem de manutenção | Em andamento | 1-Rosano | Oficina executando ordem de manutenção | Em andamento | Executando   |
+| StatusOM                               | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina executando ordem de manutenção | Em andamento | 020783 | -       | Rosano Vasconcelos |                | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario7
 @Manual
 @PainelOMs
-Esquema do Cenario: Concluir Execução 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Concluir Execução"
-E preencher os dados 
+Esquema do Cenario: Programar Execução 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "ficina executando ordem de manutenção"
+E clicar "Programar Execução"
+E preencher os dados
 E clicar "Ok"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                        | StatusOM_1   | Tecnico  | StatusOficina_2          | StatusOM_2 | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina executando ordem de manutenção | Em andamento | 1-Rosano | Oficina concluiu serviço | Concluído  | Concluído    |
+| StatusOM                               | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina executando ordem de manutenção | Em andamento | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario8
 @Manual
 @PainelOMs
-Esquema do Cenario: Gerar NF Fatura
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Gerar NF Fatura"
-E preenhcer os dados
+Esquema do Cenario: Concluir Execução 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina executando ordem de manutenção"
+E clicar "Concluir Execução"
+E preencher os dados
 E clicar "Ok"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1          | StatusOM_1 | Tecnico  | StatusOficina_2          | StatusOM_2 | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina concluiu serviço | Concluído  | 1-Rosano | Oficina concluiu serviço | Concluído  | Concluído    |
+| StatusOM                 | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status     | Patrimonio | Ultil | Total | SLA    |
+| Oficina concluiu serviço | Concluído    | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | Executando | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
@@ -261,24 +295,31 @@ Exemplos:
 @Manual
 @PainelOMs
 Esquema do Cenario: Entregar equipamento 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Entregar Equipamento"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina concluiu serviço"
+E clicar "Entregar Equipamento"
+E preencher os dados
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1          | StatusOM_1 | Tecnico  | StatusOficina_2      | StatusOM_2 | StatusPainel   |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina concluiu serviço | Concluído  | 1-Rosano | Equipamento Entregue | Concluído  | Eqpto Entregue |
+| StatusOM             | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status        | Patrimonio | Ultil | Total | SLA    |
+| Equipamento entregue | Concluído    | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | Epto.Entregue | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
@@ -286,49 +327,61 @@ Exemplos:
 @Manual
 @PainelOMs
 Esquema do Cenario: Encerrar
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Encerrar"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Equipamento entregue"
+E clicar "Encerrar"
+E preencher os dados
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1      | StatusOM_1 | Tecnico  | StatusOficina_2 | StatusOM_2 | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Equipamento Entregue | Concluído  | 1-Rosano | F-Fechadas      | Concluído  | -            |
-
+| StatusOM     | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| F - Fechadas | Concluído    | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 @Cenario11
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar encerramento
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Estornar encerramento"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "F - Fechadas"
+E clicar "Estornar Encerramento"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1 | StatusOM_1 | Tecnico  | StatusOficina_2      | StatusOM_2 | StatusPainel   |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | F-Fechadas      | Concluído  | 1-Rosano | Equipamento Entregue | Concluído  | Eqpto Entregue |
+| StatusOM             | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Equipamento entregue | Concluído    | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
@@ -336,191 +389,216 @@ Exemplos:
 @Manual
 @PainelOMs
 Esquema do Cenario: Estornar entrega
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Estornar entrega"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Equipamento entregue"
+E clicar "Estornar Entrega"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1      | StatusOM_1 | Tecnico  | StatusOficina_2          | StatusOM_2 | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Equipamento Entregue | Concluído  | 1-Rosano | Oficina concluiu serviço | Concluído  | -            |
+| StatusOM                 | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina concluiu serviço | Concluído    | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario13
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar NF Fatura
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Estornar NF Fatura"
+Esquema do Cenario: Estornar conclusão Execução
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina concluiu serviço"
+E clicar "Estornar Conclusão Execução"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1      | StatusOM_1 | Tecnico  | StatusOficina_2          | StatusOM_2 | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Equipamento Entregue | Concluído  | 1-Rosano | Oficina concluiu serviço | Concluído  | -            |
+| StatusOM                               | StatusPainel | OM     | Tecnico            | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina executando ordem de manutenção | Em andamento | 020783 | Rosano Vasconcelos | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario14
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar conclusão Execução
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Estornar Conclusão Execução"
+Esquema do Cenario: Estornar programação
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina executando ordem de manutenção "
+E clicar "Estornar Programação"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1      | StatusOM_1 | Tecnico  | StatusOficina_2                        | StatusOM_2   | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Equipamento Entregue | Concluído  | 1-Rosano | Oficina executando ordem de manutenção | Em andamento | -            |
+| StatusOM                               | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina executando ordem de manutenção | Em andamento | 020783 |  -      | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario15
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar programação
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E tenha <Tecnico>
-E esteja logado ao Services Web
-Quando clicar "Estornar Programação"
+Esquema do Cenario: Estornar autorização de execução 
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina executando ordem de manutenção "
+E clicar "Estornar Autoriz.Execução"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-E grava <StatusPainel>
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1      | StatusOM_1 | Tecnico  | StatusOficina_2                        | StatusOM_2   | StatusPainel |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Equipamento Entregue | Concluído  | 1-Rosano | Oficina executando ordem de manutenção | Em andamento | -            |
+| StatusOM                                     | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguardando autorização para execução | Pendente     | 020783 | -       | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario16
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar autorização de execução 
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Estornar Autorização Execução"
+Esquema do Cenario: Estornar Autorização Faturamento
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina executando ordem de manutenção"
+E clicar "Estornar Autoriz.Faturamento"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                        | StatusOM_1  | StatusOficina_2                           | StatusOM_2 | 
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina executando ordem de manutenção | Concluído   | Oficina aguarda autorização para execução | Pendente   | 
+| StatusOM                                     | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguardando autorização para execução | Pendente     | 020783 | -       | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario17
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar Autorização Faturamento
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Estornar Autoriz. Faturamneto"
+Esquema do Cenario: Estornar Conclusão Levantamento
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina aguarda autorização para execução"
+E clicar "Estornar Conclusão Levantamento"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                        | StatusOM_1 | StatusOficina_2                           | StatusOM_2 | 
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina executando ordem de manutenção | Concluído  | Oficina aguarda autorização para execução | Pendente   | 
+| StatusOM                                         | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina fazendo levantamento de serviços e peças | Pendente     | 020783 | -       | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
 @Cenario18
 @Manual
 @PainelOMs
-Esquema do Cenario: Estornar Conclusão Levantamento
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Estornar Conclusão Levantamento"
-E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
-
-Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                        | StatusOM_1 | StatusOficina_2                                   | StatusOM_2 |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina executando ordem de manutenção | Concluído  | Oficina fazendo levantamento dos serviços e peças | Pendente   |
-
-
-
-@Cenario19
-@Manual
-@PainelOMs
 Esquema do Cenario: Estornar Início levantamento
-E esteja logado como funcionário    
-E contenha no Sisloc <OM> 
-E tenha <Cliente> 
-E tenha <Problema> 
-E tenha <Patrimonio>
-E tenha <StatusOficina_1>
-E tenha <StatusOM_1>
-E esteja logado ao Services Web
-Quando clicar "Estornar Início Levantamento"
+Dado esteja logado ao Services Web 
+E esteja logado como funcionário
+E esteja logado no Sisloc 
+E esteja logado como funcionário 
+Quando clicar em "Ordem de Manutenção"
+E esteja com status "Oficina fazendo levantamento de serviços e peças"
+E clicar "Estornar Início Levantamento"
 E clicar "Sim"
-Entao grava <StatusOficina_2> 
-E grava <StatusOM_2> 
+Entao grava no Sisloc o <StatusOM>
+E apresenta <StatusPainel>
+E apresenta <OM>
+E apresenta <Tecnico>
+E apresenta <Cliente>
+E apresenta <UltAtualizacao>
+E apresenta <Problema>
+E apresenta <Status>
+E apresenta <Patrimonio>
+E apresenta <Util>
+E apresenta <Total>
+E apresenta <SLA> no painel do Services Web
 
 Exemplos:
-| OM     | Cliente             | Problema | Patrimonio | StatusOficina_1                                   | StatusOM_1 | StatusOficina_2                          | StatusOM_2 |
-| 020781 | Rosano Vasnconcelos | teste    | PG-10      | Oficina fazendo levantamento dos serviços e peças | Concluído  | Oficina aguarda liberação do equipamento | Pendente   |
+| StatusOM                                 | StatusPainel | OM     | Tecnico | Cliente            | UltAtualizacao   | Problema | Status | Patrimonio | Ultil | Total | SLA    |
+| Oficina aguarda liberação do equipamento | Pendente     | 020783 | -       | Rosano Vasconcelos | 14/11/2023 17:36 | teste    | -      | BEB-1      | 10:43 | 49:42 | -10:13 |
 
 
 
