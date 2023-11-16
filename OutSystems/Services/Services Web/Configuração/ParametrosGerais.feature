@@ -215,7 +215,7 @@ Exemplos:
 | Matriz  | Template mensagem email | Nome empresa: [NOMEEMPRESA];Número remessa: [NUMEROREMESSA];Contato: [NOMECONTATO];Cliente: [NOMECLIENTE];Endereço entrega: [ENDERECOENTREGA] e Produtos: [PRODUTOS]. | Parâmetro atualizado com sucesso ! |
 
 
-@Cenario08
+@Cenario09
 @Automatizar
 @ParametrosGeraisDevolução
 Esquema do Cenario: Selecionar opções nas ações da aba Devolução
@@ -238,7 +238,7 @@ Exemplos:
 
 
 
-@Cenario09
+@Cenario10
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar ações na aba Sisloc Messenger
@@ -261,7 +261,7 @@ Exemplos:
 
 
 
-@Cenario10
+@Cenario11
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar senha na aba Sisloc Messenger
@@ -283,7 +283,7 @@ Exemplos:
 
 
 
-@Cenario11
+@Cenario12
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger
@@ -304,7 +304,7 @@ Exemplos:
 
 
 
-@Cenario12
+@Cenario13
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger sem informar telefone
@@ -322,7 +322,7 @@ Exemplos:
 
 
 
-@Cenario13
+@Cenario14
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar E-mail na aba Sisloc Messenger
@@ -343,7 +343,7 @@ Exemplos:
 
 
 
-@Cenario14
+@Cenario15
 @Automatizar
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar E-mail na aba Sisloc Messenger sem informar e-mail
