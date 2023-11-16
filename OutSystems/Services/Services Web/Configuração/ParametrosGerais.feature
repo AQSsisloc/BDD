@@ -96,7 +96,7 @@ Exemplos:
 
 
 @Cenario04
-@Automatizar
+@Manual
 @ParametrosGeraisRota
 Esquema do Cenario: Editar ações na aba Rota
 E selecionado empresa <Empresa>
@@ -123,7 +123,7 @@ Exemplos:
 
 
 @Cenario05
-@Automatizar
+@Manual
 @ParametrosGeraisOrdemDeManutencao
 Esquema do Cenario: Selecionar opções nas ações da aba Ordem de Manutenção
 E selecionado empresa <Empresa>
@@ -171,7 +171,7 @@ Exemplos:
 
 
 @Cenario07
-@Automatizar
+@Manual
 @ParametrosGeraisChecklist
 Esquema do Cenario: Selecionar opções nas ações da aba Checklist
 E selecionado empresa <Empresa>
@@ -194,7 +194,7 @@ Exemplos:
 
 
 @Cenario08
-@Automatizar
+@Manual
 @ParametrosGeraisRemessa
 Esquema do Cenario: Selecionar opções nas ações da aba Remessa 
 E selecionado empresa <Empresa>
@@ -215,8 +215,9 @@ Exemplos:
 | Matriz  | Template mensagem email | Nome empresa: [NOMEEMPRESA];Número remessa: [NUMEROREMESSA];Contato: [NOMECONTATO];Cliente: [NOMECLIENTE];Endereço entrega: [ENDERECOENTREGA] e Produtos: [PRODUTOS]. | Parâmetro atualizado com sucesso ! |
 
 
+
 @Cenario09
-@Automatizar
+@Manual
 @ParametrosGeraisDevolução
 Esquema do Cenario: Selecionar opções nas ações da aba Devolução
 E selecionado empresa <Empresa>
@@ -239,7 +240,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar ações na aba Sisloc Messenger
 E selecionado empresa <Empresa>
@@ -262,7 +263,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Editar senha na aba Sisloc Messenger
 E selecionado empresa <Empresa>
@@ -284,7 +285,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @ParametrosGeraisSislocMessenger
 Esquema do Cenario: Testar WhatsApp na aba Sisloc Messenger
 E selecionado empresa <Empresa>
