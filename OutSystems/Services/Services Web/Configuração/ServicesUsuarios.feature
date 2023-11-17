@@ -229,13 +229,15 @@ E selecionar "Usuários"
 Quando clicar "Ações"
 E clicar "Transferir responsável"
 E selecionar <ResponsavelDestino>
+E selecionar <Rota>
 E clicar "Transferir Responsável"
+E clicar "Sim"
 Entao grava os dados 
-E retorna <MensagemEmpresa>
+E retorna <MensagemTransferencia>
 
 Exemplos:
-| ResponsavelDestino      | MensagemEmpresa                |
-| AdminPortalRole         | Configuração salva com sucesso |
+| ResponsavelDestino | MensagemTransferencia                                                                                       |
+| AQS                | O processo de transferência dos itens selecionados iniciada. Assim que for concluído, você será notificado. |
 
 
 
