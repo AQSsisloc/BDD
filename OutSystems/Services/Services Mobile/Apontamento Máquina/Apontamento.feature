@@ -33,7 +33,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar 
+@Manual 
 @Apontamento
 Esquema do Cenario: Apontamento em progresso 
 E esteja logado com usuário funcionário
@@ -151,7 +151,7 @@ Exemplos:
 
 
 @Cenario8
-@Automatizar 
+@Manual
 @Apontamento
 Esquema do Cenario: Adicionar eventos diferentes com mesma data 
 E esteja logado com usuário funcionário
@@ -270,7 +270,7 @@ Exemplos:
 
 
 @Cenario14
-@Manual
+@Automatizar
 @Apontamento
 Esquema do Cenario: excluir assinatura 
 E esteja logado com usuário funcionário

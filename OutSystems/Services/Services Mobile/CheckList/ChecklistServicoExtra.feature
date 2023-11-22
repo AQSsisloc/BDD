@@ -169,7 +169,7 @@ Exemplos:
 
 
 @Cenario8
-@Automatizar
+@Manual
 @ChecklistServicoExtra
 Esquema do Cenario: Visualizar fila de sicronização de um checklist de serviço extra
 E que esteja logado com usuário funcionário
@@ -190,7 +190,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar
+@Manual
 @ChecklistServicoExtra
 Esquema do Cenario: Pesquisar checklists de serviço extra atuais
 E que esteja logado com usuário funcionário
@@ -208,7 +208,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @ChecklistServicoExtra
 Esquema do Cenario: Pesquisar checklists de serviço extra atrasados
 E que esteja logado com usuário funcionário
@@ -226,7 +226,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ChecklistServicoExtra
 Esquema do Cenario: Pesquisar checklists de seviço extra futuros
 E que esteja logado com usuário funcionário
@@ -244,7 +244,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @ChecklistServicoExtra
 Esquema do Cenario: Pesquisar um checklist serviço extra já cadastrado
 E que esteja logado com usuário funcionário

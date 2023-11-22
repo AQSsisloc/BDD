@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @BaixaComprovante
 Esquema do Cenario: Baixar comprovante de entrega 
 E esteja logado com usuário funcionário
@@ -34,9 +34,9 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @BaixaComprovanteOffline
-Esquema do Cenario: Baixar comprovante de entrega 
+Esquema do Cenario: Baixar comprovante de entrega offline
 E esteja logado com usuário funcionário
 E esteja com a empresa <Empresa>
 E esteja no modo offline

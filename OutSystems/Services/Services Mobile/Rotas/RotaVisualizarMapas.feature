@@ -13,7 +13,7 @@ Dado que esteja logado no Service Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @ExibirTrajeto
 Esquema do Cenario: Exibir trajeto da rota 
 E esteja logado com usuário funcionário
@@ -29,7 +29,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @LocalAtividade
 Esquema do Cenario: Exibir local da atividade 
 E esteja logado com usuário funcionário

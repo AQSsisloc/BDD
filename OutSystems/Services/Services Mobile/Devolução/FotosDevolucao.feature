@@ -35,7 +35,7 @@ Exemplos:
 @Cenario2
 @Manual
 @InserirFotoDevolucaoFrontal
-Esquema do Cenario: Inserir foto na devolucao com câmera frontal
+Esquema do Cenario: Inserir foto na devolução com câmera frontal
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Remessa>
@@ -56,7 +56,7 @@ Exemplos:
 @Cenario3
 @Manual
 @FecharCameraDevolucao 
-Esquema do Cenario: Inserir foto na remessa
+Esquema do Cenario: Inserir foto na devolução
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Devolucao>
@@ -76,7 +76,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @ExcluirFotoDevolucao
-Esquema do Cenario: Excluir foto na remessa 
+Esquema do Cenario: Excluir foto na rdevolução 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Devolucao>
@@ -96,7 +96,7 @@ Exemplos:
 @Cenario5
 @Automatizar
 @CancelarExclusaoFotoRemessa 
-Esquema do Cenario: Cancelar exclusão de foto na remessa 
+Esquema do Cenario: Cancelar exclusão de foto na devolução 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E clicar na <Remessa>
@@ -115,7 +115,7 @@ Exemplos:
 @Cenario6
 @Manual
 @InserirFotoRemessaOffline
-Esquema do Cenario: Inserir foto na remessa
+Esquema do Cenario: Inserir foto na devolução
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E esteja no modo offline
@@ -136,7 +136,7 @@ Exemplos:
 @Cenario7
 @Automatizar
 @ExcluirFotoRemessaOffline 
-Esquema do Cenario: Excluir foto na remessa 
+Esquema do Cenario: Excluir foto na devolução 
 E esteja logado com usuário funcionário
 E esteja logado com <Empresa>
 E esteja no modo offline 

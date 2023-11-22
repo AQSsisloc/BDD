@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @BaixaComprovante
 Esquema do Cenario: Baixar comprovante de entrega 
 E esteja logado com usuário funcionário
@@ -73,7 +73,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @EnviarEmailRemessa
 Esquema do Cenario: Enviar email pela remessa 
 E esteja logado com usuário funcionário
@@ -92,7 +92,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @EnviarEmailRemessaOffline
 Esquema do Cenario: Enviar email pela remessa em modo offline 
 E esteja logado com usuário funcionário

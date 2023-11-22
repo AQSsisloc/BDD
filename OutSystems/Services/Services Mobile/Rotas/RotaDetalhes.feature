@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @ContatosEmailRota
 Esquema do Cenario: Enviar email para o contato de uma atividade
 E esteja logado com usuário funcionário
@@ -32,7 +32,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @ContatosTelefoneRota
 Esquema do Cenario: Direcionar para o discador com contato preenchido
 E esteja logado com usuário funcionário
@@ -51,7 +51,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @DetalhesRota
 Esquema do Cenario: Visualizar detalhes da atividade
 E esteja logado com usuário funcionário
@@ -68,7 +68,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @ProdutosRota
 Esquema do Cenario: Visualizar produtos da atividade
 E esteja logado com usuário funcionário
@@ -86,7 +86,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @SemProdutosRota
 Esquema do Cenario: Sem produtos da atividade
 E esteja logado com usuário funcionário
@@ -104,7 +104,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar
+@Manual
 @ObservaçãoRota
 Esquema do Cenario: Visualizar observação na atividade
 E esteja logado com usuário funcionário
@@ -122,7 +122,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar
+@Manual
 @SemObservaçãoRota
 Esquema do Cenario: Sem observação na atividade
 E esteja logado com usuário funcionário
@@ -139,7 +139,7 @@ Exemplos:
 
 
 @Cenario08
-@Automatizar
+@Manual
 @AcaminhoRota
 Esquema do Cenario: Iniciar atividade pendente deve disparar mensagem de Motorista a caminho configurada
 E esteja com Modelo mensagem WhatsApp motorista está a caminho configurada no Services Web
@@ -158,7 +158,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar
+@Manual
 @CheckInRota
 Esquema do Cenario: Ao fazer chek in deve disparar mensagem de Motorista chegou configurada
 E esteja com Modelo mensagem WhatsApp motorista chegou configurada no Services WEB
@@ -177,7 +177,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @CheckOutRota
 Esquema do Cenario: Ao fazer chek out deve disparar mensagem de Atividade concluída configurada
 E esteja com Modelo mensagem WhatsApp atividade concluída configurada no Services WEB
@@ -196,7 +196,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @SemNotificacao
 Esquema do Cenario: Quando não configurado mensagens WhatsApp não deve exibir seção "Notificações" 
 E não esteja com "Notificar os clientes sobre a rota por WhatsApp" configurada no Services WEB

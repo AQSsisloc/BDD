@@ -71,7 +71,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar 
+@Manual
 @MovimentacaoInterna
 Esquema do Cenario: Gravar movimentação de peças na requisição 
 E esteja logado com usuário funcionário
@@ -92,7 +92,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar 
+@Manual 
 @MovimentacaoInterna
 Esquema do Cenario: Gravar quantidade "Entrada" na movimentação de peças na requisição 
 E esteja logado com usuário funcionário
@@ -239,7 +239,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @MovimentacaoInterna
 Esquema do Cenario: Gravar quantidade maior do pedido    
 E esteja logado com usuário funcionário

@@ -143,7 +143,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar 
+@Manual 
 @InformacaoPatrimonio
 Esquema do Cenario: Abrir relatório de OM concluída   
 E esteja logado com usuário funcionário
@@ -264,7 +264,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar 
+@Manual
 @InformacaoPatrimonio
 Esquema do Cenario: Abrir relatório de checklist concluído 
 E esteja logado com usuário funcionário
