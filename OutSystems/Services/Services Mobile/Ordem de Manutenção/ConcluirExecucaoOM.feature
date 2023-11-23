@@ -352,7 +352,7 @@ Exemplos:
 
 
 @Cenario14
-@Automatizar
+@Manual
 @ConcluirExecucaoOM
 Esquema do Cenario: Entregar equipamento após a conclusão da execução da Ordem de Manutenção e editar assinatura coletada
 E que esteja logado com usuário funcionário
@@ -466,7 +466,7 @@ Exemplos:
 
 
 @Cenario18
-@Automatizar
+@Manual
 @ConcluirExecucaoOM
 Esquema do Cenario: Concluir execução da Ordem de Manutenção criada e enviar relatório da OM por e-mail
 E que esteja logado com usuário funcionário

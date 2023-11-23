@@ -230,7 +230,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ChecklistRemessa
 Esquema do Cenario: Pesquisar checklists de remessa atuais
 E que esteja logado com usuário funcionário
@@ -248,7 +248,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @ChecklistRemessa
 Esquema do Cenario: Pesquisar checklists de remessa atrasados
 E que esteja logado com usuário funcionário
@@ -266,7 +266,7 @@ Exemplos:
 
 
 @Cenario13
-@Automatizar
+@Manual
 @ChecklistRemessa
 Esquema do Cenario: Pesquisar checklists de remessa futuros
 E que esteja logado com usuário funcionário

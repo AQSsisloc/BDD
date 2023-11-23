@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar 
+@Manual
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos ativos
 E esteja logado com usuário funcionário
@@ -25,7 +25,7 @@ Entao exibe quantidade disponíveis no almoxarifado dos equipamentos
 
 
 @Cenario2
-@Automatizar 
+@Manual
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos inativos
 E esteja logado com usuário funcionário
@@ -39,7 +39,7 @@ Entao somente exibe quantidade disponíveis no almoxarifado dos equipamentos ina
 
 
 @Cenario3
-@Automatizar 
+@Manual
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos ativos e inativos
 E esteja logado com usuário funcionário
@@ -93,7 +93,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar 
+@Manual
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos ativos em modo offline
 E esteja em modo offline
@@ -106,7 +106,7 @@ Entao exibe quantidade disponíveis no almoxarifado dos equipamentos
 
 
 @Cenario7
-@Automatizar 
+@Manual 
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos inativos em modo offline
 E esteja em modo offline
@@ -121,7 +121,7 @@ Entao somente exibe quantidade disponíveis no almoxarifado dos equipamentos ina
 
 
 @Cenario8
-@Automatizar 
+@Manual 
 @EstoqueAlmoxarifado
 Cenario: Visualizar estoque equipamentos ativos e inativos em modo offline
 E esteja em modo offline

@@ -88,7 +88,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @BaixarModeloOM
 Esquema do Cenario: Baixar modelo de relatório na Ordem de Manutenção sem relatório cadastrado
 E que esteja logado com usuário funcionário
@@ -108,7 +108,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @BaixarModeloOM
 Esquema do Cenario: Fechar a baixa do modelo de relatório na Ordem de Manutenção
 E que esteja logado com usuário funcionário

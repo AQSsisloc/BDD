@@ -13,7 +13,7 @@ Dado esteja logado no Services Mobile
 
 
 @Cenario1
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Visualizar a listagem de até cinco Ordens de Manutenções criadas
 E que esteja logado com usuário funcionário
@@ -30,7 +30,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Visualizar a listagem de todas as Ordens de Manutenções criadas
 E que esteja logado com usuário funcionário
@@ -48,7 +48,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Pesquisar Ordem de manutenção criada na tela de Listagem
 E que esteja logado com usuário funcionário
@@ -67,7 +67,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @OrdemDeManutencao
 Esquema do Cenario: Pesquisar Ordem de manutenção na tela de Listagem que não foi criada
 E que esteja logado com usuário funcionário

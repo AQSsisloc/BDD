@@ -230,7 +230,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ChecklistOM
 Esquema do Cenario: Pesquisar checklists de OM atuais
 E que esteja logado com usuário funcionário
@@ -248,7 +248,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @ChecklistOM
 Esquema do Cenario: Pesquisar checklists de OM atrasados
 E que esteja logado com usuário funcionário
@@ -266,7 +266,7 @@ Exemplos:
 
 
 @Cenario13
-@Automatizar
+@Manual
 @ChecklistOM
 Esquema do Cenario: Pesquisar checklists de OM futuros
 E que esteja logado com usuário funcionário

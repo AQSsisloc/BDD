@@ -35,7 +35,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @AbrirMapa
 Esquema do Cenario: Visualizar mapa da posição do equipamento da Ordem de Manutenção não registrado posição
 E que esteja logado com usuário funcionário

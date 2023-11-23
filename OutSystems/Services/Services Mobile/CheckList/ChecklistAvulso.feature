@@ -190,7 +190,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar
+@Manual
 @ChecklistAvulso
 Esquema do Cenario: Pesquisar checklists avulsos atuais
 E que esteja logado com usuário funcionário
@@ -208,7 +208,7 @@ Exemplos:
 
 
 @Cenario10
-@Automatizar
+@Manual
 @ChecklistAvulso
 Esquema do Cenario: Pesquisar checklists avulsos atrasados
 E que esteja logado com usuário funcionário
@@ -226,7 +226,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ChecklistAvulso
 Esquema do Cenario: Pesquisar checklists avulsos futuros
 E que esteja logado com usuário funcionário

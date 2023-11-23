@@ -40,7 +40,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @AdicionarServicoOM
 Esquema do Cenario: Adicionar serviço na criação da Ordem de Manutenção informando a quantidade 0
 E que esteja logado com usuário funcionário
@@ -66,7 +66,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @AdicionarServicoOM
 Esquema do Cenario: Adicionar serviço na criação da Ordem de Manutenção sem inserir dados
 E que esteja logado com usuário funcionário
@@ -112,7 +112,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @ExecutarServicoOM
 Esquema do Cenario: Executar serviço criado na Ordem de Manutenção
 E que esteja logado com usuário funcionário
@@ -132,7 +132,7 @@ Exemplos:
 
 
 @Cenario6
-@Automatizar
+@Manual
 @PausarServicoOM
 Esquema do Cenario: Pausar serviço em execução na Ordem de Manutenção
 E que esteja logado com usuário funcionário
@@ -152,7 +152,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar
+@Manual
 @PararServicoOM
 Esquema do Cenario: Parar serviço em execução na Ordem de Manutenção
 E que esteja logado com usuário funcionário
@@ -273,7 +273,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @CancelarApontarServicoOM
 Esquema do Cenario: Cancelar apontamento de serviço na Ordem de Manutenção
 E que esteja logado com usuário funcionário

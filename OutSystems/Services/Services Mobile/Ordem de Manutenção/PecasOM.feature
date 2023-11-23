@@ -39,7 +39,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @AdicionarPecaOM
 Esquema do Cenario: Adicionar peça na criação da Ordem de Manutenção sem peça cadastrada
 E que esteja logado com usuário funcionário
@@ -60,7 +60,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @AdicionarPecaOM
 Esquema do Cenario: Adicionar peça na criação da Ordem de Manutenção sem confirmação
 E que esteja logado com usuário funcionário
@@ -156,7 +156,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar
+@Manual
 @CancelarRequisicaoPecaOM
 Esquema do Cenario: Cancelar requisição de peça de uma OM
 E que esteja logado com usuário funcionário
@@ -178,7 +178,7 @@ Exemplos:
 
 
 @Cenario8
-@Automatizar
+@Manual
 @CancelarDevolucaoPecaOM
 Esquema do Cenario: Cancelar devolução de peça requisitada de uma OM 
 E que esteja logado com usuário funcionário

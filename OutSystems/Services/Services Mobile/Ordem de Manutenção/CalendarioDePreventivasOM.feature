@@ -35,7 +35,7 @@ Exemplos:
 
 
 @Cenario2
-@Automatizar
+@Manual
 @CalendarioDePreventivasOM
 Esquema do Cenario: Visualizar o calendário de preventivas de uma Ordem de Manutenção criada do tipo Próprio/Sublocado
 E selecionar <Empresa>
@@ -54,7 +54,7 @@ Exemplos:
 
 
 @Cenario3
-@Automatizar
+@Manual
 @CalendarioDePreventivasOM
 Esquema do Cenario: Visualizar o calendário de preventivas de uma Ordem de Manutenção criada sem programa de manutenção definido para o equipamento
 E selecionar <Empresa>
@@ -72,7 +72,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @CalendarioDePreventivasOM
 Esquema do Cenario: Visualizar o calendário de preventivas de uma Ordem de Manutenção criada sem unidade de medição no cadastro de produto
 E selecionar <Empresa>

@@ -78,7 +78,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar 
+@Manual
 @EntradaProduto
 Esquema do Cenario: Excluir observação 
 E esteja logado com usuário funcionário
@@ -100,7 +100,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar 
+@Manual
 @EntradaProduto
 Esquema do Cenario: Pesquisar equipamento 
 E esteja logado com usuário funcionário
@@ -164,7 +164,7 @@ Exemplos:
 
 
 @Cenario8
-@Automatizar 
+@Manual 
 @EntradaProduto
 Esquema do Cenario: Excluir observação em modo offline
 E esteja em modo offline  
@@ -187,7 +187,7 @@ Exemplos:
 
 
 @Cenario9
-@Automatizar 
+@Manual
 @EntradaProduto
 Esquema do Cenario: Pesquisar equipamento em modo offline
 E esteja em modo offline 

@@ -99,7 +99,7 @@ Exemplos:
 
 
 @Cenario4
-@Automatizar
+@Manual
 @EnviarEmailOM
 Esquema do Cenario: Enviar e-mail de relatório sem informar dados na Ordem de Manutenção criada
 E que esteja logado com usuário funcionário
@@ -123,7 +123,7 @@ Exemplos:
 
 
 @Cenario5
-@Automatizar
+@Manual
 @EnviarEmailOM
 Esquema do Cenario: Cancelar o envio do e-mail de relatório na Ordem de Manutenção criada
 E que esteja logado com usuário funcionário
@@ -180,7 +180,7 @@ Exemplos:
 
 
 @Cenario7
-@Automatizar
+@Manual
 @EnviarEmailOM
 Esquema do Cenario: Enviar e-mail de relatório na criação da Ordem de Manutenção com e-mail destinatário inválido
 E que esteja logado com usuário funcionário

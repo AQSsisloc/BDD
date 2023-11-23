@@ -230,7 +230,7 @@ Exemplos:
 
 
 @Cenario11
-@Automatizar
+@Manual
 @ChecklistLocacao
 Esquema do Cenario: Pesquisar checklists atuais de locação
 E que esteja logado com usuário funcionário
@@ -248,7 +248,7 @@ Exemplos:
 
 
 @Cenario12
-@Automatizar
+@Manual
 @ChecklistLocacao
 Esquema do Cenario: Pesquisar checklists atrasados de locação
 E que esteja logado com usuário funcionário
@@ -266,7 +266,7 @@ Exemplos:
 
 
 @Cenario13
-@Automatizar
+@Manual
 @ChecklistLocacao
 Esquema do Cenario: Pesquisar checklists futuros de locação
 E que esteja logado com usuário funcionário
