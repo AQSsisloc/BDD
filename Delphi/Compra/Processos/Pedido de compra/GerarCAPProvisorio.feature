@@ -1,6 +1,6 @@
 #language: pt
-#Gerar CAP provisório
-#FDelphi
+#GerarCAPprovisorio
+#Delphi
 
 
 Funcionalidade: Gerar CAP provisório no compra no pedido de compra
@@ -14,7 +14,7 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@GerarCAPProvisório
+@GerarCAPProvisorio
 Esquema do Cenario: Não cadastrar uma parcela na aba "6 - parcelas" no pedido de compras
 E que esteja logado com usuário funcionário
 E selecionar "Gerar CAP Provisório"
@@ -28,7 +28,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@GerarCAPProvisório
+@GerarCAPProvisorio
 Esquema do Cenario: Cadastrar uma parcela na aba "6 - parcelas" no pedido de compras
 E que esteja logado com usuário funcionário
 E selecionar "Gerar CAP Provisório"

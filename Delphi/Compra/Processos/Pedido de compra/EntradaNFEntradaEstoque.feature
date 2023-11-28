@@ -1,6 +1,6 @@
 #language: pt
-#Entrada NF/Estoque
-#FDelphi
+#EntradaNF/Estoque
+#Delphi
 
 
 Funcionalidade: Entrada N.F/Estoque no pedido de compra
@@ -15,7 +15,7 @@ Dado acessar o sistema Sisloc com usuário
 @Cenario1
 @Automatizar
 @EntradaNF/Estoque
-Cenario: Entrada N.F/Estoque no pedido de compra
+Esquema do Cenario: Entrada N.F/Estoque no pedido de compra
 E selecionar "Entrada N.F/Estoque"
 E clicar "Cancelar"
 E não grava dados
@@ -30,7 +30,7 @@ Exemplos:
 @Cenario2
 @Automatizar
 @EntradaNF/Estoque
-Cenario: Entrada N.F/Estoque no pedido de compra
+Esquema do Cenario: Entrada N.F/Estoque no pedido de compra
 E selecionar "Entrada N.F/Estoque"
 E preencher os campos disponíveis
 Quando clicar em "Concluir"
@@ -47,7 +47,7 @@ Exemplos:
 @Cenario3
 @Automatizar
 @EstonarEntrada
-Cenario: Estonar Entrada N.F/Estoque no pedido de compra
+Esquema do Cenario: Estonar Entrada N.F/Estoque no pedido de compra
 E selecionar "Estornar Entrada"
 Quando clicar em "Não"
 Entao não grava os dados
@@ -62,7 +62,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @EstonarEntrada
-Cenario: Estonar Entrada N.F/Estoque no pedido de compra
+Esquema do Cenario: Estonar Entrada N.F/Estoque no pedido de compra
 E selecionar "Estornar Entrada"
 Quando clicar em "Sim"
 Entao grava os dados

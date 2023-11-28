@@ -1,6 +1,6 @@
 #language: pt
-#Liberar Valor Teto Pedido de Compra
-#FDelphi
+#LiberarValorTetoPedidodeCompra
+#Delphi
 
 
 Funcionalidade: Liberar valor teto de compra no pedido de compra
@@ -16,15 +16,15 @@ Dado acessar o sistema Sisloc com usuário
 @Automatizar
 @LiberarValorTeto
 Esquema do Cenario: Liberar valor teto no pedido de compra
-E selecionar "Liberar Valor Teto"
+Quando selecionar "Liberar Valor Teto"
 Então grava dados
 E inserir <DataLiberacaoValorTeto>
 E inserir <UsuarioLiberacao>
 E grava o <PedidodeCompra>
 
 Exemplos:
-| DataLiberacaoValorTeto | UsuarioLiberacao  |
-| 25/09/2023 10:59       | 12 - CARLOS ANDRÉ |
+| DataLiberacaoValorTeto | UsuarioLiberacao  | PedidodeCompra |
+| 25/09/2023 10:59       | 12 - CARLOS ANDRÉ |                |
 
 
 
@@ -39,5 +39,5 @@ E limpar <UsuarioLiberacao>
 E grava o <PedidodeCompra>
 
 Exemplos:
-| DataLiberacaoValorTeto | UsuarioLiberacao |
-|                        |                  |
+| DataLiberacaoValorTeto | UsuarioLiberacao | PedidodeCompra |
+|                        |                  |                |

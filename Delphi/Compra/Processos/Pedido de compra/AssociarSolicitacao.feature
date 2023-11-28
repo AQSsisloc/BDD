@@ -1,6 +1,6 @@
 #language: pt
-#Associar Solicitação Pedido de Compra
-#FDelphi
+#AssociarSolicitacao
+#Delphi
 
 
 Funcionalidade: Associar uma solicitação de compra no pedido de compra
@@ -14,8 +14,9 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@AssociarSolicitação
+@AssociarSolicitacao
 Esquema do Cenario: Associar solicitação de compra no pedido de compra
+E esteja com mapa de cotação gerado
 E selecionar "Associar Solicitação"
 E inserir <Solicitacao>
 Quando clicar em "Ok"
@@ -24,23 +25,24 @@ E inserir <NumerodaSolicitacao>
 E gera o <PedidodeCompra>
 
 Exemplos:
-| Solicitacao    | NumerodaSolicitacao |
-| 013391         | 013391              |
-| 013564, 013663 | 013564, 013663      |
+| Solicitacao    | NumerodaSolicitacao | PedidodeCompra |
+| 013391         | 013391              |                |
+| 013564, 013663 | 013564, 013663      |                |
 
 
 
-@Cenarios
+@Cenario2
 @Automatizar
-@DesassociarSolicitação
+@DesassociarSolicitacao
 Esquema do Cenario: Desassociar solicitação de compra no pedido de compra
 E selecionar "Associar Solicitação"
 E selecionar "Todos"
-E desmarcar <Solicitacao>
+E esteja com <Solicitacao>
+E desmarcar <CheckBoxSolicitacao>
 Quando clicar em "Ok"
 Então limpa o campo "Número Solicitação"
 
 Exemplos:
-| Solicitacao    | Solicacao |
-| 013391         | Desmarcar |
-| 013564, 013663 | Desmarcar |
+| Solicitacao    | CheckBoxSolicitacao |
+| 013391         | Desmarcar           |
+| 013564, 013663 | Desmarcar           |

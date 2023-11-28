@@ -1,6 +1,6 @@
 #language: pt
-#Pedido de compra
-#FDelphi
+#Pedidodecompra
+#Delphi
 
 
 Funcionalidade: Cadastrar um pedido de compra
@@ -63,7 +63,7 @@ Entao grava os dados
 Cenario: Cadastrar um pedido de compras com impostos e retenções
 E clicar em aba "2 - NF/Impostos/Retenções"
 E preencher os campos disponíveis
-E clicar em "Salvar"
+Quando clicar em "Salvar"
 Entao grava os dados
 
 
@@ -74,7 +74,7 @@ Entao grava os dados
 Cenario: Cadastrar um pedido de compras com campos adicionais
 E clicar em aba "3 - Campos adicionais"
 E preencher os campos disponíveis
-E clicar em "Salvar"
+Quando clicar em "Salvar"
 Entao grava os dados
 
 
@@ -87,5 +87,5 @@ E clicar em aba "3 - Campos adicionais"
 E preencher os campos disponíveis
 E selecionar "Número dias"
 E selecionar "Valor Parcelas"
-E clicar em "Salvar"
+Quando clicar em "Salvar"
 Entao grava os dados

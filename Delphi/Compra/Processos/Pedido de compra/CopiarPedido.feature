@@ -1,6 +1,6 @@
 #language: pt
-#Copiar Pedido
-#FDelphi
+#CopiarPedido
+#Delphi
 
 
 Funcionalidade: Copiar pedido de compra
@@ -25,12 +25,12 @@ Então não faz a cópia do pedido de compra
 @Cenario2
 @Automatizar
 @CopiarPedido
-Cenario: Copiar pedido de compra
+Esquema do Cenario: Copiar pedido de compra
 E selecionar "Copiar pedido"
 E selecionar "Sim"
 Então cria novo pedido de compra semelhente ao antigo
 E grava <Status>
 
 Exemplos:
-| Status |
+| Status    |
 | Em aberto |

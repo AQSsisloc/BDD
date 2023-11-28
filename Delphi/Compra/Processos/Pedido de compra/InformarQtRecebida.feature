@@ -1,6 +1,6 @@
 #language: pt
-#informar Qt. Recebida
-#FDelphi
+#informarQtRecebida
+#Delphi
 
 
 Funcionalidade: Informar a quantidade recebida no pedido de compra
@@ -16,7 +16,7 @@ Dado acessar o sistema Sisloc com usuário
 @Automatizar
 @InformarQtrecebida
 Cenario: Informar quantidade recebida no pedido de compra na aba 4 - Produtos. Pedido de compra tem que está com status Autrizado.
-E selecionar "Informar Qt. Recebido"
+Quando selecionar "Informar Qt. Recebido"
 E preencher campos disponíveis
 E selecionar "Cancelar"
 Então fecha a tela sem grava dados

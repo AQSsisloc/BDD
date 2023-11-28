@@ -1,6 +1,6 @@
 #language: pt
-#Autorizar Fornecimento
-#FDelphi
+#AutorizarFornecimento
+#Delphi
 
 
 Funcionalidade: Autorizar fornecimento do pedido de compra
@@ -15,7 +15,7 @@ Dado acessar o sistema Sisloc com usuário
 @Cenario1
 @Automatizar
 @AutorizarFornecimento
-Esquema do Cenario: Autorizar fornecimento no pedido de compra
+Cenario: Autorizar fornecimento no pedido de compra
 E selecionar "Autorizar Forneciemnto"
 E clicar "Não"
 E não grava dados
@@ -61,7 +61,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @EstoranrFornecimento
-Esquema do Cenario: Estoanr o autorizar fornecimento no pedido de compra
+Esquema do Cenario: Estornar o autorizar fornecimento no pedido de compra
 E selecionar "Estonar Forneciemnto"
 E clicar "Não"
 E não remove data/hora do campo "Fornecimento"

@@ -490,9 +490,63 @@ E clicar em "Arquivo Excel"
 E clicar em "Exportar Arquivos"
 Entao exporta para excel as atividades filtradas
 
-
 Exemplos:
 | Status                                       |
 | Cancelado, Concluído, Em Andamento, Pendente |
+
+
+
+@PENDENTE
+@Cenario24
+@Manual
+@AtividadeEmMassa
+Esquema do Cenario: Cadastrar atividades em massa para oportunidade 
+E que esteja logado com usuário gerente
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "+Atividade"
+E clicar em "Oportunidade"
+E selecionar "CCriar atividades em massa recorrentes ou pontuais"
+E inserir <Oportunidade>
+E preencher os dados 
+E revisar <Contatos> 
+E revisar <Enderecos>
+E revisar <Responsaveis>
+E e clicar gerar "Recorrencia" 
+E clicar em "Salvar"
+Entao grava os dados
+E apresenta a <MensagemDeSucesso>
+
+Exemplos:
+| Oportunidade | Contatos | Enderecos | Responsaveis | MensagemDeSucesso            |
+|              |          |           |              | Atividade salva com sucesso! |
+
+
+
+@Cenario25
+@Manual
+@AtividadeEmMassa
+Esquema do Cenario: Cadastrar atividades em massa para oportunidade sem recorrência  
+E que esteja logado com usuário gerente
+E selecionar "Processos"
+E selecionar "Atividades"
+Quando clicar em "+Atividade"
+E clicar em "Oportunidade"
+E selecionar "CCriar atividades em massa recorrentes ou pontuais"
+E inserir <Oportunidade>
+E preencher os dados 
+E revisar <Contatos> 
+E revisar <Enderecos>
+E revisar <Responsaveis>
+E clicar "Não quero recorrência"
+E clicar em "Salvar"
+Entao grava os dados
+E apresenta a <MensagemDeSucesso>
+
+Exemplos:
+| Oportunidade | Contatos | Enderecos | Responsaveis | MensagemDeSucesso            |
+|              |          |           |              | Atividade salva com sucesso! |
+
+
 
 

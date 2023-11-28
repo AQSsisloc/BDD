@@ -1,6 +1,6 @@
 #language: pt
 #Encerrar
-#FDelphi
+#Delphi
 
 
 Funcionalidade: Encerrar o pedido de compra
@@ -15,7 +15,7 @@ Dado acessar o sistema Sisloc com usuário
 @Cenario1
 @Automatizar
 @Encerrar
-Cenario: Encerrar pedido de compra
+Esquema do Cenario: Encerrar pedido de compra
 E selecionar "Encerrar"
 E clicar "Cancelar"
 E não grava dados
@@ -30,7 +30,7 @@ Exemplos:
 @Cenario2
 @Automatizar
 @Encerrar
-Cenario: Encerrar pedido de compra
+Esquema do Cenario: Encerrar pedido de compra
 E selecionar "Encerrar"
 E preencher os dado
 Quando clicar "Ok"
@@ -49,7 +49,7 @@ Exemplos:
 @Cenario3
 @Automatizar
 @EstornarEncerramento
-Cenario: Estornar Encerramento do pedido de compra
+Esquema do Cenario: Estornar Encerramento do pedido de compra
 E selecionar "Encerrar"
 E clicar "Não"
 E não grava dados
@@ -64,7 +64,7 @@ Exemplos:
 @Cenario4
 @Automatizar
 @EstornarEncerramento
-Cenario: Estornar o encerramento do pedido de compra
+Esquema do Cenario: Estornar o encerramento do pedido de compra
 E selecionar "Estornar encerramento"
 Quando clicar "Sim"
 E grava dados

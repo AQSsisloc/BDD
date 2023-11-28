@@ -1,6 +1,6 @@
 #language: pt
-#Expedição Fornecedor
-#FDelphi
+#ExpedicaoFornecedor
+#Delphi
 
 
 Funcionalidade: Expedição Fornecedor do pedido de compra
@@ -14,7 +14,7 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@ExpediçãoFornecedor
+@ExpedicaoFornecedor
 Cenario: Expedição Fornecedor no pedido de compra
 E selecionar "Expedição Fornecedor"
 Quando clicar "Não"
@@ -29,8 +29,8 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@ExpediçãoFornecedor
-Cenario: Expedição Fornecedor no pedido de compra
+@ExpedicaoFornecedor
+Esquema do Cenario: Expedição Fornecedor no pedido de compra
 E selecionar "Expedição Fornecedor"
 Quando clicar "Sim"
 E grava dados
@@ -45,8 +45,8 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@EstornarExpedição
-Cenario: Estornar Expedição no pedido de compra
+@ExpedicaoFornecedor
+Esquema do Cenario: Estornar Expedição no pedido de compra
 E selecionar "Estornar Expedição"
 Quando clicar "Não"
 E não grava dados
@@ -60,8 +60,8 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@EstornarExpedição
-Cenario: Estornar Expedição no pedido de compra
+@ExpedicaoFornecedor
+Esquema do Cenario: Estornar Expedição no pedido de compra
 E selecionar "Estornar Expedição"
 Quando clicar "Sim"
 E grava dados

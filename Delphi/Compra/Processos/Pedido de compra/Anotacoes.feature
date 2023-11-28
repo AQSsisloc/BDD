@@ -1,6 +1,6 @@
 #language: pt
-#Anotações
-#FDelphi
+#Anotacoes
+#Delphi
 
 
 Funcionalidade: Anotações e anexar XML importando referente ao pedido de compra
@@ -12,10 +12,9 @@ Funcionalidade: Anotações e anexar XML importando referente ao pedido de compr
 Dado acessar o sistema Sisloc com usuário
 
 
-
 @Cenario1
 @Automatizar
-@Anotações
+@Anotacoes
 Cenario: Anotar informações do pedido de compra
 E selecionar "Anotações"
 E clicar em "+Adicionar"
@@ -26,7 +25,7 @@ E não grava dados
 
 @Cenario2
 @Automatizar
-@Anotações
+@Anotacoes
 Cenario: Anotar informações do pedido de compra
 E selecionar "Anotações"
 E clicar em "+Adicionar"
@@ -38,7 +37,7 @@ E grava dados
 
 @Cenario3
 @Automatizar
-@Anotações
+@Anotacoes
 Cenario: Anotar informações do pedido de compra
 E selecionar "Anotações"
 E clicar em "+Excluir"

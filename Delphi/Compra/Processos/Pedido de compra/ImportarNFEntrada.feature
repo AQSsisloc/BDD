@@ -1,5 +1,5 @@
 #language: pt
-#Importação NF Entrada
+#ImportarNFEntrada
 #Delphi
 
 
@@ -17,11 +17,11 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@ImportacaoNFEntrada
+@ImportarNFEntrada
 Cenario: Importar NF de entrada no pedido de compras pelo XML pela tela do pedido de compra
 E selecionar "Importar NF Entrada"
 E selecionar "Certificado digital não encontrado"
-E confirmar "Ok"
+Quando confirmar "Ok"
 E selecionar "Informar XML"
 E selecionar "Nome do arquivo"
 E confirmar "Cancelar"
@@ -31,7 +31,7 @@ Então não grava os dados
 
 @Cenario2
 @Automatizar
-@ImportacaoNFEntrada
+@ImportarNFEntrada
 Cenario: Importar NF de entrada no pedido de compras pelo XML pela tela do pedido de compra
 E selecionar "Importar NF Entrada"
 E selecionar "Certificado digital não encontrado"
@@ -48,13 +48,13 @@ Então grava os dados
 
 @Cenario3
 @Automatizar
-@ImportacaoNFEntrada
+@ImportarNFEntrada
 Cenario: Importar NF de entrada no pedido de compras pelo XML pela tela do pedido de compra
 E selecionar "Pedido de compra"
 E selecinar "Compra"
 E selecionar "Importar NF Entrada"
 E selecionar "Certificado digital não encontrado"
-E confirmar "Ok"
+Quando confirmar "Ok"
 E selecionar "Informar XML"
 E selecionar "Nome do arquivo"
 E confirmar "Cancelar"
@@ -64,7 +64,7 @@ Então não grava os dados
 
 @Cenario4
 @Automatizar
-@ImportacaoNFEntrada
+@ImportarNFEntrada
 Cenario: Importar NF de entrada no pedido de compras pelo XML pela tela do pedido de compra
 E selecionar "Pedido de compra"
 E selecinar "Compra"

@@ -1,6 +1,6 @@
 #language: pt
-#Autorização
-#FDelphi
+#Autorizacao
+#Delphi
 
 
 Funcionalidade: Autorizar a compra no pedido de compra
@@ -14,7 +14,7 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Autorizar pedido de compra sem parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Parcelas não cadastradas. Marque para poder continuar"
@@ -35,7 +35,7 @@ Exemplos:
 
 @Cenario2
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Autorizar pedido de compra sem parcelas cadastradas e com usuário sem valor para autorização
 E selecionar "Autorização"
 E selecionar "Parcelas não cadastradas. Marque para poder continuar"
@@ -56,7 +56,7 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
@@ -76,7 +76,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário sem valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
@@ -96,8 +96,8 @@ Exemplos:
 
 @Cenario5
 @Automatizar
-@Autorização
-Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+@Autorizacao
+Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Cancelar"
 Então não grava os dados
@@ -106,8 +106,8 @@ Então não grava os dados
 
 @Cenario6
 @Automatizar
-@Autorização
-Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+@Autorizacao
+Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
 E grava dados
@@ -119,8 +119,8 @@ Então não grava os dados
 
 @Cenario7
 @Automatizar
-@Autorização
-Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
+@Autorizacao
+Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário com valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
 E grava dados
@@ -134,7 +134,7 @@ Então não grava os dados
 
 @Cenario8
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário sem valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
@@ -155,8 +155,8 @@ Exemplos:
 
 @Cenario9
 @Automatizar
-@Autorização
-Esquema do Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário sem valor para autorização
+@Autorizacao
+Cenario: Autorizar pedido de compra com parcelas cadastradas e com usuário sem valor para autorização
 E selecionar "Autorização"
 E selecionar "Ok"
 E grava dados
@@ -171,7 +171,7 @@ Então cancela os dados
 
 @Cenario10
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
 E selecionar "Autorização"
 E selecionar "EstornarAutorização"
@@ -188,7 +188,7 @@ Exemplos:
 
 @Cenario11
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
 E selecionar "Autorização"
 E selecionar "EstornarAutorização"
@@ -204,7 +204,7 @@ Exemplos:
 
 @Cenario12
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar soslicitação pedido de compra por dentro da "Autorização"
 E selecionar "Autorização"
 E selecionar "EstornarSolicitação"
@@ -215,7 +215,7 @@ Então grava os dados
 
 @Cenario13
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
 E selecionar "EstornarAutorização"
 E Confirma "Sim"
@@ -230,7 +230,7 @@ Exemplos:
 
 @Cenario14
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar autorizar pedido de compra por dentro da "Autorização"
 E selecionar "EstornarAutorização"
 E Confirma "Não"
@@ -245,7 +245,7 @@ Exemplos:
 
 @Cenario15
 @Automatizar
-@Autorização
+@Autorizacao
 Esquema do Cenario: Estornar soslicitação pedido de compra por dentro da "Autorização"
 E selecionar "EstornarSolicitação"
 E Confirma "Sim"

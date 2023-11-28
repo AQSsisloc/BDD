@@ -1,6 +1,6 @@
 #language: pt
-#Pedido Recebido
-#FDelphi
+#PedidoRecebido
+#Delphi
 
 
 Funcionalidade: Pedido recebido do pedido de compra

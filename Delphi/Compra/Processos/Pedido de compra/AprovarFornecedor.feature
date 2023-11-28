@@ -1,6 +1,6 @@
 #language: pt
-#Aprovação Fornecedor
-#FDelphi
+#AprovarFornecedor
+#Delphi
 
 
 Funcionalidade: Aprovar Fornecedor do pedido de compra
@@ -45,7 +45,7 @@ Exemplos:
 
 @Cenario3
 @Automatizar
-@EstornarAprovação
+@AprovarFornecedor
 Cenario: Estornar a Aprovação Fornecedor no pedido de compra
 E selecionar "Estornar Aprovação"
 Quando clicar "Não"
@@ -60,7 +60,7 @@ Exemplos:
 
 @Cenario4
 @Automatizar
-@EstornarAprovação
+@AprovarFornecedor
 Cenario: Estornar a Aprovação Fornecedor no pedido de compra
 E selecionar "Estornar Aprovação"
 Quando clicar "Sim"
