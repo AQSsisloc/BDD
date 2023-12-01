@@ -14,7 +14,11 @@ Dado acessar o sistema Sisloc com usuário
 
 @Cenario1
 @Automatizar
-@UltimasCompras
-Cenario: Listar as últimas compras do produto selecionado
-Quando clicar em <UltimasCompras>
-E gera o <Relatorio>
+@AprovarSolicitacao
+Cenario: Aprovar solcitação de compra
+E clicar em <AprovarSolicitacao>
+E selecionar "Entrada em"
+E clicar "Ok"
+E selecionar "Itens"
+Quando clicar em <Ok>
+E aprovar itens
