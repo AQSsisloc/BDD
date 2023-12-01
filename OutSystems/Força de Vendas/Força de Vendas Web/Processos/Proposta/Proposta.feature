@@ -1030,6 +1030,235 @@ Exemplos:
 
 
 @Cenario48
+@Manual
+@Proposta
+Cenario: Visualizar conta 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Conta"
+Entao abre tela da conta 
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario49
+@Manual
+@Proposta
+Cenario: Visualizar origem 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Origem"
+Entao abre tela do cadastro da origem
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario50
+@Manual
+@Proposta
+Cenario: Visualizar vendedor 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Vendedor"
+Entao abre tela do cadastro do vendedor 
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario51
+@Manual
+@Proposta
+Cenario: Visualizar oportunidade 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Origem"
+Entao abre tela do cadastro de origem
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario52
+@Manual
+@Proposta
+Cenario: Visualizar segmento 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Segmento"
+Entao abre tela do cadastro de segmento
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario53
+@Manual
+@Proposta
+Esquema do Cenario: Visualizar Captador
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Captador"
+Entao abre tela do cadastro de captador 
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario54
+@Manual
+@Proposta
+Esquema do Cenario: Alterar tipo de proposta  
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Tipo de proposta"
+E altar os dados 
+E clicar "Alterar"
+Entao grava os dados 
+E apresenta <MensagemTipo>
+
+Exemplos:
+| Proposta | MensagemTipo                   |
+| 5769-02  | Proposta alterada com sucesso! |
+
+
+
+@Cenario55
+@Manual
+@Proposta
+Esquema do Cenario: Alterar preço base 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Alterar Preço Base"
+E altar os dados 
+E clicar "Alterar"
+Entao grava os dados 
+E apresenta <MensagemTipo>
+
+Exemplos:
+| Proposta | MensagemTipo                     |
+| 5769-02  | Preço base alterado com sucesso! |
+
+
+
+@Cenario56
+@Manual
+@Proposta
+Esquema do Cenario: Alterar tipo de locação 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Alterar Tipo de Locação"
+E altar os dados 
+E clicar "Alterar"
+E clicar "Sim"
+Entao grava os dados 
+E apresenta <MensagemTipo>
+
+Exemplos:
+| Proposta | MensagemTipo                          |
+| 5769-02  | Tipo de locação alterado com sucesso! |
+
+
+
+@Cenario57
+@Manual
+@Proposta
+Esquema do Cenario: Visualizar tipo de locação 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Tipo de Locação"
+Entao exibe cadastro de tipo de locação
+
+Exemplos:
+| Proposta |
+| 5769-02  |
+
+
+
+@Cenario58
+@Manual
+@Proposta
+Esquema do Cenario: Alterar tabela de preço locação 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Alterar Tipo de Locação"
+E altar os dados 
+E clicar "Alterar"
+E clicar "Sim"
+Entao grava os dados 
+E apresenta <MensagemTipo>
+
+Exemplos:
+| Proposta | MensagemTipo                          |
+| 5769-02  | Tipo de locação alterado com sucesso! |
+
+
+
+@Cenario59
+@Manual
+@Proposta
+Esquema do Cenario: Visualizar tabela de preço locação 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E selecionar <Proposta>
+E esteja na aba "Detalhes"
+Quando clicar "Visualizar Tipo de Locação"
+Entao exibe cadastro de Tabela de Preço  
+
+Exemplos:
+| Proposta | 
+| 5769-02  | 
+
+
+@Cenario60
 @Automatizar
 @Proposta
 Cenario: Pesquisar uma proposta
@@ -1042,7 +1271,7 @@ Entao exibe dados pesquisados
 
 
 
-@Cenario49
+@Cenario61
 @Manual
 @Proposta
 Esquema do Cenario: Imrpimir documento 
@@ -1061,7 +1290,7 @@ Exemplos:
 
 
 
-@Cenario50
+@Cenario62
 @Manual
 @Proposta
 Esquema do Cenario: Imrpimir Proposta 
@@ -1080,7 +1309,7 @@ Exemplos:
 
 
 
-@Cenario51
+@Cenario63
 @Automatizar
 @Proposta
 Esquema do Cenario: Enviar email da  Proposta
@@ -1099,7 +1328,7 @@ Exemplos:
 
 
 
-@Cenario52
+@Cenario64
 @Automatizar
 @Proposta
 Esquema do Cenario: Enviar whatsapp  da  Proposta 
@@ -1118,7 +1347,7 @@ Exemplos:
 
 
 
-@Cenario53
+@Cenario65
 @Automatizar
 @Proposta
 Cenario: Atualizar listagem de Proposta 
@@ -1144,7 +1373,7 @@ Entao exibe dados filtrados
 
 
 
-@Cenario55
+@Cenario66
 @Automatizar
 @Proposta
 Cenario: Exportar para excel as propostas filtradas
@@ -1158,7 +1387,7 @@ Entao exporta as propostas para excel
 
 
 
-@Cenario56
+@Cenario67
 @Automatizar
 @Proposta
 Cenario: Auditoria das Propostas 
@@ -1171,7 +1400,7 @@ Entao exibe registro de exclusão da Proposta
 
 
 
-@Cenario57
+@Cenario68
 @Automatizar
 @Proposta
 Cenario: Visualizar total
@@ -1183,7 +1412,7 @@ Entao exibe valor total das propostas
 
 
 
-@Cenario58
+@Cenario69
 @Automatizar
 @Proposta
 Esquema do Cenario: Editar status de email 
@@ -1203,7 +1432,7 @@ Exemplos:
 
 
 
-@Cenario59
+@Cenario70
 @Automatizar
 @Proposta
 Esquema do Cenario: Excluir lista de email
@@ -1223,10 +1452,10 @@ Exemplos:
 
 
 
-@Cenario60
+@Cenario71
 @Automatizar
 @Proposta
-Cenario: Imprimir documento pela listagem
+Esquema do Cenario: Imprimir documento pela listagem
 Dado que esteja logado no Força de Vendas Web com usuário funcionário
 E selecionar "Processos"
 E selecionar "Proposta" 
@@ -1242,10 +1471,10 @@ Exemplos:
 
 
 
-@Cenario61
+@Cenario72
 @Automatizar
 @Proposta
-Cenario: Imprimir documento pela listagem
+Esquema do Cenario: Imprimir documento pela listagem
 Dado que esteja logado no Força de Vendas Web com usuário funcionário
 E selecionar "Processos"
 E selecionar "Proposta" 
@@ -1261,10 +1490,10 @@ Exemplos:
 
 
 
-@Cenario62
+@Cenario73
 @Automatizar
 @Proposta
-Cenario: Imprimir proposta pela listagem
+Esquema do Cenario: Imprimir proposta pela listagem
 Dado que esteja logado no Força de Vendas Web com usuário funcionário
 E selecionar "Processos"
 E selecionar "Proposta" 
@@ -1280,10 +1509,10 @@ Exemplos:
 
 
 
-@Cenario63
+@Cenario74
 @Automatizar
 @Proposta
-Cenario: Enviar email pela listagem
+Esquema do Cenario: Enviar email pela listagem
 Dado que esteja logado no Força de Vendas Web com usuário funcionário
 E selecionar "Processos"
 E selecionar "Proposta" 
@@ -1299,10 +1528,10 @@ Exemplos:
 
 
 
-@Cenario64
+@Cenario75
 @Automatizar
 @Proposta
-Cenario: Excluir proposta pela listagem
+Esquema do Cenario: Excluir proposta pela listagem
 Dado que esteja logado no Força de Vendas Web com usuário funcionário
 E selecionar "Processos"
 E selecionar "Proposta" 
