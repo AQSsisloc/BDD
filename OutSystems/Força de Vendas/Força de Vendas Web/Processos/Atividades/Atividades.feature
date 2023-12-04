@@ -506,7 +506,7 @@ E selecionar "Processos"
 E selecionar "Atividades"
 Quando clicar em "+Atividade"
 E clicar em "Oportunidade"
-E selecionar "CCriar atividades em massa recorrentes ou pontuais"
+E selecionar "Criar atividades em massa recorrentes ou pontuais"
 E inserir <Oportunidade>
 E preencher os dados 
 E revisar <Contatos> 
@@ -522,7 +522,7 @@ Exemplos:
 |              |          |           |              | Atividade salva com sucesso! |
 
 
-
+@PENDENTE
 @Cenario25
 @Manual
 @AtividadeEmMassa
