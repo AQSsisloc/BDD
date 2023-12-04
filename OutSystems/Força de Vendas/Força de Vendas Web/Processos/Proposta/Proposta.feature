@@ -1543,3 +1543,180 @@ Entao exclui Proposta
 Exemplos:
 | Proposta  |
 | 000602-01 |
+
+
+
+@Cenario76
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Inserir produto para venda na Proposta 
+Dado esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+Quando clicar em "+ Produto Venda"
+E inserir <ProdutoVenda>
+E preencher os dados 
+E clicar "Adicionar"
+Entao grava os dados
+E apresenta <MensagemVenda>
+
+Exemplos:
+| Proposta | ProdutoVenda | MensagemVenda |
+| 5769-01  | Bosch Pinhão | -             |
+
+
+
+@Cenario77
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Inserir vários produtos para venda na Proposta 
+Dado esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+Quando clicar em "+ Vários Produto Venda"
+E inserir <ProdutoVenda>
+E preencher os dados 
+E clicar "Adicionar Produtos Venda"
+Entao grava os dados
+E apresenta <MensagemVenda>
+
+Exemplos:
+| Proposta | ProdutoVenda | MensagemVenda |
+| 5769-01  | Bosch Pinhão | -             |
+
+
+@Cenario78
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Editar produtos para venda na Proposta 
+Dado esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+E tenha produto inserido
+Quando clicar na "Seta" do <ProdutoVenda>
+E clicar "Editar"
+E preencher os dados 
+E clicar "Adicionar Produtos Venda"
+Entao grava os dados
+E apresenta <MensagemEdicao>
+
+Exemplos:
+| Proposta | ProdutosVenda | MensagemEdicao |
+| 5769-01  | TESTE AQS     | -              |
+
+
+
+@Cenario79
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Excluir produtos para venda na Proposta 
+Dado esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+E tenha produto inserido 
+Quando clicar na "Seta" do <ProdutoVenda>
+E clicar "Excluir"
+E clicar "Sim"
+Entao grava os dados
+E apresenta <MensagemExclusao>
+
+Exemplos:
+| Proposta | ProdutosVenda | MensagemExclusao                      |
+| 5769-01  | Bosch Mola    | Item selecionado removido com sucesso |
+
+
+
+@Cenario80
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Inserir acréssimo ou desconto no produto na venda da Proposta 
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+Quando clicar em "Acrés/Desc. VENDA"
+E preencher os campos disponíveis
+E clicar em "Aplicar"
+Entao grava os dados
+E apresenta <MensagemAcresDesc>
+
+Exemplos:
+| Proposta | MensagemAcresDesc                             |
+| 5967-01  | Desconto Geral aplicado nos items com sucesso |
+
+
+
+@Cenario81
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Gerenciar parcelas da venda na Proposta
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+Quando clicar em "Gerenciar Parcelas"
+E preencher os campos disponíveis
+E clicar "Confirmar"
+E clicar em "Salvar Parcelas"
+Entao grava os dados
+E apresenta <MensagemParcelas>
+
+Exemplos:
+| Proposta | MensagemParcelas                 |
+| 5967-01  | Parcelas cadastradas com sucesso |
+
+
+
+@Cenario82
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Editar parcelas da venda na Proposta
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+E tenha parcelas inseridas 
+Quando clicar em "Gerenciar Parcelas"
+E clicar "Editar"
+E preencher os dados
+E clicar "Confirmar"
+E clicar em "Salvar Parcelas"
+Entao grava os dados
+E apresenta <MensagemParcelas>
+
+Exemplos:
+| Proposta | MensagemParcelas                 |
+| 5967-01  | Parcelas cadastradas com sucesso |
+
+
+
+@Cenario83
+@Manual
+@PropostaElaboracao
+Esquema do Cenario: Excluir parcelas da venda na Proposta
+Dado que esteja logado no Força de Vendas Web com usuário funcionário
+E selecionar "Processos"
+E selecionar "Proposta"
+E <Proposta> esteja com status "Em Elaboração"
+E esteja na aba "Venda"
+E tenha parcelas inseridas 
+Quando clicar em "Gerenciar Parcelas"
+E clicar "Excluir"
+E clicar "Sim"
+Entao grava os dados
+E apresenta <MensagemParcelas>
+
+Exemplos:
+| Proposta | MensagemParcelas               |
+| 5967-01  | Parcelas removidas com sucesso |
