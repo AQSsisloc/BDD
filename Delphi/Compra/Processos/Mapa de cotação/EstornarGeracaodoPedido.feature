@@ -1,12 +1,12 @@
 #language: pt
-#Gerar Pedido de Compra
+#Estornar Geração do Pedido
 #Delphi
 
 
-Funcionalidade: Gerar Pedido de Compra.
-  Como gerar o pedido de compras a partir da cotação vencedora
-  Eu quero gerar pedido de compras no mapa de cotação
-  Para gerar pedido de compras com a cotação vencedora
+Funcionalidade: Estornar Geração do Pedido.
+  Como estonar o pedido de compras gerado partir do mapa de cotação
+  Eu quero estonar o pedido de compras gerado no mapa de cotação
+  Para estornar o pedido de compras gerado no mapa de cotação
 
 
 Dado acessar o sistema Sisloc com usuário
