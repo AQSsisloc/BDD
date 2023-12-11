@@ -401,7 +401,7 @@ Exemplos:
 
 
 @Cenario20
-@Automatizar
+@Manual
 @PesquisarAtividade
 Cenario: Pesquisar uma atividade criada
 E que esteja logado com usuário funcionário
@@ -412,7 +412,7 @@ Entao apresenta todas as atividades criadas
 
 
 @Cenario21
-@Automatizar
+@Manual
 @LimparPesquisaAtividade
 Cenario: Limpar os resultados de uma pesquisa da atividade
 E que esteja logado com usuário funcionário
@@ -423,7 +423,7 @@ Entao limpa os resultados do filtro da pesquisa
 
 
 @Cenario22
-@Automatizar
+@Manual
 @FiltrarAtividade
 Cenario: Filtrar atividade criada
 E que esteja logado com usuário funcionário
@@ -436,7 +436,7 @@ Entao apresenta a atividade do filtro pesquisado
 
 
 @Cenario23
-@Automatizar
+@Manual
 @ExportarDadosDeAtividades
 Esquema do Cenario: Exportar para excel as atividades filtradas
 E que esteja logado com usuário funcionário
